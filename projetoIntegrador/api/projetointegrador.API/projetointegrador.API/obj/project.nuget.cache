@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "HSkTgspvQAM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\projetointegrador.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\aspnetcore.scalar\\1.2.0\\aspnetcore.scalar.1.2.0.nupkg.sha512",
+    "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.11\\microsoft.aspnetcore.openapi.9.0.11.nupkg.sha512",
+    "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\microsoft.openapi\\2.3.0\\microsoft.openapi.2.3.0.nupkg.sha512",
+    "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\scalar.aspnetcore\\2.13.2\\scalar.aspnetcore.2.13.2.nupkg.sha512",
+    "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\scalar.aspnetcore.microsoft\\2.13.2\\scalar.aspnetcore.microsoft.2.13.2.nupkg.sha512",
+    "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\scalar.aspnetcore.swashbuckle\\2.13.2\\scalar.aspnetcore.swashbuckle.2.13.2.nupkg.sha512",
+    "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\10.0.0\\swashbuckle.aspnetcore.swagger.10.0.0.nupkg.sha512",
+    "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\10.0.0\\swashbuckle.aspnetcore.swaggergen.10.0.0.nupkg.sha512",
+    "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\system.text.json\\8.0.5\\system.text.json.8.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

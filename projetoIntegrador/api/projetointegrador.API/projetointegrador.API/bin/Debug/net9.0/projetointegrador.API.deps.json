@@ -1,0 +1,167 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "projetointegrador.API/1.0.0": {
+        "dependencies": {
+          "AspNetCore.Scalar": "1.2.0",
+          "Microsoft.AspNetCore.OpenApi": "9.0.11",
+          "Scalar.AspNetCore": "2.13.2",
+          "Scalar.AspNetCore.Microsoft": "2.13.2",
+          "Scalar.AspNetCore.Swashbuckle": "2.13.2"
+        },
+        "runtime": {
+          "projetointegrador.API.dll": {}
+        }
+      },
+      "AspNetCore.Scalar/1.2.0": {
+        "runtime": {
+          "lib/net8.0/AspNetCore.Scalar.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.OpenApi/9.0.11": {
+        "dependencies": {
+          "Microsoft.OpenApi": "2.3.0"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "assemblyVersion": "9.0.11.0",
+            "fileVersion": "9.0.1125.52006"
+          }
+        }
+      },
+      "Microsoft.OpenApi/2.3.0": {
+        "runtime": {
+          "lib/net8.0/Microsoft.OpenApi.dll": {
+            "assemblyVersion": "2.3.0.0",
+            "fileVersion": "2.3.0.0"
+          }
+        }
+      },
+      "Scalar.AspNetCore/2.13.2": {
+        "runtime": {
+          "lib/net9.0/Scalar.AspNetCore.dll": {
+            "assemblyVersion": "2.13.2.0",
+            "fileVersion": "2.13.2.0"
+          }
+        }
+      },
+      "Scalar.AspNetCore.Microsoft/2.13.2": {
+        "dependencies": {
+          "Microsoft.AspNetCore.OpenApi": "9.0.11",
+          "Scalar.AspNetCore": "2.13.2"
+        },
+        "runtime": {
+          "lib/net9.0/Scalar.AspNetCore.Microsoft.dll": {
+            "assemblyVersion": "2.13.2.0",
+            "fileVersion": "2.13.2.0"
+          }
+        }
+      },
+      "Scalar.AspNetCore.Swashbuckle/2.13.2": {
+        "dependencies": {
+          "Scalar.AspNetCore": "2.13.2",
+          "Swashbuckle.AspNetCore.SwaggerGen": "10.0.0"
+        },
+        "runtime": {
+          "lib/net9.0/Scalar.AspNetCore.Swashbuckle.dll": {
+            "assemblyVersion": "2.13.2.0",
+            "fileVersion": "2.13.2.0"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore.Swagger/10.0.0": {
+        "dependencies": {
+          "Microsoft.OpenApi": "2.3.0"
+        },
+        "runtime": {
+          "lib/net9.0/Swashbuckle.AspNetCore.Swagger.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.0.1949"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerGen/10.0.0": {
+        "dependencies": {
+          "Swashbuckle.AspNetCore.Swagger": "10.0.0"
+        },
+        "runtime": {
+          "lib/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.0.1949"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "projetointegrador.API/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AspNetCore.Scalar/1.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DVdi1d+7nyke9pX4Jq1Gws+8CCHoVVQ+7RJeEWBtV5WlyV5q+bzIoA8g2m1vctLTweaQEGAtHyHOBAzkuAYzAw==",
+      "path": "aspnetcore.scalar/1.2.0",
+      "hashPath": "aspnetcore.scalar.1.2.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.OpenApi/9.0.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rTa3lp6B8KM8AESIwLakTT6XaoUBTnjAZq2pRX6zS/BzQy6mOVUgaawRSyM0WHykHdwbfrEAmer3ys2xE4DVtg==",
+      "path": "microsoft.aspnetcore.openapi/9.0.11",
+      "hashPath": "microsoft.aspnetcore.openapi.9.0.11.nupkg.sha512"
+    },
+    "Microsoft.OpenApi/2.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5RZpjyt0JMmoc/aEgY9c1vE5pusdDGvkPl9qKIy9KFbRiIXD+w7gBJxX+unSjzzOcfgRoYxnO4okZyqDAL2WEw==",
+      "path": "microsoft.openapi/2.3.0",
+      "hashPath": "microsoft.openapi.2.3.0.nupkg.sha512"
+    },
+    "Scalar.AspNetCore/2.13.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/FTdSYDnWJHPCuPtGE6WXsiy6Mj1iAhT0N4hVqe5mnsxqKrqgX3QQItdjB+25WAcyBLRfuoci7o286KB72dLcw==",
+      "path": "scalar.aspnetcore/2.13.2",
+      "hashPath": "scalar.aspnetcore.2.13.2.nupkg.sha512"
+    },
+    "Scalar.AspNetCore.Microsoft/2.13.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UhtYuYxY6Rd8tEuvDVD72uu+TPlWywwyacaTK0NAwyX72iXGuCF7vuYoi9c8yf2kO2lDF9jxO/Pqxy57NLTZMQ==",
+      "path": "scalar.aspnetcore.microsoft/2.13.2",
+      "hashPath": "scalar.aspnetcore.microsoft.2.13.2.nupkg.sha512"
+    },
+    "Scalar.AspNetCore.Swashbuckle/2.13.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jjdlNOciYwuARosTBPJsuGHhNXGKddbTCmwTmyjOaim/O81v1EzKKZ50XvM1e27wu3rZ8Utyiv3ei5bmsWagQA==",
+      "path": "scalar.aspnetcore.swashbuckle/2.13.2",
+      "hashPath": "scalar.aspnetcore.swashbuckle.2.13.2.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.Swagger/10.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-X1GSq/Eh4FX58Jf7fjUyJLUoMh10jXv4VmT/BUqDAgKIkpo+UuL/SwGOZI+U8XiLFOxpAv4lGR0kFLVPs0wUIA==",
+      "path": "swashbuckle.aspnetcore.swagger/10.0.0",
+      "hashPath": "swashbuckle.aspnetcore.swagger.10.0.0.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.SwaggerGen/10.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-B8C0JC1Iknubtslov37ZvDW9w53X9IQ05UFxXxJB41ZH8cwmzWTZnAXyvqeToJ/yZNfjdCOtKdwTSGiNkQvVuA==",
+      "path": "swashbuckle.aspnetcore.swaggergen/10.0.0",
+      "hashPath": "swashbuckle.aspnetcore.swaggergen.10.0.0.nupkg.sha512"
+    }
+  }
+}
