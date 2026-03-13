@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\italo.vcfreire\\source\\repos\\Localisus\\API\\API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{844A5BDE-C58A-4813-858B-EA1E936E8B23}|API.csproj|c:\\users\\italo.vcfreire\\source\\repos\\localisus\\api\\api\\controllers\\dadosendereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{844A5BDE-C58A-4813-858B-EA1E936E8B23}|API.csproj|solutionrelative:controllers\\dadosendereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{844A5BDE-C58A-4813-858B-EA1E936E8B23}|API.csproj|c:\\users\\italo.vcfreire\\source\\repos\\localisus\\api\\api\\models\\endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{844A5BDE-C58A-4813-858B-EA1E936E8B23}|API.csproj|solutionrelative:models\\endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{844A5BDE-C58A-4813-858B-EA1E936E8B23}|API.csproj|c:\\users\\italo.vcfreire\\source\\repos\\localisus\\api\\api\\enun\\tipoendereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{844A5BDE-C58A-4813-858B-EA1E936E8B23}|API.csproj|solutionrelative:enun\\tipoendereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Endereco.cs",
+              "DocumentMoniker": "C:\\Users\\italo.vcfreire\\source\\repos\\Localisus\\API\\API\\Models\\Endereco.cs",
+              "RelativeDocumentMoniker": "Models\\Endereco.cs",
+              "ToolTip": "C:\\Users\\italo.vcfreire\\source\\repos\\Localisus\\API\\API\\Models\\Endereco.cs",
+              "RelativeToolTip": "Models\\Endereco.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T19:57:39.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TipoEndereco.cs",
+              "DocumentMoniker": "C:\\Users\\italo.vcfreire\\source\\repos\\Localisus\\API\\API\\Enun\\TipoEndereco.cs",
+              "RelativeDocumentMoniker": "Enun\\TipoEndereco.cs",
+              "ToolTip": "C:\\Users\\italo.vcfreire\\source\\repos\\Localisus\\API\\API\\Enun\\TipoEndereco.cs",
+              "RelativeToolTip": "Enun\\TipoEndereco.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T19:56:41.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DadosEndereco.cs",
+              "DocumentMoniker": "C:\\Users\\italo.vcfreire\\source\\repos\\Localisus\\API\\API\\Controllers\\DadosEndereco.cs",
+              "RelativeDocumentMoniker": "Controllers\\DadosEndereco.cs",
+              "ToolTip": "C:\\Users\\italo.vcfreire\\source\\repos\\Localisus\\API\\API\\Controllers\\DadosEndereco.cs",
+              "RelativeToolTip": "Controllers\\DadosEndereco.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T19:55:47.389Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
