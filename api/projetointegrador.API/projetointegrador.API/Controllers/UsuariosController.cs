@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using projetointegrador.API.Data;
 using projetointegrador.API.DTO;
 using projetointegrador.API.Models;
+using BCrypt.Net;
 
 namespace projetointegrador.API.Controllers
 {
@@ -41,7 +42,7 @@ namespace projetointegrador.API.Controllers
         [HttpPost("CriarUsuario")]
         public async Task<IActionResult> CriarUsuario([FromBody] CriarUsuarioDTO dadosUsuario)
         {
-            //caso os dados não sejam encontnrados, nos retorna um modelo pronto do que não foi encontrado com a bad request
+            //caso os dados não sejam encomtrados, nos retorna um modelo pronto do que não foi encontrado com a bad request
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
@@ -68,6 +69,9 @@ namespace projetointegrador.API.Controllers
                 }
             }
 
+            //criando a senha criptografada
+            string senhaHash = BCrypt.Net.BCrypt.HashPassword(dadosUsuario.Senha); //aqui estamos utilizando o método HashPassword da biblioteca BCrypt para gerar a senha criptografada, passando a senha que foi recebida no corpo da requisição pelo DTO, e essa senha criptografada vai ser armazenada no banco de dados no campo SenhaHash do nosso modelo Usuario.
+
             //criando um novo objeto do tipo usuario, para depois ser adicionado ao banco de dados com os dados que foram passados no corpo da requisição pelo DTO
             Usuario usuario = new Usuario
             {
@@ -76,7 +80,8 @@ namespace projetointegrador.API.Controllers
                 CPF = dadosUsuario.CPF,
                 TipoUsuario = dadosUsuario.TipoUsuario,
                 HospitalId = dadosUsuario.HospitalId,
-      
+                // SenhaHash = dadosUsuario.Senha se a senha for redirecionada da forma na qual ela vem da DTO, acaba sendo transportada para o nosso banco de maneira limpa, sem a criptografia, para evitar isso vamos gerar a senha criptografada com o hash da BCrypt;
+
             };
 
             //criando o nosso usuário no banco de dados, adicionando ele ao contexto e depois salvando as mudanças
@@ -84,7 +89,7 @@ namespace projetointegrador.API.Controllers
 
             var criarUsuario = await _usuarioDbContext.SaveChangesAsync();
 
-            if(criarUsuario > 0)
+            if (criarUsuario > 0)
             {
                 return Ok(usuario);
 

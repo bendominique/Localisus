@@ -22,6 +22,7 @@ namespace projetointegrador.API.Models
         public bool Ativo { get; set; }
         public TipoUsuario TipoUsuario { get; set; } //importando o enum para especificar qual é o tipo de usuário que é cadastrado no sistema   
         public int? HospitalId { get; set; } //chave estrangeira para o hospital, indicando a qual hospital o usuário está associado, caso seja um funcionário de um hospital específico. ? permite que o valor seja nulo, ou seja, um usuário pode não estar associado a nenhum hospital, como no caso de um cliente.
+        public string SenhaHash { get; set; } //propriedade para armazenar o hash da senha do usuário, garantindo a segurança das informações de autenticação. Em vez de armazenar a senha em texto plano, o hash é uma representação criptografada da senha, tornando mais difícil para terceiros acessarem as informações sensíveis do usuário.
         public List<Endereco> Enderecos { get; set; } = [];
         public List<Medicamento> Medicamentos { get; set; } = [];
 

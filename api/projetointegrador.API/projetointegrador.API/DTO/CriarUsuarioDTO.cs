@@ -9,5 +9,6 @@ namespace projetointegrador.API.DTO
         public string CPF { get; set; } = string.Empty;
         public int? HospitalId { get; set; } //verificando se o usuário é um funcionário de um hospital específico, caso contrário, ele pode ser um cliente sem associação a nenhum hospital.
         public TipoUsuario TipoUsuario { get; set; } //definindo o tipo de usuário, se é um cliente ou um funcionário, isso é importante para determinar as permissões e funcionalidades disponíveis para cada tipo de usuário no sistema.
+        public string Senha { get; set; } = string.Empty; //propriedade para receber a senha do usuário durante o processo de criação, que posteriormente será convertida em um hash para garantir a segurança das informações de autenticação.
     }
 }
