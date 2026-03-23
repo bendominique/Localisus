@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using projetointegrador.API.Data;
 
@@ -11,9 +12,11 @@ using projetointegrador.API.Data;
 namespace projetointegrador.API.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260320185513_implementandoHospitaisEEstoque")]
+    partial class implementandoHospitaisEEstoque
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -118,10 +121,6 @@ namespace projetointegrador.API.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Endereco")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -137,42 +136,6 @@ namespace projetointegrador.API.Migrations
                     b.ToTable("Hospitais");
                 });
 
-            modelBuilder.Entity("projetointegrador.API.Models.ItemEstoque", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("CodigoLote")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("DataAtualizacao")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("HospitalId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("MedicamentoId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Quantidade")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("ValidadeLote")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("HospitalId");
-
-                    b.HasIndex("MedicamentoId");
-
-                    b.ToTable("ItensEstoque");
-                });
-
             modelBuilder.Entity("projetointegrador.API.Models.Medicamento", b =>
                 {
                     b.Property<int>("IdMedicamento")
@@ -184,13 +147,10 @@ namespace projetointegrador.API.Migrations
                     b.Property<int?>("ClienteId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("DataAtualizacao")
-                        .HasColumnType("datetime2");
-
                     b.Property<float>("Dosagem")
                         .HasColumnType("real");
 
-                    b.Property<string>("Nome")
+                    b.Property<string>("NomeMedicamento")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -213,25 +173,6 @@ namespace projetointegrador.API.Migrations
                         .IsRequired();
 
                     b.Navigation("Cliente");
-                });
-
-            modelBuilder.Entity("projetointegrador.API.Models.ItemEstoque", b =>
-                {
-                    b.HasOne("projetointegrador.API.Models.Hospital", "Hospital")
-                        .WithMany()
-                        .HasForeignKey("HospitalId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("projetointegrador.API.Models.Medicamento", "Medicamento")
-                        .WithMany()
-                        .HasForeignKey("MedicamentoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Hospital");
-
-                    b.Navigation("Medicamento");
                 });
 
             modelBuilder.Entity("projetointegrador.API.Models.Medicamento", b =>

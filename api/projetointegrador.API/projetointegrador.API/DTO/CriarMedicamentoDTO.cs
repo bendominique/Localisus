@@ -2,7 +2,7 @@
 {
     public class CriarMedicamentoDTO
     {
-        public string NomeMedicamento { get; set; }
+        public string Nome { get; set; }
         public float Dosagem { get; set; }
         public int Quantidade { get; set; } 
     }

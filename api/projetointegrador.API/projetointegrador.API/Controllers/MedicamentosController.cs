@@ -14,7 +14,7 @@ namespace projetointegrador.API.Controllers
         //ativando a injeção de dependência
         //a injeção de dependência é um padrão de design que permite que as dependências de um objeto sejam fornecidas por um contêiner de injeção de dependência, em vez de serem criadas diretamente pelo objeto.
         //Isso torna o código mais modular, testável e fácil de manter. Ele é usado como readonly para garantir que a lista de medicamentos não seja modificada diretamente, mas apenas através dos métodos da classe.
-        
+
         private readonly AppDbContext _medicamentoDbContext;
 
 
@@ -34,28 +34,78 @@ namespace projetointegrador.API.Controllers
         }
 
         [HttpGet("{id}")]
-        public ActionResult<IEnumerable<Medicamento>> GetMedicineById(int id)
+        public async Task<IActionResult> GetMedicineById(int id)
         {
-            var medicamento = _medicamentoDbContext.Medicamentos.FirstOrDefault(m => m.IdMedicamento == id);
+            Medicamento? medicamento = await _medicamentoDbContext.Medicamentos.FindAsync(id);
             if (medicamento == null)
             {
                 return NotFound();
             }
             return Ok(medicamento);
         }
-         [HttpPost("CriarMedicamento")]
-         public async Task<ActionResult<Medicamento>> CreateMedicine(Medicamento medicamento)
-         {
+
+        [HttpPost("AdicionarMedicamento")] //lógica deve ser igual a da nossa controller de estoque!!
+        public async Task<IActionResult> AddMedicine(CriarMedicamentoDTO medicamentodto)
+        {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            _medicamentoDbContext.Add(medicamento);
-            int resultadoGravacao = await _medicamentoDbContext.SaveChangesAsync();
+            var medicamento = new Medicamento
+            {
+                Nome = medicamentodto.Nome,
+                Dosagem = medicamentodto.Dosagem,
+                Quantidade = medicamentodto.Quantidade,
+            };
+        
+            _medicamentoDbContext.Medicamentos.Add(medicamento);
 
-            if (resultadoGravacao > 0)
-                return Created("Medicamento registrado com sucesso", medicamento);
+            var resultadoCriarMedicamento = await _medicamentoDbContext.SaveChangesAsync();
 
-            return BadRequest("Erro ao registrar medicamento");
+            if (resultadoCriarMedicamento > 0)
+            {
+                return Ok(medicamento);
+            }
+            else
+            {
+                return BadRequest("Não foi possível criar o medicamento.");
+            }   
         }
+
     }
 }
+
+
+/*
+ * [HttpPost("AdicionarMedicamento")] //lógica deve ser igual a da nossa controller de estoque!!
+        public async Task<IActionResult> AddMedicine(CriarMedicamentoDTO medicamentodto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var medicamento = new Medicamento
+            {
+                Nome = medicamentodto.Nome,
+                Dosagem = medicamentodto.Dosagem,
+                Quantidade = medicamentodto.Quantidade,
+            };
+        
+            _medicamentoDbContext.Medicamentos.Add(medicamento);
+
+            var resultadoCriarMedicamento = await _medicamentoDbContext.SaveChangesAsync();
+
+            if (resultadoCriarMedicamento > 0)
+            {
+                return Ok(medicamento);
+            }
+            else
+            {
+                return BadRequest("Não foi possível criar o medicamento.");
+            }   
+        }
+
+
+Como eu estou pensando em recriar esse medicamento para que possa ser implementado no estoque de um hospital.
+ 
+[HttpPost("AdicionarMedicamento{hospitalId}")] -> passo os parâmetros de id do hospital e aí depois disso segue a mesma lógica, devo prosseguir dessa maneira?
+
+*/

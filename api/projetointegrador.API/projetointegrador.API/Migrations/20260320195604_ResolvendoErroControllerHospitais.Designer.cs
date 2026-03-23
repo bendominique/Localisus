@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using projetointegrador.API.Data;
 
@@ -11,9 +12,11 @@ using projetointegrador.API.Data;
 namespace projetointegrador.API.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260320195604_ResolvendoErroControllerHospitais")]
+    partial class ResolvendoErroControllerHospitais
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -190,7 +193,7 @@ namespace projetointegrador.API.Migrations
                     b.Property<float>("Dosagem")
                         .HasColumnType("real");
 
-                    b.Property<string>("Nome")
+                    b.Property<string>("NomeMedicamento")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
