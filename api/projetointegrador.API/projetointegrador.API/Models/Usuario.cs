@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace projetointegrador.API.Models
 {
-    public class Cliente
+    public class Usuario
     {
         [Key]
         public int Id { get; set; }
@@ -20,15 +20,19 @@ namespace projetointegrador.API.Models
         public string CPF { get; set; }
         public DateTime DataCadastro { get; set; }
         public bool Ativo { get; set; }
+        public TipoUsuario TipoUsuario { get; set; } //importando o enum para especificar qual é o tipo de usuário que é cadastrado no sistema   
+        public int? HospitalId { get; set; } //chave estrangeira para o hospital, indicando a qual hospital o usuário está associado, caso seja um funcionário de um hospital específico. ? permite que o valor seja nulo, ou seja, um usuário pode não estar associado a nenhum hospital, como no caso de um cliente.
         public List<Endereco> Enderecos { get; set; } = [];
         public List<Medicamento> Medicamentos { get; set; } = [];
 
+        //propriedade de navegação para a relação entre usuário e hospital, indicando que um usuário pode estar associado a um hospital específico, caso seja um funcionário de um hospital.
+        public Hospital? Hospital { get; set; }
 
         //O cliente possui uma lista de endereços, ou seja, um cliente pode ter vários endereços associados a ele.
         //No banco de dados relacional, isso se traduziria em uma relação de um para muitos entre as tabelas "Clientes" e "Enderecos", onde um cliente pode ter vários endereços associados a ele.
         //Um exemplo de cardinalidade 1:N (um para muitos) seria: um cliente pode ter vários endereços, mas cada endereço pertence a apenas um cliente.
 
-        public Cliente() { 
+        public Usuario() { 
            
             DataCadastro = DateTime.UtcNow;
             Ativo = true;

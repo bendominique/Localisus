@@ -74,38 +74,3 @@ namespace projetointegrador.API.Controllers
     }
 }
 
-
-/*
- * [HttpPost("AdicionarMedicamento")] //lógica deve ser igual a da nossa controller de estoque!!
-        public async Task<IActionResult> AddMedicine(CriarMedicamentoDTO medicamentodto)
-        {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
-            var medicamento = new Medicamento
-            {
-                Nome = medicamentodto.Nome,
-                Dosagem = medicamentodto.Dosagem,
-                Quantidade = medicamentodto.Quantidade,
-            };
-        
-            _medicamentoDbContext.Medicamentos.Add(medicamento);
-
-            var resultadoCriarMedicamento = await _medicamentoDbContext.SaveChangesAsync();
-
-            if (resultadoCriarMedicamento > 0)
-            {
-                return Ok(medicamento);
-            }
-            else
-            {
-                return BadRequest("Não foi possível criar o medicamento.");
-            }   
-        }
-
-
-Como eu estou pensando em recriar esse medicamento para que possa ser implementado no estoque de um hospital.
- 
-[HttpPost("AdicionarMedicamento{hospitalId}")] -> passo os parâmetros de id do hospital e aí depois disso segue a mesma lógica, devo prosseguir dessa maneira?
-
-*/

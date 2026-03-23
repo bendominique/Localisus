@@ -4,7 +4,7 @@ namespace projetointegrador.API.DTO
 {
     public class CriarEnderecoDTO
     {
-        public int ClienteId { get; set; }
+        public int UsuarioId { get; set; }
         public string Logradouro { get; set; } = string.Empty;
         public string Numero { get; set; } = string.Empty;
         public string Complemento { get; set; } = string.Empty;

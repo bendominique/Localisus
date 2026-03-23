@@ -9,10 +9,10 @@ namespace projetointegrador.API.Data
         }
         //DbSet representa para cada models uma tabela no banco de dados.
         //Migrations criam tabelas no banco de dados, e cada tabela tem um DbSet correspondente no AppDbContext
-        public DbSet<Models.Cliente> Clientes { get; set; }
          public DbSet<Models.Endereco> Enderecos { get; set; }
         public DbSet<Models.Medicamento> Medicamentos { get; set; }
         public DbSet<Models.Hospital> Hospitais { get; set; }
         public DbSet<Models.ItemEstoque> ItensEstoque { get; set; }
+        public DbSet<Models.Usuario> Usuarios { get; set; }
     }
 }

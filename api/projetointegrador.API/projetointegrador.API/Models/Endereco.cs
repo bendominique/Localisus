@@ -36,14 +36,14 @@ namespace projetointegrador.API.Models
         public string CEP { get; set; } = string.Empty;
 
         //instânciando a propriedade ClienteId, que é a chave estrangeira que relaciona o endereço ao cliente correspondente.
-        public int ClienteId { get; set; }
+        public int UsuarioId { get; set; }
 
         //Agora estamos convocando a propriedade Cliente, que é a referência de navegação para o cliente associado a esse endereço. Isso permite acessar as informações do cliente diretamente a partir do endereço.
         //JsonIgnore significa que a propriedade Cliente não será incluída na serialização JSON, evitando assim a referência circular entre Endereco e Cliente.
         //A anotação [ForeignKey(nameof(ClienteId))] indica que a propriedade ClienteId é a chave estrangeira que estabelece a relação entre as entidades Endereco e Cliente. Isso ajuda o Entity Framework a entender como as tabelas estão relacionadas no banco de dados.
-        [ForeignKey(nameof(ClienteId))]
+        [ForeignKey(nameof(UsuarioId))]
         [JsonIgnore]
-        public Cliente Cliente { get; set; } = null!;
+        public Usuario Usuario { get; set; } = null!;
         //Quando estamos passando public Cliente Cliente, apenas estamos dizendo para o Entity Framework que existe uma relação entre as entidades Endereco e Cliente, onde um endereço pertence a um cliente específico. O Entity Framework irá usar essa informação para criar a estrutura de banco de dados adequada e para gerenciar as operações de consulta e manipulação de dados relacionadas a essas entidades. Mas que não necessariamente sera usada
     }
 }

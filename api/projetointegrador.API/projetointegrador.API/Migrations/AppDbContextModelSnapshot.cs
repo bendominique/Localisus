@@ -22,42 +22,6 @@ namespace projetointegrador.API.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("projetointegrador.API.Models.Cliente", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<bool>("Ativo")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("CPF")
-                        .IsRequired()
-                        .HasMaxLength(14)
-                        .HasColumnType("nvarchar(14)");
-
-                    b.Property<DateTime>("DataCadastro")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<int>("TipoEndereco")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Clientes");
-                });
-
             modelBuilder.Entity("projetointegrador.API.Models.Endereco", b =>
                 {
                     b.Property<int>("Id")
@@ -81,9 +45,6 @@ namespace projetointegrador.API.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<int>("ClienteId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Complemento")
                         .IsRequired()
                         .HasMaxLength(150)
@@ -103,9 +64,12 @@ namespace projetointegrador.API.Migrations
                         .HasMaxLength(10)
                         .HasColumnType("nvarchar(10)");
 
+                    b.Property<int>("UsuarioId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("ClienteId");
+                    b.HasIndex("UsuarioId");
 
                     b.ToTable("Enderecos");
                 });
@@ -181,9 +145,6 @@ namespace projetointegrador.API.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdMedicamento"));
 
-                    b.Property<int?>("ClienteId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("DataAtualizacao")
                         .HasColumnType("datetime2");
 
@@ -197,22 +158,69 @@ namespace projetointegrador.API.Migrations
                     b.Property<int>("Quantidade")
                         .HasColumnType("int");
 
+                    b.Property<int?>("UsuarioId")
+                        .HasColumnType("int");
+
                     b.HasKey("IdMedicamento");
 
-                    b.HasIndex("ClienteId");
+                    b.HasIndex("UsuarioId");
 
                     b.ToTable("Medicamentos");
                 });
 
+            modelBuilder.Entity("projetointegrador.API.Models.Usuario", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("CPF")
+                        .IsRequired()
+                        .HasMaxLength(14)
+                        .HasColumnType("nvarchar(14)");
+
+                    b.Property<DateTime>("DataCadastro")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("HospitalId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<int>("TipoEndereco")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TipoUsuario")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("HospitalId");
+
+                    b.ToTable("Usuarios");
+                });
+
             modelBuilder.Entity("projetointegrador.API.Models.Endereco", b =>
                 {
-                    b.HasOne("projetointegrador.API.Models.Cliente", "Cliente")
+                    b.HasOne("projetointegrador.API.Models.Usuario", "Usuario")
                         .WithMany("Enderecos")
-                        .HasForeignKey("ClienteId")
+                        .HasForeignKey("UsuarioId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Cliente");
+                    b.Navigation("Usuario");
                 });
 
             modelBuilder.Entity("projetointegrador.API.Models.ItemEstoque", b =>
@@ -236,12 +244,21 @@ namespace projetointegrador.API.Migrations
 
             modelBuilder.Entity("projetointegrador.API.Models.Medicamento", b =>
                 {
-                    b.HasOne("projetointegrador.API.Models.Cliente", null)
+                    b.HasOne("projetointegrador.API.Models.Usuario", null)
                         .WithMany("Medicamentos")
-                        .HasForeignKey("ClienteId");
+                        .HasForeignKey("UsuarioId");
                 });
 
-            modelBuilder.Entity("projetointegrador.API.Models.Cliente", b =>
+            modelBuilder.Entity("projetointegrador.API.Models.Usuario", b =>
+                {
+                    b.HasOne("projetointegrador.API.Models.Hospital", "Hospital")
+                        .WithMany()
+                        .HasForeignKey("HospitalId");
+
+                    b.Navigation("Hospital");
+                });
+
+            modelBuilder.Entity("projetointegrador.API.Models.Usuario", b =>
                 {
                     b.Navigation("Enderecos");
 

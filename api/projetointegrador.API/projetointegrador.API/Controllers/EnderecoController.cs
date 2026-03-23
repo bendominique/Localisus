@@ -38,11 +38,11 @@ namespace projetointegrador.API.Controllers
                 return BadRequest(ModelState);
             }
 
-            Cliente? clienteEncontrado = await _enderecoDbContext.Clientes.FirstOrDefaultAsync(cliente => cliente.Id == dadosEndereco.ClienteId);
+            Usuario? usuarioEncontrado = await _enderecoDbContext.Usuarios.FirstOrDefaultAsync(usuario => usuario.Id == dadosEndereco.UsuarioId);
 
-            if (clienteEncontrado == null)
+            if (usuarioEncontrado == null)
             {
-                return NotFound($"Cliente com ID {dadosEndereco.ClienteId} não encontrado.");
+                return NotFound($"Cliente com ID {dadosEndereco.UsuarioId} não encontrado.");
             }
 
 
@@ -56,7 +56,7 @@ namespace projetointegrador.API.Controllers
                 Cidade = dadosEndereco.Cidade,
                 Estado = dadosEndereco.Estado,
                 CEP = dadosEndereco.CEP,
-                ClienteId = dadosEndereco.ClienteId
+                UsuarioId = dadosEndereco.UsuarioId
             };
 
             _enderecoDbContext.Enderecos.Add(novoEndereco);
