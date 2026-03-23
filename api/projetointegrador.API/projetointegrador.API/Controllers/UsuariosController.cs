@@ -80,7 +80,7 @@ namespace projetointegrador.API.Controllers
                 CPF = dadosUsuario.CPF,
                 TipoUsuario = dadosUsuario.TipoUsuario,
                 HospitalId = dadosUsuario.HospitalId,
-                // SenhaHash = dadosUsuario.Senha se a senha for redirecionada da forma na qual ela vem da DTO, acaba sendo transportada para o nosso banco de maneira limpa, sem a criptografia, para evitar isso vamos gerar a senha criptografada com o hash da BCrypt;
+                 SenhaHash = senhaHash //se a senha for redirecionada da forma na qual ela vem da DTO, acaba sendo transportada para o nosso banco de maneira limpa, sem a criptografia, para evitar isso vamos gerar a senha criptografada com o hash da BCrypt;
 
             };
 

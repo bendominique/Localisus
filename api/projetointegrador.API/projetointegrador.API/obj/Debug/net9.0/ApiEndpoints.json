@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "projetointegrador.API.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDados",
+        "Type": "projetointegrador.API.DTO.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "projetointegrador.API.Controllers.EnderecoController",
     "Method": "GetAllEnderecos",
     "RelativePath": "api/controller",
