@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using projetointegrador.API.Data;
 using projetointegrador.API.DTO;
@@ -36,6 +37,7 @@ namespace projetointegrador.API.Controllers
         }
 
         [HttpPost("CriarHospital")]
+        [Authorize(Roles ="Administrador")]
         public async Task<IActionResult> CreateHospital(CriarHospitalDTO hospitaldto)
         {
             if (!ModelState.IsValid)

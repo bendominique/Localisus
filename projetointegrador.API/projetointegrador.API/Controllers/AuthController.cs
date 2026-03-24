@@ -59,7 +59,8 @@ namespace projetointegrador.API.Controllers
                 message = "Login realizado com sucesso!",
                 UsuarioNome = usuario.Nome,
                 Tipo = usuario.TipoUsuario,
-                HospitalId = usuario.HospitalId
+                HospitalId = usuario.HospitalId,
+                Token = gerarToken
             });
 
         }

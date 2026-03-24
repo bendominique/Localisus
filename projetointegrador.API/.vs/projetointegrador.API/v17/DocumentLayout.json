@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\benjamin.dmakangwa\\documents\\projetointegrador\\api\\projetointegrador.api\\projetointegrador.api\\controllers\\hospitalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\controllers\\hospitalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\benjamin.dmakangwa\\documents\\projetointegrador\\api\\projetointegrador.api\\projetointegrador.api\\controllers\\estoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\controllers\\estoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\benjamin.dmakangwa\\documents\\projetointegrador\\api\\projetointegrador.api\\projetointegrador.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\benjamin.dmakangwa\\documents\\projetointegrador\\api\\projetointegrador.api\\projetointegrador.api\\dto\\registrarestoquedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\dto\\registrarestoquedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\benjamin.dmakangwa\\documents\\projetointegrador\\api\\projetointegrador.api\\projetointegrador.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\benjamin.dmakangwa\\documents\\projetointegrador\\api\\projetointegrador.api\\projetointegrador.api\\dto\\criarmedicamentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\dto\\criarmedicamentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,24 +35,8 @@
       "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Migrations\\20260324194621_ConfiguracaoCorsEJWT.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projetointegrador.API\\Migrations\\20260324194621_ConfiguracaoCorsEJWT.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\benjamin.dmakangwa\\documents\\projetointegrador\\api\\projetointegrador.api\\projetointegrador.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\benjamin.dmakangwa\\documents\\projetointegrador\\api\\projetointegrador.api\\projetointegrador.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\benjamin.dmakangwa\\documents\\projetointegrador\\api\\projetointegrador.api\\projetointegrador.api\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\benjamin.dmakangwa\\documents\\projetointegrador\\api\\projetointegrador.api\\projetointegrador.api\\controllers\\estoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\controllers\\estoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\benjamin.dmakangwa\\documents\\projetointegrador\\api\\projetointegrador.api\\projetointegrador.api\\enum\\tipousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -61,10 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\benjamin.dmakangwa\\documents\\projetointegrador\\api\\projetointegrador.api\\projetointegrador.api\\dto\\criarenderecodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\dto\\criarenderecodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\benjamin.dmakangwa\\documents\\projetointegrador\\api\\projetointegrador.api\\projetointegrador.api\\controllers\\hospitalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\controllers\\hospitalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\benjamin.dmakangwa\\documents\\projetointegrador\\api\\projetointegrador.api\\projetointegrador.api\\controllers\\medicamentoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -101,6 +101,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\benjamin.dmakangwa\\documents\\projetointegrador\\api\\projetointegrador.api\\projetointegrador.api\\migrations\\20260323200732_jwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\migrations\\20260323200732_jwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\benjamin.dmakangwa\\documents\\projetointegrador\\api\\projetointegrador.api\\projetointegrador.api\\migrations\\20260324194621_configuracaocorsejwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\migrations\\20260324194621_configuracaocorsejwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -110,7 +114,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 297,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
@@ -123,18 +127,17 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-03-11T17:47:59.977Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "projetointegrador.API\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Controllers\\AuthController.cs",
               "RelativeToolTip": "projetointegrador.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAQwEgAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowDwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-24T16:48:55.304Z",
               "IsPinned": true,
@@ -148,7 +151,7 @@
               "RelativeDocumentMoniker": "projetointegrador.API\\Program.cs",
               "ToolTip": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Program.cs",
               "RelativeToolTip": "projetointegrador.API\\Program.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwFMAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwFMAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-09T19:53:56.044Z",
               "IsPinned": true,
@@ -156,7 +159,93 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "20260324194621_ConfiguracaoCorsEJWT.cs",
+              "DocumentMoniker": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Migrations\\20260324194621_ConfiguracaoCorsEJWT.cs",
+              "RelativeDocumentMoniker": "projetointegrador.API\\Migrations\\20260324194621_ConfiguracaoCorsEJWT.cs",
+              "ToolTip": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Migrations\\20260324194621_ConfiguracaoCorsEJWT.cs",
+              "RelativeToolTip": "projetointegrador.API\\Migrations\\20260324194621_ConfiguracaoCorsEJWT.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T19:46:22.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CriarEnderecoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\DTO\\CriarEnderecoDTO.cs",
+              "RelativeDocumentMoniker": "projetointegrador.API\\DTO\\CriarEnderecoDTO.cs",
+              "ToolTip": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\DTO\\CriarEnderecoDTO.cs",
+              "RelativeToolTip": "projetointegrador.API\\DTO\\CriarEnderecoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T19:25:25.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "projetointegrador.API\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "projetointegrador.API\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwD4AAADuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T17:54:01.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\DTO\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "projetointegrador.API\\DTO\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\DTO\\LoginDTO.cs",
+              "RelativeToolTip": "projetointegrador.API\\DTO\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T17:46:01.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EstoqueController.cs",
+              "DocumentMoniker": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Controllers\\EstoqueController.cs",
+              "RelativeDocumentMoniker": "projetointegrador.API\\Controllers\\EstoqueController.cs",
+              "ToolTip": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Controllers\\EstoqueController.cs",
+              "RelativeToolTip": "projetointegrador.API\\Controllers\\EstoqueController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAcwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T20:26:24.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CriarUsuarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\DTO\\CriarUsuarioDTO.cs",
+              "RelativeDocumentMoniker": "projetointegrador.API\\DTO\\CriarUsuarioDTO.cs",
+              "ToolTip": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\DTO\\CriarUsuarioDTO.cs",
+              "RelativeToolTip": "projetointegrador.API\\DTO\\CriarUsuarioDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T19:56:34.431Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "HospitalController.cs",
+              "DocumentMoniker": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Controllers\\HospitalController.cs",
+              "RelativeDocumentMoniker": "projetointegrador.API\\Controllers\\HospitalController.cs",
+              "ToolTip": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Controllers\\HospitalController.cs",
+              "RelativeToolTip": "projetointegrador.API\\Controllers\\HospitalController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T18:51:26.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "CriarMedicamentoDTO.cs",
               "DocumentMoniker": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\DTO\\CriarMedicamentoDTO.cs",
               "RelativeDocumentMoniker": "projetointegrador.API\\DTO\\CriarMedicamentoDTO.cs",
@@ -169,72 +258,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CriarUsuarioDTO.cs",
-              "DocumentMoniker": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\DTO\\CriarUsuarioDTO.cs",
-              "RelativeDocumentMoniker": "projetointegrador.API\\DTO\\CriarUsuarioDTO.cs",
-              "ToolTip": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\DTO\\CriarUsuarioDTO.cs",
-              "RelativeToolTip": "projetointegrador.API\\DTO\\CriarUsuarioDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T19:56:34.431Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "20260324194621_ConfiguracaoCorsEJWT.cs",
-              "DocumentMoniker": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Migrations\\20260324194621_ConfiguracaoCorsEJWT.cs",
-              "RelativeDocumentMoniker": "projetointegrador.API\\Migrations\\20260324194621_ConfiguracaoCorsEJWT.cs",
-              "ToolTip": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Migrations\\20260324194621_ConfiguracaoCorsEJWT.cs",
-              "RelativeToolTip": "projetointegrador.API\\Migrations\\20260324194621_ConfiguracaoCorsEJWT.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "RegistrarEstoqueDTO.cs",
+              "DocumentMoniker": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\DTO\\RegistrarEstoqueDTO.cs",
+              "RelativeDocumentMoniker": "projetointegrador.API\\DTO\\RegistrarEstoqueDTO.cs",
+              "ToolTip": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\DTO\\RegistrarEstoqueDTO.cs",
+              "RelativeToolTip": "projetointegrador.API\\DTO\\RegistrarEstoqueDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T19:46:22.03Z",
+              "WhenOpened": "2026-03-24T20:04:36.996Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "CriarEnderecoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\DTO\\CriarEnderecoDTO.cs",
-              "RelativeDocumentMoniker": "projetointegrador.API\\DTO\\CriarEnderecoDTO.cs",
-              "ToolTip": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\DTO\\CriarEnderecoDTO.cs",
-              "RelativeToolTip": "projetointegrador.API\\DTO\\CriarEnderecoDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T19:25:25.894Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UsuariosController.cs",
-              "DocumentMoniker": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Controllers\\UsuariosController.cs",
-              "RelativeDocumentMoniker": "projetointegrador.API\\Controllers\\UsuariosController.cs",
-              "ToolTip": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Controllers\\UsuariosController.cs",
-              "RelativeToolTip": "projetointegrador.API\\Controllers\\UsuariosController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwD4AAADuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T17:54:01.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginDTO.cs",
-              "DocumentMoniker": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\DTO\\LoginDTO.cs",
-              "RelativeDocumentMoniker": "projetointegrador.API\\DTO\\LoginDTO.cs",
-              "ToolTip": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\DTO\\LoginDTO.cs",
-              "RelativeToolTip": "projetointegrador.API\\DTO\\LoginDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T17:46:01.313Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "20260324174931_Reajustes.cs",
               "DocumentMoniker": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Migrations\\20260324174931_Reajustes.cs",
               "RelativeDocumentMoniker": "projetointegrador.API\\Migrations\\20260324174931_Reajustes.cs",
@@ -242,12 +279,11 @@
               "RelativeToolTip": "projetointegrador.API\\Migrations\\20260324174931_Reajustes.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T17:49:31.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-24T17:49:31.683Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "TipoUsuario.cs",
               "DocumentMoniker": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Enum\\TipoUsuario.cs",
               "RelativeDocumentMoniker": "projetointegrador.API\\Enum\\TipoUsuario.cs",
@@ -255,25 +291,11 @@
               "RelativeToolTip": "projetointegrador.API\\Enum\\TipoUsuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T17:31:41.589Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-23T17:31:41.589Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EstoqueController.cs",
-              "DocumentMoniker": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Controllers\\EstoqueController.cs",
-              "RelativeDocumentMoniker": "projetointegrador.API\\Controllers\\EstoqueController.cs",
-              "ToolTip": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Controllers\\EstoqueController.cs",
-              "RelativeToolTip": "projetointegrador.API\\Controllers\\EstoqueController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAgwDkAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T20:26:24.198Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "TipoEndereco.cs",
               "DocumentMoniker": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Enum\\TipoEndereco.cs",
               "RelativeDocumentMoniker": "projetointegrador.API\\Enum\\TipoEndereco.cs",
@@ -281,12 +303,11 @@
               "RelativeToolTip": "projetointegrador.API\\Enum\\TipoEndereco.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T19:48:34.866Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-12T19:48:34.866Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Endereco.cs",
               "DocumentMoniker": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Models\\Endereco.cs",
               "RelativeDocumentMoniker": "projetointegrador.API\\Models\\Endereco.cs",
@@ -294,12 +315,11 @@
               "RelativeToolTip": "projetointegrador.API\\Models\\Endereco.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T19:09:38.926Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T19:09:38.926Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Hospital.cs",
               "DocumentMoniker": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Models\\Hospital.cs",
               "RelativeDocumentMoniker": "projetointegrador.API\\Models\\Hospital.cs",
@@ -307,12 +327,11 @@
               "RelativeToolTip": "projetointegrador.API\\Models\\Hospital.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T18:46:56.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-20T18:46:56.154Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "EnderecoController.cs",
               "DocumentMoniker": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Controllers\\EnderecoController.cs",
               "RelativeDocumentMoniker": "projetointegrador.API\\Controllers\\EnderecoController.cs",
@@ -320,21 +339,7 @@
               "RelativeToolTip": "projetointegrador.API\\Controllers\\EnderecoController.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAQwEwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T19:27:35.933Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "HospitalController.cs",
-              "DocumentMoniker": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Controllers\\HospitalController.cs",
-              "RelativeDocumentMoniker": "projetointegrador.API\\Controllers\\HospitalController.cs",
-              "ToolTip": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Controllers\\HospitalController.cs",
-              "RelativeToolTip": "projetointegrador.API\\Controllers\\HospitalController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAqwEEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T18:51:26.449Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-12T19:27:35.933Z"
             },
             {
               "$type": "Document",
@@ -346,8 +351,7 @@
               "RelativeToolTip": "projetointegrador.API\\Controllers\\MedicamentosController.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAIBJwEwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T18:30:40.142Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-23T18:30:40.142Z"
             },
             {
               "$type": "Document",
@@ -359,8 +363,7 @@
               "RelativeToolTip": "projetointegrador.API\\Models\\Usuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T18:21:28.625Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-23T18:21:28.625Z"
             },
             {
               "$type": "Document",
@@ -372,8 +375,7 @@
               "RelativeToolTip": "projetointegrador.API\\Models\\ItemEstoque.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAA6wE0AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T18:29:29.225Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-13T18:29:29.225Z"
             },
             {
               "$type": "Document",
@@ -385,8 +387,7 @@
               "RelativeToolTip": "projetointegrador.API\\Data\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T19:26:47.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T19:26:47.536Z"
             },
             {
               "$type": "Document",
@@ -398,8 +399,7 @@
               "RelativeToolTip": "projetointegrador.API\\Migrations\\20260323200732_JWT.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T20:07:33.102Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-23T20:07:33.102Z"
             },
             {
               "$type": "Document",
@@ -422,8 +422,7 @@
               "RelativeToolTip": "projetointegrador.API\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-11T17:48:05.595Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T17:48:05.595Z"
             },
             {
               "$type": "Document",
@@ -435,8 +434,7 @@
               "RelativeToolTip": "projetointegrador.API\\projetointegrador.API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-09T20:06:38.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-09T20:06:38.77Z"
             }
           ]
         }
