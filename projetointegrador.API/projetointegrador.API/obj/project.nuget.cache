@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UX9XgbBpwoo=",
+  "dgSpecHash": "JLL9yWuugG8=",
   "success": true,
   "projectFilePath": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\projetointegrador.API.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\bcrypt\\1.0.0\\bcrypt.1.0.0.nupkg.sha512",
     "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\bcrypt.net-next\\4.1.0\\bcrypt.net-next.4.1.0.nupkg.sha512",
     "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\9.0.14\\microsoft.aspnetcore.authentication.jwtbearer.9.0.14.nupkg.sha512",
     "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\microsoft.aspnetcore.middlewareanalysis\\9.0.14\\microsoft.aspnetcore.middlewareanalysis.9.0.14.nupkg.sha512",
     "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.14\\microsoft.aspnetcore.openapi.9.0.14.nupkg.sha512",
     "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
@@ -44,8 +45,8 @@
     "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.16.0\\microsoft.identitymodel.abstractions.8.16.0.nupkg.sha512",
     "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.16.0\\microsoft.identitymodel.jsonwebtokens.8.16.0.nupkg.sha512",
     "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\microsoft.identitymodel.logging\\8.16.0\\microsoft.identitymodel.logging.8.16.0.nupkg.sha512",
-    "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.35.0\\microsoft.identitymodel.protocols.6.35.0.nupkg.sha512",
-    "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.35.0\\microsoft.identitymodel.protocols.openidconnect.6.35.0.nupkg.sha512",
+    "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\microsoft.identitymodel.protocols\\8.0.1\\microsoft.identitymodel.protocols.8.0.1.nupkg.sha512",
+    "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\8.0.1\\microsoft.identitymodel.protocols.openidconnect.8.0.1.nupkg.sha512",
     "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.16.0\\microsoft.identitymodel.tokens.8.16.0.nupkg.sha512",
     "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512",
     "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",

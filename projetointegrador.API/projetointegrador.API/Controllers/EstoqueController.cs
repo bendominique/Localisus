@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using projetointegrador.API.Data;
 using projetointegrador.API.Models;
+using System.Security.Claims;
 
 namespace projetointegrador.API.Controllers
 {
@@ -39,8 +41,9 @@ namespace projetointegrador.API.Controllers
             return Ok(estoque);
 
         }
-
+        
         [HttpPost("atualizarEstoque")]
+        [Authorize(Roles = "Administrador, Funcionario")] //apenas usuários com a role de admin e funcionários podem acessar essa rota para atualizar o estoque
         public async Task<IActionResult> AtualizarEstoque([FromBody] ItemEstoque dadosEstoque)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
@@ -51,6 +54,13 @@ namespace projetointegrador.API.Controllers
             var medicamentoExistente = await _estoqueDbContext.ItensEstoque //expressão lambfa
                 .FirstOrDefaultAsync(x => x.MedicamentoId == dadosEstoque.MedicamentoId && x.HospitalId == dadosEstoque.HospitalId);
 
+            var hospitalIDToken = User.FindFirst("hospitalId")?.Value; //pegando o hospitalId do token do usuário logado
+            var nivelAcessoUsuario = User.FindFirst(ClaimTypes.Role)?.Value; //pegando o nível de acesso do usuário logado
+            if (nivelAcessoUsuario != "Administrador" && hospitalIDToken != dadosEstoque.HospitalId.ToString())
+            {
+                return Forbid("Você não tem permissão para atualizar o estoque."); //verificando se o usuário é administrador ou se o hospitalId do token corresponde ao hospitalId do estoque que está sendo atualizado, caso contrário, ele não tem permissão para atualizar o estoque daquele hospital
+            }
+
             if (_estoqueDbContext.ItensEstoque.Update(medicamentoExistente) != null)
             {
                 //atualizando o nosso estoque
@@ -58,12 +68,15 @@ namespace projetointegrador.API.Controllers
                 medicamentoExistente.Quantidade += dadosEstoque.Quantidade; //quantidade do medicamento que está sendo implementada
                 medicamentoExistente.DataAtualizacao = DateTime.Now; //atualizando a data de atualização do medicamento
                 medicamentoExistente.ValidadeLote = dadosEstoque.ValidadeLote; //atualizando a validade do lote do medicamento
+                medicamentoExistente.CodigoLote = dadosEstoque.CodigoLote; //atualizando o código do lote do medicamento
+
                 _estoqueDbContext.ItensEstoque.Update(medicamentoExistente); //atualizando o medicamento no banco de dados
 
 
             } else
             {
                 //caso o medicamento seja novo vamos inserir um novo registro de estoque
+                dadosEstoque.DataAtualizacao = DateTime.Now; //definindo a data de atualização do medicamento como a data atual
                 _estoqueDbContext.Add(dadosEstoque); //adicionando o novo estoque ao banco de dados
 
             }

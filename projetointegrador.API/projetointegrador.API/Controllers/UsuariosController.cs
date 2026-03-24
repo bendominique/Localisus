@@ -58,6 +58,11 @@ namespace projetointegrador.API.Controllers
                 }
             }
 
+            if(dadosUsuario.TipoUsuario == Enum.TipoUsuario.Cidadao || dadosUsuario.TipoUsuario == Enum.TipoUsuario.Administrador)
+            {
+                dadosUsuario.HospitalId = null; //se o tipo de usuário for do tipo cidadão ou administrador, ele não pode ter um HospitalId, então vamos setar o HospitalId como nulo para garantir que ele não tenha um HospitalId associado.
+            }
+
             //agora vamos buscar no banco de dados se existe um hospital com o id que foi passado no HospitalId, caso não exista, ele retorna uma bad request com a mensagem de erro
             if (dadosUsuario.HospitalId != null)
             {

@@ -169,3 +169,4 @@ C:\Users\benjamin.dmakangwa\Documents\projetoIntegrador\api\projetointegrador.AP
 C:\Users\benjamin.dmakangwa\Documents\projetoIntegrador\api\projetointegrador.API\projetointegrador.API\obj\Debug\net9.0\projetointegrador.API.pdb
 C:\Users\benjamin.dmakangwa\Documents\projetoIntegrador\api\projetointegrador.API\projetointegrador.API\obj\Debug\net9.0\projetointegrador.API.genruntimeconfig.cache
 C:\Users\benjamin.dmakangwa\Documents\projetoIntegrador\api\projetointegrador.API\projetointegrador.API\obj\Debug\net9.0\ref\projetointegrador.API.dll
+C:\Users\benjamin.dmakangwa\Documents\projetoIntegrador\api\projetointegrador.API\projetointegrador.API\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

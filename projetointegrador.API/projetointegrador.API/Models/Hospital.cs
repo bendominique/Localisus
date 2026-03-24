@@ -13,5 +13,9 @@ namespace projetointegrador.API.Models
         [Required(ErrorMessage = "Telefone é um valor obrigatório")]
         [StringLength(11, ErrorMessage = "Telefone precisa ter 11 caracteres")]
         public string Telefone { get; set; } = string.Empty;
+
+        //adicionando as informações de navegçaõ e acesso da api do google maps
+        public double Longitude { get; set; }
+        public double Latitude { get; set; }
     }
 }
