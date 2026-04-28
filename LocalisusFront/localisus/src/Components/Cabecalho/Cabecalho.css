@@ -1,0 +1,14 @@
+.elementos-cabecalho{
+    display: flex;
+    justify-content: center;
+}
+
+.barra-pesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border-style: none;
+    height: 40px;
+    width: 450px;
+}

@@ -9,6 +9,15 @@
 body{
     font-family: "Montserrat", sans-serif;
     display: flex;
+    justify-content: center;
+    
+}
+
+.botoes{
+    margin-left: 1350px;
+    margin-top: -40px;
+    cursor: pointer;
+    list-style: none;
 }
 
 .cabecalho{
@@ -16,17 +25,11 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 15px;
+    width: 1500px;
 }
 
-.cabecalho  img{
-    justify-content: center;
-    width: 800px;
-    padding: 30px; 
+.elementos-pagina-home{
+    background-color: var(--cor-azul-secundaria);
 }
 
-.letreiro {
-    color: var(--cor-azul-bebe);
-    font-size: 40px;
-    margin-top: 20px;
-
-}
