@@ -1,9 +1,9 @@
 import './telahome.css'
-import Botao from '../../src/Components/Botao/Botao'
-import Card from '../../src/Components/Card/Card'
-import ConteudoPagina from '../../src/Components/Body/Body'
-import ElementosCabecalho from '../../src/Components/Cabecalho/Cabecalho'
-import Login from '../TelaLogin/TelaLogin'
+import Botao from '../../Components/Botao/Botao'
+import Card from '../../Components/Card/Card'
+import ConteudoPagina from '../../Components/Body/Body'
+import ElementosCabecalho from '../../Components/Cabecalho/Cabecalho'
+
 import { Link } from "react-router-dom"
 
 export default function TelaHome() {
