@@ -20,7 +20,7 @@ export default function TelaLogin(){
 
         if (resposta.ok) {
             const dado = await resposta.json();
-            localStorage.setItem('token', 'dado.token') //salva o token
+            localStorage.setItem('token', dado.token) //salva o token
             navegar('/')
         } else {
             alert('Usuário ou senha incorretos!')
