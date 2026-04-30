@@ -7,6 +7,7 @@ import {
 import TelaCadastro from "./Paginas/TelaCadastro/TelaCadastro"
 import TelaLogin from "./Paginas/TelaLogin/TelaLogin";
 import TelaHome from "./Paginas/TelaHome/TelaHome";
+import TelaHomeUsuario from "./Paginas/TelaHomeUsuario/TelaHomeUsuario";
 
 function App() {
   return (
@@ -25,6 +26,11 @@ function App() {
         <Route
           path="/login"
           element={<TelaLogin />}
+        />
+        <Route
+          path="/home-usuario"
+
+          element={<TelaHomeUsuario/>}
         />
 
       </Routes>

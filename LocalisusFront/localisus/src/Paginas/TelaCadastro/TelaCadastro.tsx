@@ -1,57 +1,83 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import { Link } from "react-router-dom"
+import { api } from '../../Services/api'
 
 export default function TelaCadastro() {
-
-    const [nome, setNome] = useState('');
-    const [tipoUsuario, setTipoUsuario] = useState('');
+    const [dadoFormulario, setDadoFormulario] = useState({
+        nome: '', email: '', cpf: '', senha: '', tipoUsuario: 1, hospitalId: ''
+    });
     const navegar = useNavigate();
 
-    //como estamos utilizando uma tag de formulário para realizar o cadastro do usuário, todas as vezes em que nós clicarmos num botão é padrão o html reiniciar a página
-    //preventDefault impede que esse padrão seja executado
-    const handleCadastro = async (e) => {
+    /// ????????????????????????
+    const handleEntrada = (e) => {
+        const { name, value } = e.target;
+        setDadoFormulario({ ...dadoFormulario, [name]: value });
+    };
+
+    const handleSaida = async (e) => {
         e.preventDefault();
 
 
-        const resposta = await fetch('https://localhost:7024/api/usuarios/CriarUsuario', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ nome, tipoUsuario }) //tramsformando o texto obtido em JSON
-        });
 
-        if (resposta.ok) {
-            alert('Cadastro realizado com sucesso!');
-            navegar('/')
-        } else {
-            alert('Erro ao cadastrar. Tente novamente.');
+        const enviarDados = {
+            ...dadoFormulario,
+            tipoUsuario: (dadoFormulario.tipoUsuario),
+            hospitalId: dadoFormulario.hospitalId ? parseInt(dadoFormulario.hospitalId) : null
+        };
+
+
+        try {
+            const res = await api.cadastrar(enviarDados);
+            const dado = await res.json();
+
+            if (res.ok) {
+                alert('Cadasto realizado!');
+                navegar('/login')
+            } else {
+                alert(dado.Mensagem || "Erro ao cadastrar");
+            };
+
+        } catch (erro) {
+            console.error(erro)
         }
+
     }
+
 
 
     return (
         <>
-            <h1>Seja bem vindo ao Localisus</h1>
-            <form onSubmit={handleCadastro}>
-                <input
-                    type="text"
-                    placeholder="Nome de Usuário"
-                    onChange={(e) => setNome(e.target.value)}
-                />
+            <form onSubmit={handleSaida}>
+                <h1>Cadastro Localisus</h1>
+                <input name="nome" placeholder="Nome" onChange={handleEntrada} required />
+                <input name="email" type="email" placeholder="Email" onChange={handleEntrada} required />
+                <input name="cpf" placeholder="CPF" onChange={handleEntrada} required />
+                <input name="senha" type="password" placeholder="Senha" onChange={handleEntrada} required />
 
-                <input
-                    type="text"
-                    placeholder="Tipo de Usuário"
-                    onChange={(e) => setTipoUsuario(e.target.value)}
-                />
-                <button type="submit">Cadastrar</button>
+                <select name="tipoUsuario" onChange={handleEntrada}>
+                    <option value="1">Cidadão</option>
+                    <option value="2">Funcionário</option>
+                </select>
+
+                {dadoFormulario.tipoUsuario == 2 && (
+                    <input name="hospitalId" placeholder="ID do Hospital" onChange={handleEntrada} />
+                )}
+
+                <button type="submit">Finalizar Cadastro</button>
             </form>
-            <Link to="/cadastro">
-                <p> Já possui uma conta? Entre</p>
-            </Link>
-
         </>
     )
-
-
 }
+
+
+
+/*
+                DIFERENÇA ENTRE CONST E FUNCTION
+            
+    - const: cria-se uma variável que dentro dela executa-se uma função.
+    -function: cria-se uma declaração, é através dela que o React faz a transição, obtém as informações presentes para ser utilizado no nosso programa.
+
+
+
+
+*/
