@@ -1,4 +1,4 @@
-const url_base = 'https://localhost:7024/api'; //estamos declarando a api de conexão de uma vez permitindo que ela possa ser reutilizada de forma profissional ao longo do código
+export const url_base = 'https://localhost:7024/api'; //estamos declarando a api de conexão de uma vez permitindo que ela possa ser reutilizada de forma profissional ao longo do código
 
 export const api = {
     //realizando a conexão com a authcontroller da api do localisus

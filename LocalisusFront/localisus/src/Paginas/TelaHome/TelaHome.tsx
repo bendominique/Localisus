@@ -30,6 +30,16 @@ export default function TelaHome() {
                             <h2 >Vantagens do Localisus:</h2>
                         </section>
                     </article>
+                    <article className='mapa-busca'>
+                        <section className='buscar-no-mapa'>
+                            <h2>Busque por um medicamento no mapa</h2>
+                            <Link to="/mapa">
+                                <button>
+                                    buscar
+                                </button>
+                            </Link>
+                        </section>
+                    </article>
                     {/* quando um conteúdo é injetável, é necessário que ele seja fechado através de /antes do nome */}
                 </ConteudoPagina>
 
