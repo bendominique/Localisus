@@ -79,6 +79,7 @@
   },
   {
     "ContainingType": "projetointegrador.API.Controllers.HospitalController",
+<<<<<<< HEAD
     "Method": "BuscarHospital",
     "RelativePath": "api/hospital/buscar/{nome}",
     "HttpMethod": "GET",
@@ -105,6 +106,8 @@
   },
   {
     "ContainingType": "projetointegrador.API.Controllers.HospitalController",
+=======
+>>>>>>> 41245695cf3e62cc59e6c904e3e5b8464e6e46cd
     "Method": "CreateHospital",
     "RelativePath": "api/hospital/CriarHospital",
     "HttpMethod": "POST",

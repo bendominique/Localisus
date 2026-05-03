@@ -170,6 +170,7 @@ C:\Users\benjamin.dmakangwa\Documents\projetoIntegrador\api\projetointegrador.AP
 C:\Users\benjamin.dmakangwa\Documents\projetoIntegrador\api\projetointegrador.API\projetointegrador.API\obj\Debug\net9.0\projetointegrador.API.genruntimeconfig.cache
 C:\Users\benjamin.dmakangwa\Documents\projetoIntegrador\api\projetointegrador.API\projetointegrador.API\obj\Debug\net9.0\ref\projetointegrador.API.dll
 C:\Users\benjamin.dmakangwa\Documents\projetoIntegrador\api\projetointegrador.API\projetointegrador.API\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+<<<<<<< HEAD
 C:\Users\Aluno\OneDrive - SENAC - SP\Backend Localisus\projetointegrador.API\projetointegrador.API\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\Aluno\OneDrive - SENAC - SP\Backend Localisus\projetointegrador.API\projetointegrador.API\bin\Debug\net9.0\appsettings.json
 C:\Users\Aluno\OneDrive - SENAC - SP\Backend Localisus\projetointegrador.API\projetointegrador.API\bin\Debug\net9.0\projetointegrador.API.staticwebassets.endpoints.json
@@ -342,3 +343,5 @@ C:\Users\Aluno\OneDrive - SENAC - SP\Backend Localisus\projetointegrador.API\pro
 C:\Users\Aluno\OneDrive - SENAC - SP\Backend Localisus\projetointegrador.API\projetointegrador.API\obj\Debug\net9.0\projetointegrador.API.pdb
 C:\Users\Aluno\OneDrive - SENAC - SP\Backend Localisus\projetointegrador.API\projetointegrador.API\obj\Debug\net9.0\projetointegrador.API.genruntimeconfig.cache
 C:\Users\Aluno\OneDrive - SENAC - SP\Backend Localisus\projetointegrador.API\projetointegrador.API\obj\Debug\net9.0\ref\projetointegrador.API.dll
+=======
+>>>>>>> 41245695cf3e62cc59e6c904e3e5b8464e6e46cd

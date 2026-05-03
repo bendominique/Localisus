@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+<<<<<<< HEAD
 using Microsoft.IdentityModel.Tokens;
+=======
+>>>>>>> 41245695cf3e62cc59e6c904e3e5b8464e6e46cd
 using projetointegrador.API.Data;
 using projetointegrador.API.DTO;
 using projetointegrador.API.Models;
@@ -37,6 +40,7 @@ namespace projetointegrador.API.Controllers
             return Ok(hospital);
         }
 
+<<<<<<< HEAD
         //adicionando um método http para a busca de hospitais no frontend, permitindo que o usuário visualize o estoque do mesmo e caso seja um adm atualize
         [HttpGet("buscar/{nome}")]
         public async Task<ActionResult<IEnumerable<Hospital>>> BuscarHospital(string nome)
@@ -50,6 +54,8 @@ namespace projetointegrador.API.Controllers
             return Ok(resultados);
         }
 
+=======
+>>>>>>> 41245695cf3e62cc59e6c904e3e5b8464e6e46cd
         [HttpPost("CriarHospital")]
         [Authorize(Roles ="Administrador")]
         public async Task<IActionResult> CreateHospital(CriarHospitalDTO hospitaldto)
@@ -78,6 +84,7 @@ namespace projetointegrador.API.Controllers
 
             }
         }
+<<<<<<< HEAD
 
 
         //criação do método http para atualizar o hospital, permitindo que o usuário visualize o estoque dele no frontend
@@ -104,3 +111,7 @@ namespace projetointegrador.API.Controllers
         }
     }
 };
+=======
+    }
+}
+>>>>>>> 41245695cf3e62cc59e6c904e3e5b8464e6e46cd
