@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using projetointegrador.API.Data;
 using projetointegrador.API.DTO;
 using projetointegrador.API.Models;
@@ -77,5 +78,29 @@ namespace projetointegrador.API.Controllers
 
             }
         }
+
+
+        //criação do método http para atualizar o hospital, permitindo que o usuário visualize o estoque dele no frontend
+        [HttpPut("{id}")]
+        [Authorize(Roles = "Administrador")]
+        public async Task<IActionResult> AtualizarHospital(int id, Hospital HospitalDto)
+        {
+            if (id != HospitalDto.Id) return BadRequest();
+
+            _hospitalDbContext.Entry(HospitalDto).State = EntityState.Modified;
+
+            try {
+                var HospitalExiste = await _hospitalDbContext.SaveChangesAsync();
+            } catch (DbUpdateConcurrencyException)
+            {
+                if (!HospitalExists(id)) return NotFound();
+                else throw;
+                }
+            return NoContent();
+        }
+            private bool HospitalExists(int id)
+            {
+                return _hospitalDbContext.Hospitais.Any(e => e.Id == id);
+        }
     }
-}
+};

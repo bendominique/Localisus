@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\onedrive - senac - sp\\backend localisus\\projetointegrador.api\\projetointegrador.api\\dto\\criarusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\dto\\criarusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\onedrive - senac - sp\\backend localisus\\projetointegrador.api\\projetointegrador.api\\controllers\\hospitalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\controllers\\hospitalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\onedrive - senac - sp\\backend localisus\\projetointegrador.api\\projetointegrador.api\\dto\\criarmedicamentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\dto\\criarmedicamentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\onedrive - senac - sp\\backend localisus\\projetointegrador.api\\projetointegrador.api\\enum\\tipousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\enum\\tipousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\onedrive - senac - sp\\backend localisus\\projetointegrador.api\\projetointegrador.api\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,14 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\onedrive - senac - sp\\backend localisus\\projetointegrador.api\\projetointegrador.api\\dto\\registrarestoquedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\dto\\registrarestoquedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\onedrive - senac - sp\\backend localisus\\projetointegrador.api\\projetointegrador.api\\dto\\criarmedicamentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\dto\\criarmedicamentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\onedrive - senac - sp\\backend localisus\\projetointegrador.api\\projetointegrador.api\\enum\\tipousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\enum\\tipousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\onedrive - senac - sp\\backend localisus\\projetointegrador.api\\projetointegrador.api\\models\\endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,58 +82,44 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CriarUsuarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\DTO\\CriarUsuarioDTO.cs",
+              "RelativeDocumentMoniker": "projetointegrador.API\\DTO\\CriarUsuarioDTO.cs",
+              "ToolTip": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\DTO\\CriarUsuarioDTO.cs",
+              "RelativeToolTip": "projetointegrador.API\\DTO\\CriarUsuarioDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T01:27:43.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "HospitalController.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\Controllers\\HospitalController.cs",
               "RelativeDocumentMoniker": "projetointegrador.API\\Controllers\\HospitalController.cs",
               "ToolTip": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\Controllers\\HospitalController.cs",
               "RelativeToolTip": "projetointegrador.API\\Controllers\\HospitalController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACgAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAAAFIAAAB5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-01T19:30:41.777Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EstoqueController.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\Controllers\\EstoqueController.cs",
-              "RelativeDocumentMoniker": "projetointegrador.API\\Controllers\\EstoqueController.cs",
-              "ToolTip": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\Controllers\\EstoqueController.cs",
-              "RelativeToolTip": "projetointegrador.API\\Controllers\\EstoqueController.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T19:30:41.767Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MedicamentosController.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\Controllers\\MedicamentosController.cs",
-              "RelativeDocumentMoniker": "projetointegrador.API\\Controllers\\MedicamentosController.cs",
-              "ToolTip": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\Controllers\\MedicamentosController.cs",
-              "RelativeToolTip": "projetointegrador.API\\Controllers\\MedicamentosController.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T19:30:41.858Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "UsuariosController.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\Controllers\\UsuariosController.cs",
               "RelativeDocumentMoniker": "projetointegrador.API\\Controllers\\UsuariosController.cs",
               "ToolTip": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\Controllers\\UsuariosController.cs",
               "RelativeToolTip": "projetointegrador.API\\Controllers\\UsuariosController.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAAAD4AAADuAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T19:30:41.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-01T19:30:41.761Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "projetointegrador.API\\Controllers\\AuthController.cs",
@@ -141,7 +131,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
+              "Title": "TipoUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\Enum\\TipoUsuario.cs",
+              "RelativeDocumentMoniker": "projetointegrador.API\\Enum\\TipoUsuario.cs",
+              "ToolTip": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\Enum\\TipoUsuario.cs",
+              "RelativeToolTip": "projetointegrador.API\\Enum\\TipoUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T19:30:41.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CriarMedicamentoDTO.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\DTO\\CriarMedicamentoDTO.cs",
               "RelativeDocumentMoniker": "projetointegrador.API\\DTO\\CriarMedicamentoDTO.cs",
@@ -154,6 +156,30 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "MedicamentosController.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\Controllers\\MedicamentosController.cs",
+              "RelativeDocumentMoniker": "projetointegrador.API\\Controllers\\MedicamentosController.cs",
+              "ToolTip": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\Controllers\\MedicamentosController.cs",
+              "RelativeToolTip": "projetointegrador.API\\Controllers\\MedicamentosController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T19:30:41.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EstoqueController.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\Controllers\\EstoqueController.cs",
+              "RelativeDocumentMoniker": "projetointegrador.API\\Controllers\\EstoqueController.cs",
+              "ToolTip": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\Controllers\\EstoqueController.cs",
+              "RelativeToolTip": "projetointegrador.API\\Controllers\\EstoqueController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T19:30:41.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "RegistrarEstoqueDTO.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\DTO\\RegistrarEstoqueDTO.cs",
               "RelativeDocumentMoniker": "projetointegrador.API\\DTO\\RegistrarEstoqueDTO.cs",
@@ -165,19 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TipoUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\Enum\\TipoUsuario.cs",
-              "RelativeDocumentMoniker": "projetointegrador.API\\Enum\\TipoUsuario.cs",
-              "ToolTip": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\Enum\\TipoUsuario.cs",
-              "RelativeToolTip": "projetointegrador.API\\Enum\\TipoUsuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T19:30:41.806Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "TipoEndereco.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\Enum\\TipoEndereco.cs",
               "RelativeDocumentMoniker": "projetointegrador.API\\Enum\\TipoEndereco.cs",
@@ -189,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Endereco.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\Models\\Endereco.cs",
               "RelativeDocumentMoniker": "projetointegrador.API\\Models\\Endereco.cs",
@@ -201,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "EnderecoController.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\Controllers\\EnderecoController.cs",
               "RelativeDocumentMoniker": "projetointegrador.API\\Controllers\\EnderecoController.cs",
@@ -213,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "projetointegrador.API\\Models\\Usuario.cs",
@@ -225,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ItemEstoque.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\Models\\ItemEstoque.cs",
               "RelativeDocumentMoniker": "projetointegrador.API\\Models\\ItemEstoque.cs",
@@ -237,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "projetointegrador.API\\Data\\AppDbContext.cs",
@@ -249,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "20260323181833_LogicaNegocioFinalizada.cs",
               "DocumentMoniker": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Migrations\\20260323181833_LogicaNegocioFinalizada.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\Migrations\\20260323181833_LogicaNegocioFinalizada.cs",
@@ -260,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "projetointegrador.API.csproj",
               "DocumentMoniker": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\projetointegrador.API.csproj",
               "RelativeDocumentMoniker": "projetointegrador.API\\projetointegrador.API.csproj",
