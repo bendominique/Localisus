@@ -29,7 +29,17 @@ const MapaMedicamentos = () => {
       {/* Loop through global data to create pins */}
       {hospitais.map(h => (
         <Marker key={h.id} position={h.coords}>
-          <Popup>{h.name}</Popup>
+          <Popup>
+            <strong>{h.name}</strong>
+            <hr />
+            <p><strong>Estoque Disponível</strong></p>
+            <ul>
+                {/* Aqui listamos o que o Entity Framework trouxe do SQL Server */}
+                {h.estoque?.map((item: any) => (
+                    <li key={item.id}>{item.medicamento.nome}: {item.quantidade} un.</li>
+                ))}
+            </ul>
+            </Popup>
         </Marker>
       ))}
     </MapContainer>

@@ -7,6 +7,7 @@ export interface HospitalBackend{
     telefone: string,
     longitude: number,
     latitude: number
+    itensEstoque?: any[]
 }
 
 export const getHospitais = async (): Promise<HospitalBackend[]> => {
@@ -18,7 +19,7 @@ export const getHospitais = async (): Promise<HospitalBackend[]> => {
 
 export const buscarHospitais = async (nome: string): Promise<HospitalBackend[]> => {
     const resposta = await
-    fetch(`${url_base}/hospital/buscar${nome}`)
+    fetch(`${url_base}/hospital/buscar/${nome}`)
     if(!resposta.ok) return [];
     return resposta.json();
 }
