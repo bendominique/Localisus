@@ -154,6 +154,10 @@ namespace projetointegrador.API.Migrations
                     b.Property<DateTime>("DataAtualizacao")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Descricao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<float>("Dosagem")
                         .HasColumnType("real");
 

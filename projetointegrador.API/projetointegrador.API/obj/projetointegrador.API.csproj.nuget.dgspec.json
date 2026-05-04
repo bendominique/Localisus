@@ -1,41 +1,23 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\projetointegrador.API.csproj": {}
+    "C:\\Users\\user_acronus\\projetos\\projetointegrador.API\\projetointegrador.API\\projetointegrador.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\projetointegrador.API.csproj": {
+    "C:\\Users\\user_acronus\\projetos\\projetointegrador.API\\projetointegrador.API\\projetointegrador.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\projetointegrador.API.csproj",
+        "projectUniqueName": "C:\\Users\\user_acronus\\projetos\\projetointegrador.API\\projetointegrador.API\\projetointegrador.API.csproj",
         "projectName": "projetointegrador.API",
-        "projectPath": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\projetointegrador.API.csproj",
-        "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aluno\\OneDrive - SENAC - SP\\Backend Localisus\\projetointegrador.API\\projetointegrador.API\\obj\\",
-=======
-    "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\projetointegrador.API.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\projetointegrador.API.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\projetointegrador.API.csproj",
-        "projectName": "projetointegrador.API",
-        "projectPath": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\projetointegrador.API.csproj",
-        "packagesPath": "C:\\Users\\benjamin.dmakangwa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\benjamin.dmakangwa\\Documents\\projetoIntegrador\\api\\projetointegrador.API\\projetointegrador.API\\obj\\",
->>>>>>> 41245695cf3e62cc59e6c904e3e5b8464e6e46cd
+        "projectPath": "C:\\Users\\user_acronus\\projetos\\projetointegrador.API\\projetointegrador.API\\projetointegrador.API.csproj",
+        "packagesPath": "C:\\Users\\user_acronus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user_acronus\\projetos\\projetointegrador.API\\projetointegrador.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
-          "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\benjamin.dmakangwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 41245695cf3e62cc59e6c904e3e5b8464e6e46cd
+          "C:\\Users\\user_acronus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,10 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-<<<<<<< HEAD
-=======
           "C:\\Program Files\\dotnet\\library-packs": {},
->>>>>>> 41245695cf3e62cc59e6c904e3e5b8464e6e46cd
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -121,27 +100,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-<<<<<<< HEAD
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.12, 9.0.12]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[9.0.12, 9.0.12]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[9.0.12, 9.0.12]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[9.0.12, 9.0.12]"
-            }
-          ],
-=======
->>>>>>> 41245695cf3e62cc59e6c904e3e5b8464e6e46cd
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -150,11 +108,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
-=======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
->>>>>>> 41245695cf3e62cc59e6c904e3e5b8464e6e46cd
         }
       }
     }

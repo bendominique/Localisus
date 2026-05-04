@@ -12,8 +12,8 @@ using projetointegrador.API.Data;
 namespace projetointegrador.API.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260323183313_LogicaNegocio")]
-    partial class LogicaNegocio
+    [Migration("20260504212900_atualizandoDados")]
+    partial class atualizandoDados
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -89,6 +89,12 @@ namespace projetointegrador.API.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<double>("Latitude")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Longitude")
+                        .HasColumnType("float");
+
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -151,6 +157,10 @@ namespace projetointegrador.API.Migrations
                     b.Property<DateTime>("DataAtualizacao")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Descricao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<float>("Dosagem")
                         .HasColumnType("real");
 
@@ -201,6 +211,10 @@ namespace projetointegrador.API.Migrations
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("SenhaHash")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("TipoEndereco")
                         .HasColumnType("int");
