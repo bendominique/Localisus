@@ -1,0 +1,35 @@
+:root{
+    --cor-branca: #ffffff;
+    --cor-azul-bebe: #EBF9FF;
+    --cor-preta: #000000;
+    --cor-azul-primaria: #1F285D;
+    --cor-azul-secundaria: #76c6da;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.botoes{
+    margin-left: 1350px;
+    margin-top: -40px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.cabecalho{
+    background-color: var(--cor-azul-primaria);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    width: 1500px;
+}
+
+.elementos-pagina-home{
+    background-color: var(--cor-azul-secundaria);
+}
+
