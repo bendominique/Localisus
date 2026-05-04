@@ -8,6 +8,13 @@ export const api = {
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({ cpf, senha})
         });
+
+        if(resposta.ok){
+            const dados = await resposta.json()
+            localStorage.setItem('token', dados.token)
+            localStorage.setItem('tipoUsuario', dados.tipoUsuario)
+        }
+
         return resposta
     },
 
