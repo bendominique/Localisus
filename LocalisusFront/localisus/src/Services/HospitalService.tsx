@@ -1,4 +1,5 @@
 import {url_base} from '../Services/api'
+import { type ItemEstoque } from './EstoqueService';
 
 export interface Medicamento {
     id: number,
@@ -8,14 +9,7 @@ export interface Medicamento {
     quantidade: number;
 }
 
-export interface ItemEstoque {
-    id: number,
-    medicamentoID: number,
-    quantidade: number,
-    validadeLote: string,
-    codigoLote: string,
-    medicamento?: Medicamento
-}
+
 export interface HospitalBackend{
     id: number,
     nome: string, 
@@ -47,17 +41,7 @@ export const getHospitalId = async (id: number): Promise<HospitalBackend> => {
     return resposta.json();
 }
 
-export const atualizarEstoqueLocal = async (id: number, novoEstoque: ItemEstoque[]): Promise<Response> => {
-    const token = localStorage.getItem('token');
-    return await fetch(`${url_base}/hospital/${id}/estoque`, {
-        method: 'PATCH',
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${token}`
-        },
-        body: JSON.stringify(novoEstoque)
-    })
-}
+
 
 export const criarNovoHospital = async (dados: HospitalBackend) => {
     const token = localStorage.getItem('token')

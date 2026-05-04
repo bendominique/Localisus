@@ -11,6 +11,9 @@ import TelaCadastro from "./Paginas/TelaCadastro/TelaCadastro"
 import TelaLogin from "./Paginas/TelaLogin/TelaLogin";
 import TelaHome from "./Paginas/TelaHome/TelaHome";
 import TelaHomeUsuario from "./Paginas/TelaHomeUsuario/TelaHomeUsuario";
+import TelaHomeFuncionario from "./Paginas/TelaHomeProfissional/TelaHomeProfissional"
+import TelaHomeAdm from "./Paginas/TelaHomeAdm/TelaHomeAdm"
+
 
 function App() {
   return (
@@ -26,23 +29,25 @@ function App() {
           <Route
             path="/cadastro"
             element={<TelaCadastro />}
-          // />
-          // <Route 
-          //   path="/maps"
-          //   element={<MapaMedicamentos hospitalCoords={}/>}
-          //   />
-          />
-          <Route
-            path="/mapa"
-            element={<MapaMedicamentos />}
           />
           <Route
             path="/login"
             element={<TelaLogin />}
           />
           <Route
+            path="/mapa"
+            element={<MapaMedicamentos />}
+          />
+          <Route
+            path="/home-funcionario"
+            element={<TelaHomeFuncionario/>}
+          />
+           <Route
+            path="/home-adm"
+            element={<TelaHomeAdm/>}
+          />
+          <Route
             path="/home-usuario"
-
             element={<TelaHomeUsuario />}
           />
 
