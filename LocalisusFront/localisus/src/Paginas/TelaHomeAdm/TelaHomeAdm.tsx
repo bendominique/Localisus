@@ -4,14 +4,19 @@ import { getHospitais, atualizarDadosHospital, type HospitalBackend } from "../.
 export default function TelaHomeAdm() {
     const [hospitais, setHospitais] = useState<HospitalBackend[]>([])
 
-    useEffect(() => {
-        carregarLista();
-    }, [])
+    
 
     const carregarLista = async () => {
         const dados = await getHospitais();
         setHospitais(dados)
     }
+
+    useEffect(() => {
+        const inicializar = async () => {
+         await carregarLista();
+        }
+        inicializar();
+    }, [])
     
     const handleEditar = async (h: HospitalBackend) => {
         const novoNome = prompt("Novo nomedo hospital:", h.nome) || h.nome;
@@ -21,7 +26,7 @@ export default function TelaHomeAdm() {
             await atualizarDadosHospital(h.id, {...h, nome: novoNome, endereco: novoEndereco})
             alert("Hospital atualizado!")
             carregarLista();
-        } catch (err) {
+        } catch {
             alert("Falha na atualização")
         }
 
@@ -57,7 +62,7 @@ export default function TelaHomeAdm() {
             </table>
         </div>
 
-                )
+    )
 
     
 }

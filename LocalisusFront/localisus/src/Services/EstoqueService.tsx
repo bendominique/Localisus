@@ -11,7 +11,7 @@ export interface ItemEstoque {
     medicamento?: Medicamento
 }
 
-export const atualizarEstoqueLocal = async (id: number, novoEstoque: ItemEstoque[]): Promise<Response> => {
+export const atualizarEstoqueLocal = async (novoEstoque: ItemEstoque[]): Promise<Response> => {
     const token = localStorage.getItem('token');
     return await fetch(`${url_base}/estoque/atualizarEstoque`, {
         method: 'PATCH',

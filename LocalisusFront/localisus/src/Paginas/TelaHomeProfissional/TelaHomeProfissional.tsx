@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getEstoqueLocal, atualizarEstoqueLocal, ItemEstoque } from "../../Services/EstoqueService";
+import { getEstoqueLocal, atualizarEstoqueLocal, type ItemEstoque } from "../../Services/EstoqueService";
 
 export default function TelaHomeProfissional() {
     const [estoque, setEstoque] = useState<ItemEstoque[]>([])
@@ -13,7 +13,11 @@ export default function TelaHomeProfissional() {
     }
 
        useEffect(() => {
-        if(hospitalId) carregarDados();
+        const inicializar = async () => {
+
+            if(hospitalId) carregarDados();
+        }
+        inicializar();
     }, [hospitalId]);
 
     const handleAjusteEstoque = async (item: ItemEstoque, operacao: 'entrada' | 'doacao') => {
@@ -25,14 +29,13 @@ export default function TelaHomeProfissional() {
         try {
             await atualizarEstoqueLocal({
                 medicamentoId: item.medicamentoID,
-                hospitalId: hospitalId,
                 quantidade: quantidadeFinal,
                 validadeLote: item.validadeLote,
                 codigoLote: item.codigoLote
             });
             alert("Operação registrada com sucesso!")
             carregarDados()
-        } catch (err) {
+        } catch {
             alert("Erro ao atualizar o estoque")
         }
     }
