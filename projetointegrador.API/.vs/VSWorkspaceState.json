@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\projetointegrador.API",
+    "\\projetointegrador.API\\DTO",
+    "\\projetointegrador.API\\Models"
   ],
   "SelectedNode": "\\projetointegrador.API.sln",
   "PreviewInSolutionExplorer": false

@@ -5,6 +5,7 @@ import 'leaflet/dist/leaflet.css';
 import '../App.css'
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
+import { LISTA_HOSPITAIS_MOCK, LISTA_ESTOQUE_MOCK} from '../Context/DadosMocados'
 
 // 2. Configure the Default Icon FIX (Outside the component)
 let DefaultIcon = L.icon({
@@ -18,29 +19,26 @@ L.Marker.prototype.options.icon = DefaultIcon;
 
 
 const MapaMedicamentos = () => {
-  const { hospitais, carregando } = useHospital(); // Tune in!
+  // const { hospitais, carregando } = useHospital(); // Tune in!
 
-  if (carregando) return <p>Sincronizando com Backend...</p>;
+  // if (carregando) return <p>Sincronizando com Backend...</p>;
 
   return (
     <MapContainer center={[-23.5505, -46.6333]} zoom={12}>
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       
       {/* Loop through global data to create pins */}
-      {hospitais.map(h => (
-        <Marker key={h.id} position={h.coords}>
+      {LISTA_HOSPITAIS_MOCK.map(h => (
+        <Marker key={h.id} position={[h.latitude, h.longitude]}>
           <Popup>
-            <strong>{h.name}</strong>
-            <hr />
-            <p><strong>Estoque Disponível</strong></p>
-            <ul>
-                {/* Aqui listamos o que o Entity Framework trouxe do SQL Server */}
-                {h.estoque?.map((item: any) => (
-                    <li key={item.id}>{item.medicamento.nome}: {item.quantidade} un.</li>
-                ))}
-            </ul>
+            
             </Popup>
         </Marker>
+        // <Marker key={h.id} position={[-46.4712, -23.5325]}>
+        //   <Popup>
+        //     <strong> Hospital </strong>
+        //   </Popup>
+        // </Marker>
       ))}
     </MapContainer>
   );

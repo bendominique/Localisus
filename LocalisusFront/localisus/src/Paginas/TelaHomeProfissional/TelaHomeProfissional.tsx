@@ -12,13 +12,12 @@ export default function TelaHomeProfissional() {
         setEstoque(dados)
     }
 
-       useEffect(() => {
-        const inicializar = async () => {
-
-            if(hospitalId) carregarDados();
-        }
-        inicializar();
-    }, [hospitalId]);
+    //    useEffect(() => {
+    //     const inicializar = async () => {
+    //         if(hospitalId) carregarDados();
+    //     }
+    //     inicializar();
+    // }, [hospitalId]);
 
     const handleAjusteEstoque = async (item: ItemEstoque, operacao: 'entrada' | 'doacao') => {
         const valor = Number(prompt(`Quantidade para ${operacao}`))
@@ -26,13 +25,20 @@ export default function TelaHomeProfissional() {
 
         const quantidadeFinal = operacao === 'doacao' ? -valor : valor;
 
-        try {
-            await atualizarEstoqueLocal({
-                medicamentoId: item.medicamentoID,
+        const estoqueTeste : ItemEstoque[] = [
+            {
+                id: item.id,
+                nome: item.nome,
+                hospitalID: item.hospitalID,
+                medicamentoID: item.medicamentoID,
                 quantidade: quantidadeFinal,
                 validadeLote: item.validadeLote,
                 codigoLote: item.codigoLote
-            });
+            }
+        ]
+
+        try {
+            await atualizarEstoqueLocal(estoqueTeste);
             alert("Operação registrada com sucesso!")
             carregarDados()
         } catch {

@@ -4,7 +4,9 @@ import { type Medicamento } from './HospitalService'
 
 export interface ItemEstoque {
     id: number,
+    hospitalID: number,
     medicamentoID: number,
+    nome: string,
     quantidade: number,
     validadeLote: string,
     codigoLote: string,
