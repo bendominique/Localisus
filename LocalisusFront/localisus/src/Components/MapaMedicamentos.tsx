@@ -1,47 +1,53 @@
+import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import { useHospital } from '../Context/HospitalContext';
+import 'leaflet/dist/leaflet.css'; // CRITICAL: Must be here
 import L from 'leaflet';
-import 'leaflet/dist/leaflet.css';
-import '../App.css'
+import BuscaPersonalizada from './BuscaPersonalizada';
+import BarraBusca from './BarraBusca';
+
+// --- FIXED MARKER ICONS ---
+// This prevents the "Marker not found" crash
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
-import { LISTA_HOSPITAIS_MOCK, LISTA_ESTOQUE_MOCK} from '../Context/DadosMocados'
 
-// 2. Configure the Default Icon FIX (Outside the component)
 let DefaultIcon = L.icon({
     iconUrl: icon,
     shadowUrl: iconShadow,
     iconSize: [25, 41],
     iconAnchor: [12, 41]
 });
-
 L.Marker.prototype.options.icon = DefaultIcon;
 
-
 const MapaMedicamentos = () => {
-  // const { hospitais, carregando } = useHospital(); // Tune in!
+  const rawTipo = localStorage.getItem('tipoUsuario');
+  const rawHospitalId = localStorage.getItem('hospitalId');
 
-  // if (carregando) return <p>Sincronizando com Backend...</p>;
+  const isDoctor = rawTipo === "2";
+  const hospitalId = rawHospitalId ? parseInt(rawHospitalId) : undefined;
 
   return (
-    <MapContainer center={[-23.5505, -46.6333]} zoom={12}>
-      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-      
-      {/* Loop through global data to create pins */}
-      {LISTA_HOSPITAIS_MOCK.map(h => (
-        <Marker key={h.id} position={[h.latitude, h.longitude]}>
-          <Popup>
-            
-            </Popup>
+    /* We use inline styles here to guarantee it has a size */
+    <div style={{ height: '100vh', width: '100vw', position: 'absolute', top: 0, left: 0 }}>
+      <MapContainer 
+        center={[-23.5505, -46.6333]} 
+        zoom={12} 
+        style={{ height: '100%', width: '100%' }}
+      >
+        <TileLayer 
+          url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png" 
+          attribution='&copy; OpenStreetMap contributors'
+        />
+
+        <BuscaPersonalizada position="topleft">
+          <BarraBusca isDoctor={isDoctor} hospitalId={hospitalId} />
+        </BuscaPersonalizada>
+
+        <Marker position={[-23.5505, -46.6333]}>
+           <Popup>Teste de Mapa</Popup>
         </Marker>
-        // <Marker key={h.id} position={[-46.4712, -23.5325]}>
-        //   <Popup>
-        //     <strong> Hospital </strong>
-        //   </Popup>
-        // </Marker>
-      ))}
-    </MapContainer>
+      </MapContainer>
+    </div>
   );
 };
 
-export default MapaMedicamentos
+export default MapaMedicamentos;

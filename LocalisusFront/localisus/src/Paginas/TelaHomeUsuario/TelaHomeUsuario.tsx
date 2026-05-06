@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import 'leaflet/dist/leaflet.css';
 import { buscarHospitais, type HospitalBackend } from '../../Services/HospitalService';
 import { getEstoqueLocal, type ItemEstoque } from '../../Services/EstoqueService';
 
@@ -33,22 +34,6 @@ export default function TelaHomeUsuario(){
                 ))}
             </ul>
 
-            {hospitalSelecionado && (
-                <div>
-                    <h3>Estoque de: {hospitalSelecionado.nome}</h3>
-                    <p>Endereço: {hospitalSelecionado.endereco}</p>
-                    <button onClick={() => window.open(`https://www.google.com/maps?q=${hospitalSelecionado.latitude},${hospitalSelecionado.longitude}`)}>
-                        Ver Rota no Mapa
-                    </button>
-                    <ul>
-                        {estoque.map(item => (
-                            <li key={item.id}>
-                                {item.medicamento?.nome}: {item.quantidade > 0 ? `${item.quantidade} unidades` : "ESGOTADO"}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            )}
         </div>
     )
 }

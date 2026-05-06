@@ -13,6 +13,7 @@ export const api = {
             const dados = await resposta.json()
             localStorage.setItem('token', dados.token)
             localStorage.setItem('tipoUsuario', dados.tipoUsuario)
+            localStorage.setItem('hospitalId', dados.hospitalId)
         }
 
         return resposta
