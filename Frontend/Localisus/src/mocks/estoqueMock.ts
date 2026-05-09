@@ -7,3 +7,7 @@ interface estoque {
     validadeLote: Date,
     codigoLote: number
 }
+
+export const estoqueMock = [
+    {id: 1, quantidade: 10, medicamentoId: 1, hospitalId: 1, validadeLote: new Date('2026-05-12'), codigoLote: 1234 }
+]
