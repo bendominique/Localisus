@@ -3,6 +3,7 @@ import { estoqueMock } from '../mocks/estoqueMock'
 import { medicamentosMock } from '../mocks/medicamentosMock'
 import { hospitaisMock } from '../mocks/hospitaisMocks'
 import { BarraPesquisa } from '../components/BarraPesquisa'
+import { MapaLocalisus } from '../components/MapaLocalisus'
 
 export const Home = () => {
     //representação da memória do state
@@ -60,7 +61,10 @@ export const Home = () => {
             <BarraPesquisa onSearch={handlePesquisa} />
             {erro && <p style={{ color: 'red' }}>{erro}</p>}
             <div>
-                {resultado.length> 0 && <p>Hospitais Encontados:</p>}
+                {resultado.length > 0 && (
+                    <MapaLocalisus hospitaisEncontrados={resultado}/>
+                )}
+                {/* {resultado.length> 0 && <p>Hospitais Encontados:</p>}
                 <ul>
                     {resultado.map((resultadoItem, index) =>
                     (
@@ -69,7 +73,7 @@ export const Home = () => {
                             Tem {resultadoItem.quantidadeResulta} unidades de {resultadoItem.nomeMedicamento}
                         </li>
                     ))}
-                </ul>
+                </ul> */}
             </div>
 
         </>
