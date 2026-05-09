@@ -9,9 +9,8 @@ export const BarraPesquisa = ({ onSearch }: BarraPesquisaProps) => {
 
     const handleEnvio = (e: React.FormEvent) => {
         e.preventDefault()
-        if (termo.trim() !== '') {
             onSearch(termo)
-        }
+        
     }
 
     return(

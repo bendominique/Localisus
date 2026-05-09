@@ -14,10 +14,12 @@ export const Home = () => {
         setErro('')
         setResultado([]) //limpando buscas anteriores
 
-        if (termoPesquisado.trim() === '') {
+        if (!termoPesquisado.trim()) {
             setErro('Por favor, digite o nome de um medicamento')
             return
         }
+
+        setErro('')
 
         const buscarMedicamento = termoPesquisado.toLowerCase();
         const medicamentosEncontrados = medicamentosMock.filter(m => 
