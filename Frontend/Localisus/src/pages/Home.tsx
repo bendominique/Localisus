@@ -4,6 +4,7 @@ import { medicamentosMock } from '../mocks/medicamentosMock'
 import { hospitaisMock } from '../mocks/hospitaisMocks'
 import { BarraPesquisa } from '../components/BarraPesquisa'
 import { MapaLocalisus } from '../components/MapaLocalisus'
+import "./Home.css"
 
 export const Home = () => {
     //representação da memória do state
@@ -58,7 +59,13 @@ export const Home = () => {
 
     return(
         <>
-            <h1>Localisus</h1>
+        <header className='cabecalho'>
+            <ul className='lista-informacoes'>
+                <li> para profissionais </li>
+                <li> seja um colaborador </li>
+                <li> sobre nós </li>
+            </ul>
+             <h1>Localisus</h1>
             <p>Conectando tecnologia ao cuidado, para que o acesso a saúde nunca seja uma distância</p>
             <BarraPesquisa onSearch={handlePesquisa} />
             {erro && <p style={{ color: 'red' }}>{erro}</p>}
@@ -77,7 +84,20 @@ export const Home = () => {
                     ))}
                 </ul> */}
             </div>
-
+            <div>
+                <article>
+                    <section className='possibilidade'>
+                        Possibildiades Localisus
+                    </section>
+                    <section className='vantagem'>
+                        Vantagens Localisus
+                    </section>
+                    <section className='localisus-para-todos'>
+                        Localisus Para Todos
+                    </section>
+                </article>
+            </div>
+        </header>
         </>
     )
 }

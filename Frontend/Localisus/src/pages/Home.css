@@ -1,0 +1,9 @@
+.cabecalho{
+    height: 150px;
+    width: 1460px;
+    background-color: blue;
+}
+
+.cabecalho p {
+    color: white;
+}
