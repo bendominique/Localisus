@@ -53,7 +53,7 @@ export const Cadastro = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 />
                 <input
-                type="cpf"
+                type="text"
                 value={cpf}
                 placeholder='Cpf'
                 onChange={(e) => setCpf(e.target.value)}

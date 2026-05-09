@@ -1,21 +1,31 @@
 import {  useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
+import { TipoUsuario } from '../mocks/usuarioMock'
+import { authService } from '../services/authService'
 
 export const Login = () => {
     const [cpfDigitado, setCpfDigitado] = useState('')
     const [senhaDigitada, setSenhaDigitada] = useState('')
     const [erro, setErro] = useState('')
     const { login } = useAuth()
-    const navigate = useNavigate()
+    const navegar = useNavigate()
 
     const handleLogin = async (evento: React.FormEvent) => {
         evento.preventDefault()
         setErro('')
 
         try {
-            await login(cpfDigitado, senhaDigitada);
-            navigate('/admin')
+            const usuarioLogado = await login(cpfDigitado, senhaDigitada)
+            
+            if(usuarioLogado.tipoUsuario === TipoUsuario.ADMIN){
+                navegar("/admin")
+            } else if (usuarioLogado.tipoUsuario === TipoUsuario.FUNCIONARIO){
+                navegar("/funcionario")
+            } else {
+                navegar("/home")
+            }
+           
 
         } catch (error: any) {
             setErro(error.message)

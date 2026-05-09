@@ -5,35 +5,31 @@ import { TipoUsuario, Usuario } from '../mocks/usuarioMock'
 
 interface AuthContextData {
     usuario: Usuario | null; 
-    login: (cpf: string, senha: string) => Promise<void>;
-    logout: () => void;
-    register: (nome: string, cpf: string, email: string, senha: string, tipo: TipoUsuario, hospitalId: number | null) => Promise<void>
+    login: (cpf: string, senha: string) => Promise<Usuario>;
+    logout: () => void; 
+    register: (nome: string, cpf: string, email: string, senha: string, tipoUsuario: TipoUsuario, hospitalId: number | null) => Promise<void>
 }
 
 const AuthContext = createContext<AuthContextData> ({} as AuthContextData);
 
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
-    //é um hook onde o seu elemento interno é a primeira coisa que inicializa
-    //no momento em que a tela renderiza
-    useEffect(() => {
-        //realizando uma busca no nosso HD -> HardDisk, aquele que guarda todos os dados da memória do nosso PC
-        //procura a chave 
+
+    const [usuario, setUsuario] = useState<Usuario | null>(() => {
         const usuarioSalvo = localStorage.getItem('@localisus:usuario')
-
-        if(usuarioSalvo) { //caso encontre algum usuário em memória, vai enviar em JSON.parse, transformando ele em objeto
-            setUsuario(JSON.parse(usuarioSalvo))
-
+        if (usuarioSalvo){
+            return JSON.parse(usuarioSalvo)
         }
-    }, []) //permite que inicialize apenas no momento em que a tela renderiza
-
-    const [usuario, setUsuario] = useState<Usuario | null>(null)
+        return null
+    })
+    
 
     const login = async (cpf: string, senha: string) => {
         const usuarioEncontrado = await authService.login(cpf, senha)
         setUsuario(usuarioEncontrado)
 
         localStorage.setItem('@localisus:usuario', JSON.stringify(usuarioEncontrado))
+        return usuarioEncontrado
     }
 
 const logout = () => {

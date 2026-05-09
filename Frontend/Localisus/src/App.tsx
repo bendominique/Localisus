@@ -1,8 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { AuthProvider } from './contexts/AuthContext'
+import { ProtectedRoute } from './components/ProtectedRoute'
 import { Admin } from './pages/Admin'
 import { Cadastro} from './pages/Cadastro'
 import { Login} from './pages/Login'
+import { Funcionario } from './pages/Funcionario'
+import {Home}  from './pages/Home'
+import { TipoUsuario } from './mocks/usuarioMock'
 
 export function App() {
     return (
@@ -11,7 +15,20 @@ export function App() {
                 <Routes>
                     <Route 
                         path="/admin" 
-                        element={<Admin />}
+                        element={
+                        <ProtectedRoute allowedRoles={[TipoUsuario.ADMIN]}>
+                            <Admin />
+                        </ProtectedRoute>
+                        }
+                        />
+
+                        <Route
+                        path="/funcionario"
+                        element={
+                        <ProtectedRoute allowedRoles={[TipoUsuario.FUNCIONARIO]}>
+                            <Funcionario />
+                        </ProtectedRoute>
+                        }
                         />
                          <Route 
                         path="/cadastro" 
@@ -20,6 +37,11 @@ export function App() {
                         <Route 
                         path="/login" 
                         element={<Login />}
+                        />
+                        
+                         <Route 
+                        path="/" 
+                        element={<Home />}
                         />
                 </Routes>
             </BrowserRouter>

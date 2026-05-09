@@ -11,7 +11,8 @@ export const authService = {
 
     //método de login
     async login(cpfDigitado: string,
-                 senhaDigitada: string): Promise<Usuario> {
+                 senhaDigitada: string
+                    ): Promise<Usuario> {
         
         const dadosMocados = import.meta.env.VITE_USE_MOCKS === 'true'
 
@@ -63,7 +64,7 @@ export const authService = {
             cpf: cpf,
             email: email,
             senha: senha,
-            tipoUsuario: TipoUsuario.CIDADAO,
+            tipoUsuario: tipoUsuario,
             hospitalId: hospitalId
         }
 

@@ -12,7 +12,7 @@ export const Admin = () => {
 
     return (
         <>
-        <h1> Seja bem vindo {usuario?.nome} </h1>
+        <h1> Seja bem vindo(a) {usuario?.nome} </h1>
         <button onClick={handleLogout}>Sair</button>
         </>
     )
