@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import "./BarraPesquisa.css"
 
 interface BarraPesquisaProps {
     onSearch: (termo:string) => void
@@ -16,6 +17,7 @@ export const BarraPesquisa = ({ onSearch }: BarraPesquisaProps) => {
     return(
         <form onSubmit={handleEnvio}>
             <input
+                className='medicamentos-pesquisa'
                 type='text'
                 value={termo}
                 onChange={(e) => setTermo(e.target.value)}

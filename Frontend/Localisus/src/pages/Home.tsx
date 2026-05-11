@@ -4,9 +4,13 @@ import { medicamentosMock } from '../mocks/medicamentosMock'
 import { hospitaisMock } from '../mocks/hospitaisMocks'
 import { BarraPesquisa } from '../components/BarraPesquisa'
 import { MapaLocalisus } from '../components/MapaLocalisus'
+import { Link, NavLink } from 'react-router-dom'
 import "./Home.css"
+import UsuarioIcon from '../components/UsuarioIcon'
+
 
 export const Home = () => {
+
     //representação da memória do state
     const [erro, setErro] = useState('')
     const [resultado, setResultado] = useState<any[]>([])
@@ -23,7 +27,7 @@ export const Home = () => {
         setErro('')
 
         const buscarMedicamento = termoPesquisado.toLowerCase();
-        const medicamentosEncontrados = medicamentosMock.filter(m => 
+        const medicamentosEncontrados = medicamentosMock.filter(m =>
             m.nome.toLowerCase().includes(buscarMedicamento)
         )
         if (medicamentosEncontrados.length === 0) {
@@ -37,7 +41,7 @@ export const Home = () => {
             idMedicamentos.includes(i.medicamentoId) && i.quantidade > 0
         )
 
-        if(estoqueDisponivel.length === 0) {
+        if (estoqueDisponivel.length === 0) {
             setErro('Nenhum hospital possui esse medicamento em estoque no momento')
             return
         }
@@ -57,23 +61,39 @@ export const Home = () => {
         setResultado(resultadoFinal)
     }
 
-    return(
+  
+
+    return (
         <>
-        <header className='cabecalho'>
-            <ul className='lista-informacoes'>
-                <li> para profissionais </li>
-                <li> seja um colaborador </li>
-                <li> sobre nós </li>
-            </ul>
-             <h1>Localisus</h1>
-            <p>Conectando tecnologia ao cuidado, para que o acesso a saúde nunca seja uma distância</p>
-            <BarraPesquisa onSearch={handlePesquisa} />
-            {erro && <p style={{ color: 'red' }}>{erro}</p>}
-            <div>
-                {resultado.length > 0 && (
-                    <MapaLocalisus hospitaisEncontrados={resultado}/>
-                )}
-                {/* {resultado.length> 0 && <p>Hospitais Encontados:</p>}
+            <header className='cabecalho'>
+                <ul className='lista-informacoes'>
+                    <li>
+                        <NavLink to="/"> 
+                            colaboradores
+                        </NavLink>
+                    </li>
+                    <li> 
+                        <NavLink to="/"> 
+                         para smartphones
+                         </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/"> sobre nós </NavLink>
+                     </li>
+                    <li>
+                        
+                    <UsuarioIcon></UsuarioIcon>
+                        Login/Registro
+                    </li>
+                </ul>
+                <h1 className='letreiro'>Localisus</h1>
+                <p>Conectando tecnologia ao cuidado, para que o acesso a saúde nunca seja uma distância</p>
+                {erro && <p style={{ color: 'red' }}>{erro}</p>}
+                <div>
+                    {resultado.length > 0 && (
+                        <MapaLocalisus hospitaisEncontrados={resultado} />
+                    )}
+                    {/* {resultado.length> 0 && <p>Hospitais Encontados:</p>}
                 <ul>
                     {resultado.map((resultadoItem, index) =>
                     (
@@ -83,9 +103,11 @@ export const Home = () => {
                         </li>
                     ))}
                 </ul> */}
-            </div>
+                </div>
+            </header>
+            <BarraPesquisa onSearch={handlePesquisa} />
             <div>
-                <article>
+                <article className='elementos-pagina'>
                     <section className='possibilidade'>
                         Possibildiades Localisus
                     </section>
@@ -97,7 +119,6 @@ export const Home = () => {
                     </section>
                 </article>
             </div>
-        </header>
         </>
     )
 }
