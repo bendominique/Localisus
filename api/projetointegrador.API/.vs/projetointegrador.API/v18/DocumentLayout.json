@@ -1,86 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\",
+  "WorkspaceRootPath": "C:\\Users\\Aluno\\Videos\\Testes Unit\u00E1rios\\Api-Localisus\\api\\projetointegrador.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\videos\\localisus\\api\\projetointegrador.api\\projetointegrador.api\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37DB026C-95D0-450D-8E8A-EFD680850D01}|TestesLocalisus\\TestesLocalisus.csproj|c:\\users\\aluno\\videos\\testes unit\u00E1rios\\api-localisus\\api\\projetointegrador.api\\testeslocalisus\\testeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37DB026C-95D0-450D-8E8A-EFD680850D01}|TestesLocalisus\\TestesLocalisus.csproj|solutionrelative:testeslocalisus\\testeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\videos\\localisus\\api\\projetointegrador.api\\projetointegrador.api\\controllers\\enderecocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\controllers\\enderecocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\videos\\testes unit\u00E1rios\\api-localisus\\api\\projetointegrador.api\\projetointegrador.api\\controllers\\estoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\controllers\\estoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\videos\\localisus\\api\\projetointegrador.api\\projetointegrador.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\videos\\testes unit\u00E1rios\\api-localisus\\api\\projetointegrador.api\\projetointegrador.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\videos\\localisus\\api\\projetointegrador.api\\projetointegrador.api\\migrations\\20260312190418_atualizandoenderecoenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\migrations\\20260312190418_atualizandoenderecoenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\videos\\testes unit\u00E1rios\\api-localisus\\api\\projetointegrador.api\\projetointegrador.api\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\videos\\localisus\\api\\projetointegrador.api\\projetointegrador.api\\models\\estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\models\\estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\videos\\localisus\\api\\projetointegrador.api\\projetointegrador.api\\dto\\criarmedicamentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\dto\\criarmedicamentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\videos\\localisus\\api\\projetointegrador.api\\projetointegrador.api\\migrations\\20260311195623_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\migrations\\20260311195623_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\videos\\localisus\\api\\projetointegrador.api\\projetointegrador.api\\controllers\\medicamentoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\controllers\\medicamentoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\videos\\localisus\\api\\projetointegrador.api\\projetointegrador.api\\dto\\criarenderecodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\dto\\criarenderecodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\videos\\localisus\\api\\projetointegrador.api\\projetointegrador.api\\models\\medicamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\models\\medicamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\videos\\localisus\\api\\projetointegrador.api\\projetointegrador.api\\models\\endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\models\\endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\videos\\localisus\\api\\projetointegrador.api\\projetointegrador.api\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\videos\\localisus\\api\\projetointegrador.api\\projetointegrador.api\\dto\\criarclientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\dto\\criarclientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\videos\\localisus\\api\\projetointegrador.api\\projetointegrador.api\\migrations\\20260312200048_atualizandocpf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\migrations\\20260312200048_atualizandocpf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\videos\\localisus\\api\\projetointegrador.api\\projetointegrador.api\\enum\\tipoendereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\enum\\tipoendereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\videos\\localisus\\api\\projetointegrador.api\\projetointegrador.api\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\videos\\localisus\\api\\projetointegrador.api\\projetointegrador.api\\projetointegrador.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\projetointegrador.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\videos\\localisus\\api\\projetointegrador.api\\projetointegrador.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\videos\\localisus\\api\\projetointegrador.api\\projetointegrador.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\videos\\localisus\\api\\projetointegrador.api\\projetointegrador.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|c:\\users\\aluno\\videos\\testes unit\u00E1rios\\api-localisus\\api\\projetointegrador.api\\projetointegrador.api\\dto\\criarusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3141B598-76E4-424C-8D9D-A6C18EB72E50}|projetointegrador.API\\projetointegrador.API.csproj|solutionrelative:projetointegrador.api\\dto\\criarusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,248 +30,74 @@
       "DocumentGroups": [
         {
           "DockedWidth": 214,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CriarMedicamentoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\DTO\\CriarMedicamentoDTO.cs",
-              "RelativeDocumentMoniker": "projetointegrador.API\\DTO\\CriarMedicamentoDTO.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\DTO\\CriarMedicamentoDTO.cs",
-              "RelativeToolTip": "projetointegrador.API\\DTO\\CriarMedicamentoDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "CriarUsuarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Videos\\Testes Unit\u00E1rios\\Api-Localisus\\api\\projetointegrador.API\\projetointegrador.API\\DTO\\CriarUsuarioDTO.cs",
+              "RelativeDocumentMoniker": "projetointegrador.API\\DTO\\CriarUsuarioDTO.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Videos\\Testes Unit\u00E1rios\\Api-Localisus\\api\\projetointegrador.API\\projetointegrador.API\\DTO\\CriarUsuarioDTO.cs",
+              "RelativeToolTip": "projetointegrador.API\\DTO\\CriarUsuarioDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T18:58:25.317Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MedicamentosController.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Controllers\\MedicamentosController.cs",
-              "RelativeDocumentMoniker": "projetointegrador.API\\Controllers\\MedicamentosController.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Controllers\\MedicamentosController.cs",
-              "RelativeToolTip": "projetointegrador.API\\Controllers\\MedicamentosController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABUAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T18:58:25.324Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "20260311195623_InitialMigration.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Migrations\\20260311195623_InitialMigration.cs",
-              "RelativeDocumentMoniker": "projetointegrador.API\\Migrations\\20260311195623_InitialMigration.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Migrations\\20260311195623_InitialMigration.cs",
-              "RelativeToolTip": "projetointegrador.API\\Migrations\\20260311195623_InitialMigration.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAQwCgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T18:58:25.331Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Endereco.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Models\\Endereco.cs",
-              "RelativeDocumentMoniker": "projetointegrador.API\\Models\\Endereco.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Models\\Endereco.cs",
-              "RelativeToolTip": "projetointegrador.API\\Models\\Endereco.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCoAAAAMAQAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T18:58:25.339Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ClientesController.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Controllers\\ClientesController.cs",
-              "RelativeDocumentMoniker": "projetointegrador.API\\Controllers\\ClientesController.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Controllers\\ClientesController.cs",
-              "RelativeToolTip": "projetointegrador.API\\Controllers\\ClientesController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAwwDsAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T18:58:25.368Z",
+              "WhenOpened": "2026-05-11T05:33:42.982Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Estoque.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Models\\Estoque.cs",
-              "RelativeDocumentMoniker": "projetointegrador.API\\Models\\Estoque.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Models\\Estoque.cs",
-              "RelativeToolTip": "projetointegrador.API\\Models\\Estoque.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "TesteService.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Videos\\Testes Unit\u00E1rios\\Api-Localisus\\api\\projetointegrador.API\\TestesLocalisus\\TesteService.cs",
+              "RelativeDocumentMoniker": "TestesLocalisus\\TesteService.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Videos\\Testes Unit\u00E1rios\\Api-Localisus\\api\\projetointegrador.API\\TestesLocalisus\\TesteService.cs",
+              "RelativeToolTip": "TestesLocalisus\\TesteService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T18:58:25.21Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20260312190418_AtualizandoEnderecoEnum.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Migrations\\20260312190418_AtualizandoEnderecoEnum.cs",
-              "RelativeDocumentMoniker": "projetointegrador.API\\Migrations\\20260312190418_AtualizandoEnderecoEnum.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Migrations\\20260312190418_AtualizandoEnderecoEnum.cs",
-              "RelativeToolTip": "projetointegrador.API\\Migrations\\20260312190418_AtualizandoEnderecoEnum.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T18:58:25.346Z"
+              "WhenOpened": "2026-05-11T02:28:06.239Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Data\\AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Videos\\Testes Unit\u00E1rios\\Api-Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "projetointegrador.API\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Videos\\Testes Unit\u00E1rios\\Api-Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Data\\AppDbContext.cs",
               "RelativeToolTip": "projetointegrador.API\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T18:58:25.354Z"
+              "WhenOpened": "2026-05-11T05:47:29.266Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EnderecoController.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Controllers\\EnderecoController.cs",
-              "RelativeDocumentMoniker": "projetointegrador.API\\Controllers\\EnderecoController.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Controllers\\EnderecoController.cs",
-              "RelativeToolTip": "projetointegrador.API\\Controllers\\EnderecoController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwAUAAAAAAAAAAAAAAA==",
+              "Title": "EstoqueController.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Videos\\Testes Unit\u00E1rios\\Api-Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Controllers\\EstoqueController.cs",
+              "RelativeDocumentMoniker": "projetointegrador.API\\Controllers\\EstoqueController.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Videos\\Testes Unit\u00E1rios\\Api-Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Controllers\\EstoqueController.cs",
+              "RelativeToolTip": "projetointegrador.API\\Controllers\\EstoqueController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T18:58:25.362Z"
+              "WhenOpened": "2026-05-11T05:46:19.483Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CriarClienteDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\DTO\\CriarClienteDTO.cs",
-              "RelativeDocumentMoniker": "projetointegrador.API\\DTO\\CriarClienteDTO.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\DTO\\CriarClienteDTO.cs",
-              "RelativeToolTip": "projetointegrador.API\\DTO\\CriarClienteDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T18:58:25.376Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CriarEnderecoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\DTO\\CriarEnderecoDTO.cs",
-              "RelativeDocumentMoniker": "projetointegrador.API\\DTO\\CriarEnderecoDTO.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\DTO\\CriarEnderecoDTO.cs",
-              "RelativeToolTip": "projetointegrador.API\\DTO\\CriarEnderecoDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T18:58:25.382Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Models\\Cliente.cs",
-              "RelativeDocumentMoniker": "projetointegrador.API\\Models\\Cliente.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Models\\Cliente.cs",
-              "RelativeToolTip": "projetointegrador.API\\Models\\Cliente.cs",
+              "DocumentIndex": 3,
+              "Title": "UsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Videos\\Testes Unit\u00E1rios\\Api-Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Services\\UsuarioService.cs",
+              "RelativeDocumentMoniker": "projetointegrador.API\\Services\\UsuarioService.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Videos\\Testes Unit\u00E1rios\\Api-Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Services\\UsuarioService.cs",
+              "RelativeToolTip": "projetointegrador.API\\Services\\UsuarioService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T18:58:25.387Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Medicamento.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Models\\Medicamento.cs",
-              "RelativeDocumentMoniker": "projetointegrador.API\\Models\\Medicamento.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Models\\Medicamento.cs",
-              "RelativeToolTip": "projetointegrador.API\\Models\\Medicamento.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T18:58:25.391Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "20260312200048_AtualizandoCPF.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Migrations\\20260312200048_AtualizandoCPF.cs",
-              "RelativeDocumentMoniker": "projetointegrador.API\\Migrations\\20260312200048_AtualizandoCPF.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Migrations\\20260312200048_AtualizandoCPF.cs",
-              "RelativeToolTip": "projetointegrador.API\\Migrations\\20260312200048_AtualizandoCPF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T18:58:25.396Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "TipoEndereco.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Enum\\TipoEndereco.cs",
-              "RelativeDocumentMoniker": "projetointegrador.API\\Enum\\TipoEndereco.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Enum\\TipoEndereco.cs",
-              "RelativeToolTip": "projetointegrador.API\\Enum\\TipoEndereco.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T18:58:25.4Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AppDbContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Migrations\\AppDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "projetointegrador.API\\Migrations\\AppDbContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Migrations\\AppDbContextModelSnapshot.cs",
-              "RelativeToolTip": "projetointegrador.API\\Migrations\\AppDbContextModelSnapshot.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T18:58:25.405Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\appsettings.json",
-              "RelativeDocumentMoniker": "projetointegrador.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\appsettings.json",
-              "RelativeToolTip": "projetointegrador.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-01T18:58:25.41Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "projetointegrador.API\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Properties\\launchSettings.json",
-              "RelativeToolTip": "projetointegrador.API\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-01T18:58:25.415Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "projetointegrador.API.csproj",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\projetointegrador.API.csproj",
-              "RelativeDocumentMoniker": "projetointegrador.API\\projetointegrador.API.csproj",
-              "ToolTip": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\projetointegrador.API.csproj",
-              "RelativeToolTip": "projetointegrador.API\\projetointegrador.API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-01T18:58:25.424Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Program.cs",
-              "RelativeDocumentMoniker": "projetointegrador.API\\Program.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Videos\\Localisus\\api\\projetointegrador.API\\projetointegrador.API\\Program.cs",
-              "RelativeToolTip": "projetointegrador.API\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T18:58:25.527Z"
+              "WhenOpened": "2026-05-11T05:36:40.082Z",
+              "EditorCaption": ""
             }
           ]
         }
