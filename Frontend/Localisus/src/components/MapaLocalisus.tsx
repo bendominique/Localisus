@@ -20,7 +20,8 @@ export const MapaLocalisus = ({hospitaisEncontrados}: MapaProps) => {
     const centro: [number, number] = [-23.5505, -46.6333]
 
     return (
-        <MapContainer center={[-23.5505, -46.6333]} zoom={12} style={{ height: '500px', width: '100%', borderRadius: '8px', marginTop: '20px' }}>
+        <div className="conteudo-mapa">
+            <MapContainer center={[-23.5505, -46.6333]} zoom={12} style={{ height: '500px', width: '100%', borderRadius: '8px', marginTop: '20px' }}>
             
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -37,5 +38,6 @@ export const MapaLocalisus = ({hospitaisEncontrados}: MapaProps) => {
                 </Marker>
             ))}
         </MapContainer>
+        </div>
     )
 }

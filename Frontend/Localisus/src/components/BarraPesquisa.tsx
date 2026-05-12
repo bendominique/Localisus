@@ -15,7 +15,7 @@ export const BarraPesquisa = ({ onSearch }: BarraPesquisaProps) => {
     }
 
     return(
-        <form onSubmit={handleEnvio}>
+        <form className="formulario-pesquisa" onSubmit={handleEnvio}>
             <input
                 className='medicamentos-pesquisa'
                 type='text'
@@ -23,7 +23,7 @@ export const BarraPesquisa = ({ onSearch }: BarraPesquisaProps) => {
                 onChange={(e) => setTermo(e.target.value)}
                 placeholder='Pesquise por um medicamento'
                 />
-                <button type='submit'>Pesquisar</button>
+                <button id="botao-pesquisar" type='submit'>Pesquisar</button>
         </form>
     )
 }

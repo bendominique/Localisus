@@ -1,5 +1,18 @@
 .medicamentos-pesquisa{
+    justify-content: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
     width: 300px;
+}
+#botao-pesquisar{
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 10px;
+}
+
+.formulario-pesquisa{
+    display: flex;
+    height: 6rem;
+    justify-content: center;
 }

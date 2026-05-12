@@ -1,0 +1,52 @@
+body{
+font-family: 'Montserrat', sans-serif;
+}
+
+.cabecalho{
+    height:20rem;
+    width: 100%;
+    background-color: #1F285D;
+}
+
+.cabecalho p,
+.cabecalho h1  {
+    color: white;
+}
+
+.conteudo-pagina {
+    background-color: aqua;
+    height: 50rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.lista-informacoes
+{
+    flex-direction: row;
+    text-decoration: none;
+    background-color: brown;
+    display: flex;
+    height: 3.5rem;
+    justify-content: center;
+    justify-content: space-evenly;
+
+}
+
+.lista-informacoes li,
+.lista-informacoes li a 
+{
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+    cursor: pointer;
+}
+
+
+
+.elementos-pagina
+{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 8%;
+}

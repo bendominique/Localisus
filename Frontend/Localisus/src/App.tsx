@@ -2,47 +2,57 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { AuthProvider } from './contexts/AuthContext'
 import { ProtectedRoute } from './components/ProtectedRoute'
 import { Admin } from './pages/Admin'
-import { Cadastro} from './pages/Cadastro'
-import { Login} from './pages/Login'
+import { Cadastro } from './pages/Cadastro'
+import { Login } from './pages/Login'
 import { Funcionario } from './pages/Funcionario'
-import {Home}  from './pages/Home'
+import { Home } from './pages/Home'
 import { TipoUsuario } from './mocks/usuarioMock'
+import { Contato } from './pages/Contato'
 
 export function App() {
     return (
         <AuthProvider>
             <BrowserRouter>
                 <Routes>
-                    <Route 
-                        path="/admin" 
+                    <Route
+                        path="/admin"
                         element={
-                        <ProtectedRoute allowedRoles={[TipoUsuario.ADMIN]}>
-                            <Admin />
-                        </ProtectedRoute>
+                            <ProtectedRoute allowedRoles={[TipoUsuario.ADMIN]}>
+                                <Admin />
+                            </ProtectedRoute>
                         }
-                        />
+                    />
 
-                        <Route
+                    <Route
+                        path="/cadastro"
+                        element={<Cadastro />}
+                    />
+                    <Route 
+                        path='/contato'
+                        element={<Contato/>}
+                    />
+                    <Route 
+                        path='/sobre'
+                        element={<Contato/>}
+                    />
+                    <Route
                         path="/funcionario"
                         element={
-                        <ProtectedRoute allowedRoles={[TipoUsuario.FUNCIONARIO]}>
-                            <Funcionario />
-                        </ProtectedRoute>
+                            <ProtectedRoute allowedRoles={[TipoUsuario.FUNCIONARIO]}>
+                                <Funcionario />
+                            </ProtectedRoute>
                         }
-                        />
-                         <Route 
-                        path="/cadastro" 
-                        element={<Cadastro />}
-                        /> 
-                        <Route 
-                        path="/login" 
+                    />
+
+                    <Route
+                        path="/login"
                         element={<Login />}
-                        />
-                        
-                         <Route 
-                        path="/" 
+                    />
+
+                    <Route
+                        path="/"
                         element={<Home />}
-                        />
+                    />
                 </Routes>
             </BrowserRouter>
         </AuthProvider>

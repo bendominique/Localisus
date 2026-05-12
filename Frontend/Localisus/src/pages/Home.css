@@ -1,41 +1,73 @@
-.cabecalho{
-    height:20rem;
-    width: 100%;
-    background-color: #1F285D;
+:root {
+    --fundo-hero: #e9f9ff;
+    --letras-azul: #07044B;
+    --letras-branco: #ffff;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.cabecalho p,
-.cabecalho h1  {
-    color: white;
+body {
+    background-color: var(--fundo-hero);
+    color: var(--letras-azul);
 }
 
-.lista-informacoes
-{
-    flex-direction: row;
+.conteudo-home {
     text-decoration: none;
-    background-color: brown;
+    margin-top: 8rem;
     display: flex;
-    height: 3.5rem;
     justify-content: center;
-    justify-content: space-evenly;
-
+    flex-direction: column;
 }
 
-.lista-informacoes li,
-.lista-informacoes li a 
-{
-    text-decoration: none;
-    color: inherit;
+.info-pagina h1,
+.info-pagina h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.info-pagina {
+    flex-direction: column;
+}
+
+.info-pagina button {
+    flex-direction: column;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
     list-style: none;
-    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
 }
 
 
 
-.elementos-pagina
-{
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    margin-top: 8%;
+#botao-conhecer {
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    border-style: none;
+    border-color: var(--letras-branco);
+    height: 30px;
+    background-color: var(--letras-azul);
+    color: var(--letras-branco);
+    border-radius: 30px;
+    cursor: pointer;
+    width: 150px;
+}
+
+
+#botao-conhecer:hover {
+    border-style: solid;
+    border-color: var(--letras-azul);
+    height: 30px;
+    background-color: var(--letras-branco);
+    color: var(--letras-azul);
+    border-radius: 30px;
+    cursor: pointer;
+    width: 150px;
 }
