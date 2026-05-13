@@ -1,4 +1,11 @@
-@import url('https://googleapis.com');
+@import url('https://googleapis.com'); 
+
+:root {
+    --fundo-hero: #ffffff;
+    --letras-azul: #07044B;
+    --letras-branco: #ffff;
+}
+
 
 body {
     font-family: 'Montserrat', sans-serif;

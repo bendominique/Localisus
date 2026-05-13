@@ -1,0 +1,29 @@
+main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.oq-localisus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.oq-localisus h1,
+.oq-localisus p {
+    display: flex;
+    justify-content: center;
+}
+
+.oq-localisus p{
+    margin: auto;
+    width: 35%;
+}
+
+.resposta-localisus h1{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}

@@ -1,5 +1,5 @@
 :root {
-    --fundo-hero: #e9f9ff;
+    --fundo-hero: #f6fafd;
     --letras-azul: #07044B;
     --letras-branco: #ffff;
     font-family: 'Montserrat', sans-serif;
@@ -19,7 +19,7 @@ body {
 }
 
 .info-pagina h1{
-    font-size: 75px;
+    font-size: 95px;
 }
 
 .info-pagina h1,
@@ -31,6 +31,7 @@ body {
 
 
 .info-pagina {
+    margin-top: 0px;
     flex-direction: column;
 }
 
