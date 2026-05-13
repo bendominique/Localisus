@@ -9,6 +9,8 @@ import { Home } from './pages/Home'
 import { TipoUsuario } from './mocks/usuarioMock'
 import { Contato } from './pages/Contato'
 import { Sobre } from './pages/Sobre'
+import { UsuarioComum } from './pages/UsuarioComum'
+import  Navbar  from './components/Navbar'
 
 
 export function App() {
@@ -34,8 +36,16 @@ export function App() {
                         element={<Contato/>}
                     />
                     <Route 
+                        path='/home-user'
+                        element={<UsuarioComum/>}
+                    />
+                    <Route 
                         path='/sobre'
                         element={<Sobre/>}
+                    />
+                    <Route 
+                        path='/navbar'
+                        element={<Navbar/>}
                     />
                     <Route
                         path="/funcionario"

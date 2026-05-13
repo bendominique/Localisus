@@ -1,0 +1,15 @@
+.cards{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    justify-items: space-around;
+}
+
+.cards h1{
+    font-size: 35px;
+}
+
+.cards p{
+    word-wrap: break-word;
+    justify-content: center;
+}

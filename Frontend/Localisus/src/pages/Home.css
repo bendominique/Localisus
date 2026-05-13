@@ -12,10 +12,15 @@ body {
 
 .conteudo-home {
     text-decoration: none;
-    margin-top: 8rem;
+    margin-top: 4rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.elementos-cabecalho {
+    display: block;
+    flex-direction: row;
 }
 
 .info-pagina h1{
@@ -67,17 +72,17 @@ body {
 #botao-conhecer {
     text-decoration: none;
     display: block;
-    font-weight: 600;
-    font-size: larger;
-    margin: auto;
+    font-weight: 300;
+    font-size: medium;
+    margin-top: -10px;
     border-style: none;
     border-color: var(--letras-branco);
-    height: 60px;
+    height: 45px;
     background-color: var(--letras-azul);
     color: var(--letras-branco);
     border-radius: 150px;
     cursor: pointer;
-    width: 250px;
+    width: 150px;
 }
 
 
@@ -85,11 +90,11 @@ body {
     animation: botaoAnimacao;
     animation-duration: 4s;
     border-style: solid;
-    height: 60px;
+    height: 45px;
     background-color: var(--letras-branco);
     border-radius: 150px;
     cursor: pointer;
-    width: 250px;
+    width: 150px;
 }
 
 @keyframes botaoAnimacao {

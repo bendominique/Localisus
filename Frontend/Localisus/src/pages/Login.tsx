@@ -23,7 +23,7 @@ export const Login = () => {
             } else if (usuarioLogado.tipoUsuario === TipoUsuario.FUNCIONARIO){
                 navegar("/funcionario")
             } else {
-                navegar("/")
+                navegar("/home-user")
             }
            
 
