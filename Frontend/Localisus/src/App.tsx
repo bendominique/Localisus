@@ -8,6 +8,8 @@ import { Funcionario } from './pages/Funcionario'
 import { Home } from './pages/Home'
 import { TipoUsuario } from './mocks/usuarioMock'
 import { Contato } from './pages/Contato'
+import { Sobre } from './pages/Sobre'
+
 
 export function App() {
     return (
@@ -33,7 +35,7 @@ export function App() {
                     />
                     <Route 
                         path='/sobre'
-                        element={<Contato/>}
+                        element={<Sobre/>}
                     />
                     <Route
                         path="/funcionario"

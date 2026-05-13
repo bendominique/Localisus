@@ -18,14 +18,25 @@ body {
     flex-direction: column;
 }
 
+.info-pagina h1{
+    font-size: 75px;
+}
+
 .info-pagina h1,
 .info-pagina h3 {
     display: flex;
     justify-content: center;
 }
 
+
+
 .info-pagina {
     flex-direction: column;
+}
+
+.info-pagina a{
+    font-weight: 900;
+    text-decoration: none;
 }
 
 .info-pagina button {
@@ -38,36 +49,51 @@ body {
 }
 
 .navbar {
-    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
     display: flex;
     justify-content: space-around;
-    text-decoration: none;
 }
 
+.navbar a{
+    color: var(--letras-azul);
+    list-style: none;
+    text-decoration: none;
+    text-decoration-line: none;
+}
 
 
 #botao-conhecer {
     text-decoration: none;
     display: block;
+    font-weight: 600;
+    font-size: larger;
     margin: auto;
     border-style: none;
     border-color: var(--letras-branco);
-    height: 30px;
+    height: 60px;
     background-color: var(--letras-azul);
     color: var(--letras-branco);
-    border-radius: 30px;
+    border-radius: 150px;
     cursor: pointer;
-    width: 150px;
+    width: 250px;
 }
 
 
 #botao-conhecer:hover {
+    animation: botaoAnimacao;
+    animation-duration: 4s;
     border-style: solid;
-    border-color: var(--letras-azul);
-    height: 30px;
+    height: 60px;
     background-color: var(--letras-branco);
-    color: var(--letras-azul);
-    border-radius: 30px;
+    border-radius: 150px;
     cursor: pointer;
-    width: 150px;
+    width: 250px;
+}
+
+@keyframes botaoAnimacao {
+    100% {border-color: var(--letras-azul);}
+    100% {color: var(--letras-azul)}
+    50% {border-color: var(--letras-azul);}
+    50% {color: var(--letras-azul)}
 }

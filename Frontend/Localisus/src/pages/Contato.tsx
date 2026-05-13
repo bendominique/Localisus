@@ -1,7 +1,7 @@
 export const Contato = () => {
     return(
         <>
-        <h1> Por que usar o Localisus? </h1>
+        <h1> Quem nós somos? </h1>
         </>
     )
 }
