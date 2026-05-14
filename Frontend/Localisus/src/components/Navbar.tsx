@@ -18,7 +18,3 @@ export default function Navbar({ }) {
 }
 
 
-export function NavbarProps({children, nome}: NavbarProps) {
-    const nomeClasses = ['']
-
-}

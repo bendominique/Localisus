@@ -49,12 +49,12 @@ export function App() {
                     />
                     <Route
                         path="/funcionario"
-                        element={
-                            <ProtectedRoute allowedRoles={[TipoUsuario.FUNCIONARIO]}>
-                                <Funcionario />
-                            </ProtectedRoute>
-                        }
-                    />
+                        element={<Funcionario />
+                            // <ProtectedRoute allowedRoles={[TipoUsuario.FUNCIONARIO]}>
+                            //     
+                            // </ProtectedRoute>
+                        } />
+                       
 
                     <Route
                         path="/login"
