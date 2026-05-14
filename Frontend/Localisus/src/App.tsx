@@ -36,7 +36,7 @@ export function App() {
                         element={<Contato/>}
                     />
                     <Route 
-                        path='/home-user'
+                        path='/home-usuario'
                         element={<UsuarioComum/>}
                     />
                     <Route 

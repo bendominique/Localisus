@@ -1,23 +1,12 @@
 import Navbar from "../components/Navbar"
+import { Cards } from "../components/Cards"
 
 export const UsuarioComum = () => {
 
     return(
         <>
-        <Navbar elementos={[
-            {
-                id: 'primeiro',
-                titulo: 'Primeiro',
-                conteudo: <p> Esse é o primeiro</p>
-            },
-            {
-                id: 'segundo',
-                titulo: 'Segundo',
-                conteudo: <p> Esse é o segundo </p>
-            }
-
-        ]}
-        />
+        <h1>Olá </h1>
+        <Cards></Cards>
     </>
     )
 }

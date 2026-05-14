@@ -2,16 +2,19 @@ import { NavLink } from "react-router-dom"
 import "./Home.css"
 import { PartticulasFundo } from "./ParticulasFundo"
 import { Cards } from "../components/Cards"
+import { BarraPesquisa } from "../components/BarraPesquisa"
 
 export const Home = () => {
     return (
         <>
             <header className="elementos-cabecalho">
                 <span>
-                    <h1 className="letreiro">
-                        LOCALISUS
-                    </h1>
                     <ul className="navbar">
+                        <li>
+                            <h1 id="letreiro">
+                                LOCALISUS
+                            </h1>
+                        </li>
                         <NavLink to="/">
                             <li id="home-navbar">Home</li>
                         </NavLink>
@@ -32,7 +35,9 @@ export const Home = () => {
             <main>
                 <div className="conteudo-home">
                     <section className="info-pagina">
-                        <h3>Conectando tecnologia ao cuidado, para que o acesso a saúde nunca seja uma distância</h3>
+                        {/* <BarraPesquisa {}></BarraPesquisa> */}
+                        <h2>Conectando tecnologia ao cuidado, para que o acesso a saúde nunca seja uma distância</h2>
+                        <h3>Como o Localisus ajuda você</h3>
                         <Cards></Cards>
                     </section>
                 </div>
