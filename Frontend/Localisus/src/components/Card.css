@@ -1,7 +1,6 @@
 .cards{
     display: flex;
     height: 4px;
-    width: 100px;
 }
 
 .cards h1{
