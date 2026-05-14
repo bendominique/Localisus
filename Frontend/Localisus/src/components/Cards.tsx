@@ -1,6 +1,6 @@
 import "./Card.css"
 
-interface CardData {
+export interface CardData {
     id: number,
     titulo: string,
     descricao: string
@@ -18,7 +18,7 @@ const elementosCard: CardData[] = [
     {id: 4, titulo: "Cuide da saúde", descricao: "Tenha mais controle, acompanhe e gerencie consultas e medicamentos. "}
 ]
 
-function ComponenteCard({
+export function ComponenteCard({
     titulo,
     descricao
 }: CardProps) {

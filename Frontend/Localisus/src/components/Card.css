@@ -1,8 +1,6 @@
 .cards{
     display: flex;
     height: 4px;
-    justify-content: center;
-    justify-items: space-around;
     width: 100px;
 }
 
@@ -11,8 +9,10 @@
 }
 
 .cards p{
+    display: block;
+    padding: 15px;
+    margin: auto;
     word-wrap: break-word;
-    justify-content: center;
 }
 
 .descricao-cards{
@@ -29,6 +29,7 @@
 }
 
 .descricao-cards .descricao {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
