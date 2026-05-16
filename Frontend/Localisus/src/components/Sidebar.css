@@ -1,0 +1,21 @@
+.barra-lateral button{
+    margin-top: -100px;
+    cursor: pointer;
+    background-color: rgb(197, 221, 255);
+    border-style: none;
+    height: 55px;
+    width: 55px;
+}
+
+.barra-lateral {
+    z-index: 10px;
+    width: 30%;
+}
+
+
+
+.barra-lateral.fechada{
+    cursor: pointer;
+    background-color: blueviolet;
+    width: 0%;
+}

@@ -2,6 +2,7 @@
     --fundo-hero: #f6fafd;
     --letras-azul: #07044B;
     --letras-branco: #ffff;
+    --letras-azul-bebe: #007dbc;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -9,6 +10,10 @@ body {
     background-color: var(--fundo-hero);
     color: var(--letras-azul);
 }
+
+
+
+
 
 .conteudo-home {
     text-decoration: none;
@@ -18,6 +23,13 @@ body {
     flex-direction: column;
 }
 
+.conteudo-home h4{
+    color: var(--letras-azul-bebe);
+    font-weight: 500;
+}
+
+
+
 .elementos-cabecalho li {
     display: block;
     flex-direction: row;
@@ -26,7 +38,7 @@ body {
 }
 
 .info-pagina h1{
-    font-size: 95px;
+    font-size: 50px;
 }
 
 .info-pagina h1,
@@ -49,6 +61,10 @@ body {
 
 .info-pagina button {
     flex-direction: column;
+}
+
+.info-pagina span{
+    color: rgb(0, 166, 255)
 }
 
 #letreiro {

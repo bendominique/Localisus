@@ -1,18 +1,37 @@
 .medicamentos-pesquisa{
-    justify-content: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    width: 300px;
+    border: flex;
+    border-radius: 10px;
+    border-style: none;
+    max-height: 60px;
+    width: 45rem;
 }
+
+.medicamentos-pesquisa::placeholder{
+    display: block;
+    opacity: 0.6;
+    font-weight: 550;
+}
+
 #botao-pesquisar{
+    border-style: none;
+    height: 50px;
+    width: 85px;
+    border-radius: 8px;
+    background-color: #0228be;
+    cursor: pointer;
+    color: white;
     justify-content: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 10px;
+    margin-left: -6rem;
+    margin-top: 5.75px;
+}
+
+#botao-pesquisar:hover{
+    background-color: #031e8a;
 }
 
 .formulario-pesquisa{
     display: flex;
-    height: 6rem;
-    justify-content: center;
+    height: 100px;
+    margin-left: 10px;
+    justify-content: flex-start;
 }

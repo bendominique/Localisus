@@ -1,55 +1,94 @@
+.conteudo-pagina{
+    margin-top: -4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.pos-cabecalho{
+    align-self: flex-start;
+    margin-left: 10rem;
+    margin-bottom: 2rem;
+}
+
+
 .cards-usuario-comum-centro{ 
     background-color: #ffffff;
     box-shadow: 0px 2px 3px 1px rgb(132, 132, 132);
     border-radius: 15px;
     margin-left: 30px;
     height: 150px;
-    width: 195px;
+    width: 250px;
+}
+
+.componentes-abaixo-pesquisa p{
+    color: #07044B;
+    font-weight: 50;
+}   
+
+
+.pesquisa-elementos{
+    display: flex;
+    flex-direction: column;
+    height: 16rem;
+    width: 65rem;
 }
 
 .cartao-busca{
-    background: linear-gradient(45deg, blue, yellow );
+    background: linear-gradient(45deg, rgb(0, 72, 255), rgb(195, 233, 255) );
     border-radius: 15px;
     display: flex;
-    margin-left: 12rem;
+    align-items: center;
+    max-height: 250px;
+    padding: 15px;
     flex-direction: column;
-    height: 12rem;
-    padding: 20px;
-    width: 77rem;
 }
 
-.cartao-busca h2,
-.cartao-busca h4,
-.cartao-busca p {
+.cartao-busca:hover{
+    background: linear-gradient(195deg, rgb(195, 233, 255),  rgb(0, 72, 255));
+}
+
+.cartao-busca h2{
+    font-weight: 600;
+}
+
+.pesquisa-elementos h2,
+.pesquisa-elementos h4{
     color: white;   
 }
 
-.componentes-pesquisa{
+#mais-buscados{
+    margin-top: -15px;
+    font-weight: 400;
+    color: white;
+}
+
+
+.pesquisa-elementos h4{
+    font-weight:220;
+}
+
+
+.componentes-abaixo-pesquisa{
     display: flex;
     align-items: center;
     justify-content: center ;
     flex-direction: row;
+    margin-right: 2rem;
     margin-top: 2rem;
 }
 
 
-.componentes-pesquisa h1{
+.componentes-abaixo-pesquisa h1{
     display: flex;
     justify-content: center;
     font-size: 18px;
 }
 
-.componentes-pesquisa p{
+.componentes-abaixo-pesquisa p{
     padding: 10px;
     font-size: 14px;
-}
-
-.componentes-lateral-direita{
-    position: top;
-    float: right;
-    display: flex;
-    flex-direction: column;
-
 }
 
 
@@ -67,4 +106,9 @@
 
 #sugestao-user{
     font-weight: 50;
+}
+
+
+.componentes-cotidiano{
+    margin-top: 15rem;
 }

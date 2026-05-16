@@ -35,9 +35,9 @@ export const Home = () => {
             <main>
                 <div className="conteudo-home">
                     <section className="info-pagina">
-                        {/* <BarraPesquisa {}></BarraPesquisa> */}
-                        <h2>Conectando tecnologia ao cuidado, para que o acesso a saúde nunca seja uma distância</h2>
-                        <h3>Como o Localisus ajuda você</h3>
+                        
+                        <h1>Encontre seus medicamentos com mais facilidade</h1>
+                        <h2>Tudo o que você precisa, <span>em um só lugar</span></h2>
                         <Cards></Cards>
                     </section>
                 </div>
