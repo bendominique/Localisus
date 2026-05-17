@@ -5,22 +5,29 @@ import { MapaLocalisus } from "../components/MapaLocalisus";
 import { medicamentosMock } from "../mocks/medicamentosMock";
 import { estoqueMock } from "../mocks/estoqueMock";
 import "./UsuarioComum.css"
-import { Clock, Bell, Info, Pill, Search, HeartPlus, CalendarCheck, Hospital, AlarmClock, Bot, Newspaper } from "lucide-react";
+import { Clock, Bell, Info, Pill, Search, HeartPlus, CalendarCheck, Hospital, AlarmClock, Bot, Newspaper, Map, BellRing } from "lucide-react";
 import { hospitaisMock } from "../mocks/hospitaisMocks";
 import { Sidebar } from "../components/Sidebar";
+import { TopbarUsuarios } from "../components/TopbarUsuarios";
 
 export const UsuarioComum = () => {
 
     const cardsCentro = [
-        { titulo: "Histórico de retiradas", descricao: "Acompanhe todas as retiradas realizadas e visualize a frequência com que seus medicamentos estão sendo utilizados.", icone: CalendarCheck, cor: "#ff1aff" },
+        { titulo: "Históricos", descricao: "Acompanhe todas as retiradas realizadas e visualize a frequência com que seus medicamentos estão sendo utilizados.", icone: CalendarCheck, cor: "#ff1aff" },
         { titulo: "Lembretes", descricao: "Receba alertas importantes para não esquecer horários, dosagens e medicamentos que precisam ser tomados hoje.", icone: AlarmClock, cor: "#ff1aff" },
-        { titulo: "Meus medicamentos", descricao: "Gerencie seus medicamentos em um só lugar, acompanhe tratamentos ativos e receba lembretes personalizados.", icone: Pill, cor: "#ff1aff" },
-        { titulo: "Postos próximos", descricao: "Encontre unidades de saúde, farmácias e postos de atendimento próximos da sua localização de forma rápida e prática.", icone: Hospital, cor: "#afff1a" }
+        { titulo: "Medicamentos", descricao: "Gerencie seus medicamentos em um só lugar, acompanhe tratamentos ativos e receba lembretes personalizados.", icone: Pill, cor: "#ff1aff" },
+        { titulo: "Postos e Farmácias", descricao: "Encontre unidades de saúde, farmácias e postos de atendimento próximos da sua localização de forma rápida e prática.", icone: Hospital, cor: "#afff1a" }
     ]
 
     const cardsDireita = [
-        { titulo: "Cali", descricao: "Assistente virtual do localisus", icone: Bot, cor: "#ff1a1a"},
-        { titulo: "Últimas Notícias", descricao: "Alera: Surto de hantavírus", icone: Newspaper, cor: "#ff9218" }
+        { titulo: "Cali", descricao: "Assistente virtual do localisus", icone: Bot, cor: "#ff1a1a" },
+        { titulo: "Seu dia", descricao: "Amoxicilina", icone: Newspaper, cor: "#ff9218" }
+    ]
+
+    const cardsInfoDia = [
+        { titulo: "16:00", descricao: "Amoxicilina 250ml", icone: Clock, cor: "#fff" },
+        { titulo: "UBS Central", descricao: "1,2km de distância", icone: Map, cor: "#821ff1" },
+        { titulo: "Consulta agendada", descricao: "Amanhã às 10:00  ", icone: BellRing, cor: "rgba(225, 255, 0, 0.67)" }
     ]
 
     //criou-se uma memória para a busca dentro do nosso mapa, agora a nossa tela de home sabe oq pesquisar e aonde pesquisar
@@ -60,7 +67,7 @@ export const UsuarioComum = () => {
     return (
         <>
             <header>
-
+                <TopbarUsuarios />
             </header>
             <main>
                 <div className="conteudo-pagina">
@@ -69,19 +76,24 @@ export const UsuarioComum = () => {
                         <h4 id="sugestao-user">Como podemos ajudar hoje? </h4>
                     </div>
                     <section className="pesquisa-elementos">
-                        <div className="cartao-busca">
-                            <h2> Encontre seu medicamento </h2>
-                            <h4> Pesquise e veja onde encontrar gratuitamente por uma farmácia ou pelo SUS</h4>
-                            <article className="area-pesquisa">
-                                <BarraPesquisa onSearch={executarBusca} />
-                            </article>
-                            <p id="mais-buscados">Mais buscados:</p>
+
+                        <div className="info-container">
+                            {
+                                cardsInfoDia.map(ci =>
+                                    <article className="info-dia">
+                                        <ComponenteCard titulo={ci.titulo} descricao={ci.descricao} icone={ci.icone} cor={ci.cor} />
+                                    </article>
+                                )
+                            }
                         </div>
+                        <BarraPesquisa onSearch={executarBusca} />
+                        <p id="mais-buscados">Buscas Recentes: Mais buscados:</p>
+                        <h2 id="acoes-rapidas">Ações rápidas</h2>
                         <article className="componentes-abaixo-pesquisa">
                             {
                                 cardsCentro.map(cc =>
-                                    <article className="cards-usuario-comum-centro" style={{"--cor-tema": cc.cor} as React.CSSProperties}>
-                                        <ComponenteCard titulo={cc.titulo} descricao={cc.descricao} icone={cc.icone} cor={cc.cor}/>
+                                    <article className="cards-usuario-comum-centro" style={{ "--cor-tema": cc.cor } as React.CSSProperties}>
+                                        <ComponenteCard titulo={cc.titulo} descricao={cc.descricao} icone={cc.icone} cor={cc.cor} />
                                     </article>
                                 )
                             }
@@ -90,8 +102,11 @@ export const UsuarioComum = () => {
                     <section className="componentes-cotidiano">
                         {
                             cardsDireita.map(cd =>
-                                <article className="elementos-card-usuario-comum-cotidiano" style={{"--cor-tema": cd.cor} as React.CSSProperties}>
-                                    <ComponenteCard titulo={cd.titulo} descricao={cd.descricao} icone={cd.icone} cor={cd.cor}/>
+                                <article className="elementos-card-usuario-comum-cotidiano" style={{ "--cor-tema": cd.cor } as React.CSSProperties}>
+                                    <ComponenteCard
+                                        titulo={cd.titulo}
+                                        descricao={cd.descricao}
+                                        icone={cd.icone} cor={cd.cor} />
                                 </article>
                             )
                         }

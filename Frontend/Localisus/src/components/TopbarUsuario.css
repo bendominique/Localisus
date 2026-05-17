@@ -1,0 +1,11 @@
+.elementos-cabecalho{
+    display: flex;
+    flex-direction: row;
+}
+
+.elementos-usuario{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    right: 30px;
+}

@@ -17,19 +17,18 @@ export const BarraPesquisa = ({ onSearch }: BarraPesquisaProps) => {
 
     return (
         <>
-            <div id="particulas-fundo">
-                {/* <PartticulasFundo /> */}
+            <div className="barra-pesquisa">
+                <form className="formulario-pesquisa" onSubmit={handleEnvio}>
+                    <input
+                        className='medicamentos-pesquisa'
+                        type='text'
+                        value={termo}
+                        onChange={(e) => setTermo(e.target.value)}
+                        placeholder='Ex: Dipirona, Insulina'
+                    />
+                    <button id="botao-pesquisar" type='submit'>Buscar</button>
+                </form>
             </div>
-            <form className="formulario-pesquisa" onSubmit={handleEnvio}>
-                <input
-                    className='medicamentos-pesquisa'
-                    type='text'
-                    value={termo}
-                    onChange={(e) => setTermo(e.target.value)}
-                    placeholder='Ex: Dipirona, Insulina'
-                />
-                <button id="botao-pesquisar" type='submit'>Buscar</button>
-            </form>
         </>
 
     )

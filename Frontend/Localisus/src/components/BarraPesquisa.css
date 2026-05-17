@@ -1,14 +1,23 @@
+.barra-pesquisa{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+
 .medicamentos-pesquisa{
     border: flex;
-    border-radius: 10px;
     border-style: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0.2px #929292;
     max-height: 60px;
-    width: 45rem;
+    width: 62.5rem;
 }
 
 .medicamentos-pesquisa::placeholder{
     display: block;
     opacity: 0.6;
+    color: #a9a9a9;
     font-weight: 550;
 }
 

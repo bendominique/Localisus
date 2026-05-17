@@ -42,9 +42,7 @@ export function ComponenteCard({
     )
 }
 
-const tamanhosCard = {
-    
-}
+
 
 export const Cards = () => {
     return(

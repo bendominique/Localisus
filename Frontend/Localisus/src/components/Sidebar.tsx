@@ -11,9 +11,9 @@ export const Sidebar = () => {
 
     return (
         <>
-            <aside className={`barra-lateral ${estaAberta ? 'aberta' : 'fechada'}`}>
+            <div className={`barra-lateral ${estaAberta ? 'aberta' : 'fechada'}`}>
                 <button onClick={() => setEstaAberta(!estaAberta)}>
-                    {estaAberta ? '' : ''}
+                    {estaAberta ? 'Sim' : 'Nao'}
                 </button>
                 {
                     <div className="elementos-barra">
@@ -25,7 +25,7 @@ export const Sidebar = () => {
                            ))}
                 </div>
                 }
-            </aside>
+            </div>
         </>
     )
 }
