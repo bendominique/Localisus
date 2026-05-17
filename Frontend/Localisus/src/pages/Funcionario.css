@@ -1,3 +1,8 @@
+:root {
+    --borda-cards: 0px 2px 2px 0.5px rgb(132, 132, 132);
+}
+
+
 .conteudo-pagina {
     margin-top: -4rem;
     display: flex;
@@ -19,17 +24,14 @@
 
 .cards-info-hospital{
     background-color: white;
-    margin: auto;
-    padding: 15px;
-    width: 250px;
+    box-shadow: var(--borda-cards);
+    border-radius: 10px;
+    margin-left: 12px;
+    padding: 2rem;
+    height: 8rem;
+    width: 26rem;
 }
 
-.cards-info-hospital h1{
-    font-size: 18px;
-}
-
-.cards-info-hospital h1,
-.cards-info-hospital.icone{
-    
-    display: flex;
+.cards-info-hospital p{
+    color: #575757;
 }

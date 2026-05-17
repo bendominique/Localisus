@@ -36,7 +36,6 @@
     width: 72rem;
 }
 
-
 .info-dia {
     background-color: #c4ecff;
     box-shadow: var(--borda-cards);
@@ -57,7 +56,7 @@
 }
 
 .info-dia h1 {
-    font-size: 26px;
+    font-size: 22px;
 }
 
 .cards-usuario-comum-centro {

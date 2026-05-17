@@ -2,6 +2,11 @@
     display: flex;
 }
 
+.icone-container,
+.icone-container h1{
+    color: var(--cor-tema)
+}
+
 .cards p {
     display: block;
     padding: 15px;

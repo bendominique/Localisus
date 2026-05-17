@@ -5,8 +5,9 @@ import { hospitaisMock } from "../mocks/hospitaisMocks"
 import { estoqueMock } from "../mocks/estoqueMock"
 import { TopbarUsuarios } from "../components/TopbarUsuarios"
 import "./Funcionario.css"
-import { IceCream } from "lucide-react"
+import { IceCream, LucideHospital, LucidePanelTopClose, PillIcon, UsersIcon } from "lucide-react"
 import { ComponenteCard } from "../components/Cards"
+import { usuarioMock } from "../mocks/usuarioMock"
 
 
 export const Funcionario = () => {
@@ -14,10 +15,10 @@ export const Funcionario = () => {
     const { usuario } = useAuth()
     const [estoque, setEstoque] = useState<any[]>([])
     const cardsFuncionario = [
-        { titulo: "Estoque total", descricao: "12,2M", icone: IceCream, cor: "#ffff" },
-        { titulo: "Medicamentos disponíveis", descricao: "12.219", icone: IceCream, cor: "#ffff" },
-        { titulo: "Unidades ativas", descricao: "128", icone: IceCream, cor: "#ffff" },
-        { titulo: "Usuários atendidos", descricao: "56.982", icone: IceCream, cor: "#ffff" }
+        { titulo: "Estoque total", descricao: "12,2M", icone: LucidePanelTopClose, cor: "#ff8c00" },
+        { titulo: "Medicamentos", descricao: "12.219", icone: PillIcon, cor: "#00aeff" },
+        { titulo: "Unidades ativas", descricao: "128", icone: LucideHospital, cor: "#000000" },
+        { titulo: "Usuários atendidos", descricao: "56.982", icone: UsersIcon, cor: "#009c34" }
     ]
 
     useEffect(() => {
@@ -58,12 +59,12 @@ export const Funcionario = () => {
             </header>
             <main className="conteudo-pagina-funcionario">
                 <section className="pos-cabecalho-funcionario">
-                    <h1 id="saudacao-user">Olá, nome!</h1>
+                    <h1 id="saudacao-user">Olá, {usuario?.nome}!</h1>
                     <h4 id="sugestao-user">Aqui está um resumo do dia</h4>
                     <div className="info-hospital">
                         {
                             cardsFuncionario.map(cf =>
-                                <article className="cards-info-hospital">
+                                <article className="cards-info-hospital"  style={{ "--cor-tema": cf.cor } as React.CSSProperties}>
                                     <ComponenteCard titulo={cf.titulo} descricao={cf.descricao} icone={cf.icone} cor={cf.cor} />
                                 </article>
                             )

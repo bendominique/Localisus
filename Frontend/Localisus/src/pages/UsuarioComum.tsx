@@ -9,8 +9,11 @@ import { Clock, Bell, Info, Pill, Search, HeartPlus, CalendarCheck, Hospital, Al
 import { hospitaisMock } from "../mocks/hospitaisMocks";
 import { Sidebar } from "../components/Sidebar";
 import { TopbarUsuarios } from "../components/TopbarUsuarios";
+import { useAuth } from "../contexts/AuthContext";
 
 export const UsuarioComum = () => {
+
+    const {usuario} = useAuth()
 
     const cardsCentro = [
         { titulo: "Históricos", descricao: "Acompanhe todas as retiradas realizadas e visualize a frequência com que seus medicamentos estão sendo utilizados.", icone: CalendarCheck, cor: "#ff1aff" },
@@ -72,7 +75,7 @@ export const UsuarioComum = () => {
             <main>
                 <div className="conteudo-pagina">
                     <div className="pos-cabecalho">
-                        <h1 id="saudacao-user">Olá, nome!</h1>
+                        <h1 id="saudacao-user">Olá, {usuario?.nome}!</h1>
                         <h4 id="sugestao-user">Como podemos ajudar hoje? </h4>
                     </div>
                     <section className="pesquisa-elementos">
