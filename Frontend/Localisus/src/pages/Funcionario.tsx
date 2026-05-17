@@ -15,10 +15,10 @@ export const Funcionario = () => {
     const { usuario } = useAuth()
     const [estoque, setEstoque] = useState<any[]>([])
     const cardsFuncionario = [
-        { titulo: "Estoque total", descricao: "12,2M", icone: LucidePanelTopClose, cor: "#ff8c00" },
-        { titulo: "Medicamentos", descricao: "12.219", icone: PillIcon, cor: "#00aeff" },
-        { titulo: "Unidades ativas", descricao: "128", icone: LucideHospital, cor: "#000000" },
-        { titulo: "Usuários atendidos", descricao: "56.982", icone: UsersIcon, cor: "#009c34" }
+        { titulo: "Estoque total", descricao: "12,2M", icone: LucidePanelTopClose, cor: "#8c00ff" },
+        { titulo: "Medicamentos", descricao: "12.219", icone: PillIcon, cor: "#25c900" },
+        { titulo: "Unidades ativas", descricao: "128", icone: LucideHospital, cor: "#28b9e5" },
+        { titulo: "Usuários atendidos", descricao: "56.982", icone: UsersIcon, cor: "#f29500" }
     ]
 
     useEffect(() => {
@@ -71,20 +71,26 @@ export const Funcionario = () => {
                         }
                     </div>
                 </section>
-                <h2>Estoque {hospital?.nome}</h2>
-                <ul>
+                <section className="elementos-funcionario">
+                    <article className="mapa">
+                        
+                    </article>
+                    <article className="medicamentos-destaque">
 
-                    {estoque.map(e =>
-                        <li key={e.id}>
-                            {e.nome} é
-                            {e.descricao},
-                            no nosso estoque ele contém a dosagem de {e.dosagem}ml e
-                            {e.quantidade} unidades
-                        </li>
+                    </article>
+                    <article className="alertas">
 
-                    )}
-                </ul>
-                <h2>Pacientes</h2>
+                    </article>
+                    <article className="solicitacoes">
+
+                    </article>
+                    <article className="consumo-categoria">
+
+                    </article>
+                    <article className="resumo-regiao">
+
+                    </article>
+                </section>
             </main>
         </>
     )
