@@ -1,21 +1,17 @@
-.cards{
+.cards {
     display: flex;
 }
 
-.cards h1{
-    font-size: 20px;
-}
-
-.cards p{
+.cards p {
     display: block;
     padding: 15px;
     margin: auto;
     word-wrap: break-word;
 }
 
-.elementos-cards{
-    box-shadow: 3px 3px #6b6b6b ;
-    border-radius: 30px;    
+.elementos-cards {
+    box-shadow: 3px 3px #6b6b6b;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,12 +27,29 @@
 
 .elementos-cards h1,
 .elementos-cards .icone-container {
-    font-size: 20px;
     color: var(--cor-tema);
     transition: color 0.4s ease-in-out
 }
 
-.elementos-cards p{
+
+.elementos-cards .icone-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.icone-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icone-container h1{
+    font-size: 25px;
+    margin-left: 5px;
+    margin: auto;
+}
+
+.elementos-cards p {
     display: block;
     padding: 15px;
     margin: auto;
@@ -46,15 +59,15 @@
     transition: color 0.4 ease-in;
 }
 
-.elementos-cards:hover{
+.elementos-cards:hover {
     background-color: var(--cor-tema);
     transform: translateY(-25px);
-    box-shadow: 5px 8px 15px rgba(0,0,0,0.2);
+    box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .elementos-cards:hover h1,
 .elementos-cards:hover p,
-.elementos-cards:hover .icone-container{
+.elementos-cards:hover .icone-container {
     color: #fff
 }
 

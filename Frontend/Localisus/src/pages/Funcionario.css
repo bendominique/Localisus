@@ -1,0 +1,35 @@
+.conteudo-pagina {
+    margin-top: -4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.pos-cabecalho {
+    align-self: flex-start;
+    margin-left: 10rem;
+    margin-bottom: 2rem;
+}
+
+.info-hospital{
+    display: flex;
+    justify-content: center;
+}
+
+.cards-info-hospital{
+    background-color: white;
+    margin: auto;
+    padding: 15px;
+    width: 250px;
+}
+
+.cards-info-hospital h1{
+    font-size: 18px;
+}
+
+.cards-info-hospital h1,
+.cards-info-hospital.icone{
+    
+    display: flex;
+}

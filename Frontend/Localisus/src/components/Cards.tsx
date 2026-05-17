@@ -18,10 +18,10 @@ interface CardProps {
 }
 
 const elementosCard: CardData[] = [
-    {id: 1, titulo: "Acesso rápido", descricao: "Encontre os seus medicamentos através do nome, comercial ou técnico.", icone: Search, cor: "#12d393"},
-    {id: 2, titulo: "Localizar postos", descricao: "Visualize os postos de saúde próximos a você que possuem o medicamento que precisa.", icone: MapPin, cor: "#ef4444"},
-    {id: 3, titulo: "Veja rotas", descricao: "Saiba qual é a rota mais rápida entre você e o seu medicamento com apenas um clique.", icone: Navigation, cor: "#3b82f6"},
-    {id: 4, titulo: "Cuide da saúde", descricao: "Tenha mais controle, acompanhe e gerencie consultas e medicamentos. ", icone: HeartPulse, cor: "#ff1aff"}
+    { id: 1, titulo: "Acesso rápido", descricao: "Encontre os seus medicamentos através do nome, comercial ou técnico.", icone: Search, cor: "#12d393" },
+    { id: 2, titulo: "Localizar postos", descricao: "Visualize os postos de saúde próximos a você que possuem o medicamento que precisa.", icone: MapPin, cor: "#ef4444" },
+    { id: 3, titulo: "Veja rotas", descricao: "Saiba qual é a rota mais rápida entre você e o seu medicamento com apenas um clique.", icone: Navigation, cor: "#3b82f6" },
+    { id: 4, titulo: "Cuide da saúde", descricao: "Tenha mais controle, acompanhe e gerencie consultas e medicamentos. ", icone: HeartPulse, cor: "#ff1aff" }
 ]
 
 export function ComponenteCard({
@@ -30,12 +30,12 @@ export function ComponenteCard({
     icone: Icone,
     cor
 }: CardProps) {
-    return(
+    return (
         <div>
             <div className="icone-container">
-                <Icone size={32}/>
+                <Icone size={26} />
+                <h1>{titulo}</h1>
             </div>
-            <h1>{titulo}</h1>
             <p>{descricao}</p>
 
         </div>
@@ -45,14 +45,14 @@ export function ComponenteCard({
 
 
 export const Cards = () => {
-    return(
+    return (
         <>
             <div className="cards">
                 {
-                    elementosCard.map( e => 
-                        <div key={e.id} className="elementos-cards" style={{"--cor-tema": e.cor} as React.CSSProperties}>
+                    elementosCard.map(e =>
+                        <div key={e.id} className="elementos-cards" style={{ "--cor-tema": e.cor } as React.CSSProperties}>
                             <ComponenteCard
-                               titulo={e.titulo}
+                                titulo={e.titulo}
                                 descricao={e.descricao}
                                 icone={e.icone}
                                 cor={e.cor}
@@ -62,5 +62,5 @@ export const Cards = () => {
                 }
             </div>
         </>
-    )    
+    )
 }

@@ -8,9 +8,9 @@ import { HeroImagem } from "../components/HeroImagem"
 export const Home = () => {
     return (
         <>
-            <header className="elementos-cabecalho">
+            <header className="elementos-cabecalho-hero">
                 <span>
-                    <ul className="navbar">
+                    <ul className="navbar-hero">
                         <li>
                             <h1 id="letreiro">
                                 LOCALISUS

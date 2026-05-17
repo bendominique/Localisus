@@ -12,9 +12,6 @@ body {
 }
 
 
-
-
-
 .conteudo-home {
     text-decoration: none;
     margin-top: 4rem;
@@ -30,15 +27,11 @@ body {
 
 
 
-.elementos-cabecalho li {
+.elementos-cabecalho-hero li {
     display: block;
     flex-direction: row;
     align-items: center;
     list-style: none;
-}
-
-.info-pagina h1{
-    font-size: 50px;
 }
 
 .info-pagina h1,
@@ -46,7 +39,6 @@ body {
     display: flex;
     justify-content: center;
 }
-
 
 .info-pagina {
     display: flex;
@@ -78,14 +70,14 @@ body {
     justify-content: center;
 }
 
-.navbar {
+.navbar-hero {
     font-size: 20px;
     font-weight: 600;
     display: flex;
     justify-content: space-around;
 }
 
-.navbar a{
+.navbar-hero a{
     color: var(--letras-azul);
     list-style: none;
     text-decoration: none;

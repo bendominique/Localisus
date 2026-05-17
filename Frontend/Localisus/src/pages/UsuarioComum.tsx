@@ -76,7 +76,6 @@ export const UsuarioComum = () => {
                         <h4 id="sugestao-user">Como podemos ajudar hoje? </h4>
                     </div>
                     <section className="pesquisa-elementos">
-
                         <div className="info-container">
                             {
                                 cardsInfoDia.map(ci =>
@@ -89,7 +88,7 @@ export const UsuarioComum = () => {
                         <BarraPesquisa onSearch={executarBusca} />
                         <p id="mais-buscados">Buscas Recentes: Mais buscados:</p>
                         <h2 id="acoes-rapidas">Ações rápidas</h2>
-                        <article className="componentes-abaixo-pesquisa">
+                        <div className="componentes-abaixo-pesquisa">
                             {
                                 cardsCentro.map(cc =>
                                     <article className="cards-usuario-comum-centro" style={{ "--cor-tema": cc.cor } as React.CSSProperties}>
@@ -97,7 +96,7 @@ export const UsuarioComum = () => {
                                     </article>
                                 )
                             }
-                        </article>
+                        </div>
                     </section>
                     <section className="componentes-cotidiano">
                         {
