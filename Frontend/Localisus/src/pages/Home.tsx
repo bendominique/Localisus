@@ -3,6 +3,7 @@ import "./Home.css"
 import { PartticulasFundo } from "./ParticulasFundo"
 import { Cards } from "../components/Cards"
 import { BarraPesquisa } from "../components/BarraPesquisa"
+import { HeroImagem } from "../components/HeroImagem"
 
 export const Home = () => {
     return (
@@ -35,8 +36,7 @@ export const Home = () => {
             <main>
                 <div className="conteudo-home">
                     <section className="info-pagina">
-                        
-                        <h1>Encontre seus medicamentos com mais facilidade</h1>
+                        <HeroImagem/>
                         <h2>Tudo o que você precisa, <span>em um só lugar</span></h2>
                         <Cards></Cards>
                     </section>

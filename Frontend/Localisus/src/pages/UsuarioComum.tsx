@@ -5,22 +5,22 @@ import { MapaLocalisus } from "../components/MapaLocalisus";
 import { medicamentosMock } from "../mocks/medicamentosMock";
 import { estoqueMock } from "../mocks/estoqueMock";
 import "./UsuarioComum.css"
-import { Clock, Bell, Info, Pill, Search, HeartPlus } from "lucide-react";
+import { Clock, Bell, Info, Pill, Search, HeartPlus, CalendarCheck, Hospital, AlarmClock, Bot, Newspaper } from "lucide-react";
 import { hospitaisMock } from "../mocks/hospitaisMocks";
 import { Sidebar } from "../components/Sidebar";
 
 export const UsuarioComum = () => {
 
     const cardsCentro = [
-        { titulo: "Histórico de retiradas", descricao: "Acompanhe todas as retiradas realizadas e visualize a frequência com que seus medicamentos estão sendo utilizados.", icone: Search, cor: "#ff1aff" },
-        { titulo: "Lembretes", descricao: "Receba alertas importantes para não esquecer horários, dosagens e medicamentos que precisam ser tomados hoje.", icone: Search, cor: "#ff1aff" },
-        { titulo: "Meus medicamentos", descricao: "Gerencie seus medicamentos em um só lugar, acompanhe tratamentos ativos e receba lembretes personalizados.", icone: Search, cor: "#ff1aff" },
-        { titulo: "Postos próximos", descricao: "Encontre unidades de saúde, farmácias e postos de atendimento próximos da sua localização de forma rápida e prática.", icone: Search, cor: "#afff1a" }
+        { titulo: "Histórico de retiradas", descricao: "Acompanhe todas as retiradas realizadas e visualize a frequência com que seus medicamentos estão sendo utilizados.", icone: CalendarCheck, cor: "#ff1aff" },
+        { titulo: "Lembretes", descricao: "Receba alertas importantes para não esquecer horários, dosagens e medicamentos que precisam ser tomados hoje.", icone: AlarmClock, cor: "#ff1aff" },
+        { titulo: "Meus medicamentos", descricao: "Gerencie seus medicamentos em um só lugar, acompanhe tratamentos ativos e receba lembretes personalizados.", icone: Pill, cor: "#ff1aff" },
+        { titulo: "Postos próximos", descricao: "Encontre unidades de saúde, farmácias e postos de atendimento próximos da sua localização de forma rápida e prática.", icone: Hospital, cor: "#afff1a" }
     ]
 
     const cardsDireita = [
-        { titulo: "Cali", descricao: "Assistente virtual do localisus", icone: HeartPlus, cor: "#ff1a1a"},
-        { titulo: "Últimas Notícias", descricao: "Alera: Surto de hantavírus", icone: HeartPlus, cor: "#ff9218" }
+        { titulo: "Cali", descricao: "Assistente virtual do localisus", icone: Bot, cor: "#ff1a1a"},
+        { titulo: "Últimas Notícias", descricao: "Alera: Surto de hantavírus", icone: Newspaper, cor: "#ff9218" }
     ]
 
     //criou-se uma memória para a busca dentro do nosso mapa, agora a nossa tela de home sabe oq pesquisar e aonde pesquisar
@@ -90,7 +90,7 @@ export const UsuarioComum = () => {
                     <section className="componentes-cotidiano">
                         {
                             cardsDireita.map(cd =>
-                                <article className="elementos-card-usuario-comum-direita">
+                                <article className="elementos-card-usuario-comum-cotidiano" style={{"--cor-tema": cd.cor} as React.CSSProperties}>
                                     <ComponenteCard titulo={cd.titulo} descricao={cd.descricao} icone={cd.icone} cor={cd.cor}/>
                                 </article>
                             )

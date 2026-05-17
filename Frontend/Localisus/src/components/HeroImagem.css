@@ -1,0 +1,15 @@
+
+.dispositivos-hero {
+    background: linear-gradient(45deg, #e8f5ff, #d4ecff);
+    width: 850px;
+} 
+
+.hero-imagem {
+    background: linear-gradient(45deg, #e8f5ff, #d4ecff);
+    width: 850px;
+    border-radius: 30px;
+} 
+
+.hero-texto h1{
+    font-size: 38px;
+}
