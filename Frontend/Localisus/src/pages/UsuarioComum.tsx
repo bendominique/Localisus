@@ -56,7 +56,7 @@ export const UsuarioComum = () => {
 
         const hospitaisFormatados = estoqueComRemedio.map(itemEstoque => {
             const hosp = hospitaisMock.find(h => h.id === itemEstoque.hospitalId)
-            const med = medicamentosEncontrados.find(m => m.id === itemEstoque.id)
+            const med = medicamentosEncontrados.find(m => m.id === itemEstoque.medicamentoId)
 
             return {
                 hospital: hosp,

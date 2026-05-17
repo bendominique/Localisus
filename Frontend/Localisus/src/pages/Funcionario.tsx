@@ -8,6 +8,7 @@ import "./Funcionario.css"
 import { IceCream, LucideHospital, LucidePanelTopClose, PillIcon, UsersIcon } from "lucide-react"
 import { ComponenteCard } from "../components/Cards"
 import { usuarioMock } from "../mocks/usuarioMock"
+import { DashboardFuncionario } from "../components/DashboardFuncionario"
 
 
 export const Funcionario = () => {
@@ -72,24 +73,7 @@ export const Funcionario = () => {
                     </div>
                 </section>
                 <section className="elementos-funcionario">
-                    <article className="mapa">
-                        
-                    </article>
-                    <article className="medicamentos-destaque">
-
-                    </article>
-                    <article className="alertas">
-
-                    </article>
-                    <article className="solicitacoes">
-
-                    </article>
-                    <article className="consumo-categoria">
-
-                    </article>
-                    <article className="resumo-regiao">
-
-                    </article>
+                   <DashboardFuncionario />
                 </section>
             </main>
         </>
