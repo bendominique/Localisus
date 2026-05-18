@@ -1,3 +1,4 @@
+
 export interface hospital{
     id: number,
     nome: string,
@@ -9,6 +10,6 @@ export interface hospital{
 }
 
 export const hospitaisMock = [
-    { id: 1, nome: "Hospital das Clínicas", latitude: -23.556, longitude: -46.669},
-     { id: 2, nome: "Santa Casa", latitude: -23.543, longitude: -46.652}
+    { id: 1, nome: "Hospital das Clínicas", latitude: -23.556, longitude: -46.669, status: "DISPONIVEL"},
+     { id: 2, nome: "Santa Casa", latitude: -23.543, longitude: -46.652, status: "INDISPONIVEL"}
 ]

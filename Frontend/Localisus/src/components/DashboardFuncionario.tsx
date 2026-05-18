@@ -30,11 +30,16 @@ export const DashboardFuncionario = () => {
             const volumeTotal = estoqueLocal.reduce((soma, item) => soma + item.quantidade, 0)
 
             let statusLogistico = 'DISPONIVEL';
-            if  (volumeTotal === 0) statusLogistico = 'INDISPONIVEL'
+            if (volumeTotal === 0) statusLogistico = 'INDISPONIVEL'
             else if (volumeTotal < 50) statusLogistico = 'CRITICO'
 
-            return{
-                ...hosp,
+            return {
+                id: hosp.id,
+                nome: hosp.nome,
+                latitude: hosp.latitude,
+                longitude: hosp.longitude,
+                endereco: "",
+                telefone: "",
                 status: statusLogistico,
                 volumeEstoque: volumeTotal
             }
@@ -43,33 +48,35 @@ export const DashboardFuncionario = () => {
 
     return (
         <>
-        
+
             <main className="dashboard-funcionario-container">
-                <header className="kpi-container">
-                    {/* kpi = Key PErformance Indicator */}
-                    <div className="card-kpi">
-                        <h3> Capacidade Total Rede </h3>
-                        <p>{metricasGlobais.capacidadeGeral}</p>
-                    </div>
-                    <div className="card-kpi-2">
-                        <h3> Alertas de Estoque Crítico </h3>
-                        <p className="alerta-vermelho">{metricasGlobais.totalItensBaixo}</p>
-                    </div>
+                <header>
                 </header>
                 <section className="dashboard-grid">
-                    <div className="area-visualizacao-mapa">
+                    <article className="area-visualizacao-mapa">
                         <h2>Mapeamento de Disponibilidade Pública</h2>
-                        <MapaFuncionario 
+                        <MapaFuncionario
                             hospitais={hospitaisCustomizados}
                             onHospitalClick={setHospitalSelecionadoId}
-                            />
-                    </div>
+                        />
+                    </article>
+                </section>
+                <section className="kpi-container">
+                    <article className="card-kpi">
+                        <h3> Capacidade Total Rede </h3>
+                        <p>{metricasGlobais.capacidadeGeral}</p>
+                    </article>
+                    <article className="card-kpi-2">
+                        <h3> Alertas de Estoque Crítico </h3>
+                        <p className="alerta-vermelho">{metricasGlobais.totalItensBaixo}</p>
+                    </article>
+                    
                     <aside className="area-inventario-especifico">
                         {hospitalSelecionadoId ? (
                             <div className="tabela-estoque-hospital">
-                                <h2> Estoque do Hospital #{hospitalSelecionadoId}</h2>
+                                <h2> Estoque do Hospital {hospitalSelecionadoId}</h2>
                             </div>
-                        ): (
+                        ) : (
                             <div className="estado-vazio">
                                 <p> Selecione um hospital público para o mapa analisar o estoque integral</p>
                             </div>
