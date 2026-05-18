@@ -12,12 +12,22 @@ const customIcon = L.icon({
     popupAnchor: [1, -34],
 });
 
-interface MapaProps {
-    hospitaisEncontrados: any[]
-    onHospitalClick: (hospitalId: number) => void
+export interface DadosHospitalMapa {
+    hospital: {
+        id: number;
+        nome: string;
+        latitude: number;
+        longitude: number;
+    }
+    nomeMedicamento: string | undefined;
+    quantidadeRestante: number;
 }
 
-export const MapaLocalisus = ({ hospitaisEncontrados, onHospitalClick }: MapaProps) => {
+interface MapaProps {
+    hospitaisEncontrados: DadosHospitalMapa[]
+}
+
+export const MapaLocalisus = ({ hospitaisEncontrados}: MapaProps) => {
     const centro: [number, number] = [-23.5505, -46.6333]
 
     return (

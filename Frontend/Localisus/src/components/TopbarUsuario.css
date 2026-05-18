@@ -8,4 +8,6 @@
     position: absolute;
     flex-direction: row;
     right: 30px;
+    list-style: none;
+    cursor: pointer;
 }

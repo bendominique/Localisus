@@ -5,7 +5,7 @@ import "./TopbarUsuario.css"
 export const TopbarUsuarios = () => {
 
     const topBarIcones = [
-        { icone: User2Icon }
+        {id: 1, icone: <User2Icon size={32}/> }
     ]
 
     return (
@@ -15,11 +15,10 @@ export const TopbarUsuarios = () => {
                 <ul className="elementos-usuario">
                     {
 
-                        topBarIcones.map(i => (
-                            <li className="icone">
-                                [i.icone]
+                        topBarIcones.map(i => 
+                            <li key={i.id} className="icone">
+                                {i.icone}
                             </li>
-                        )
                         )
                     }
                 </ul>

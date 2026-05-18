@@ -4,16 +4,17 @@ import { BarraPesquisa } from "../components/BarraPesquisa";
 import { medicamentosMock } from "../mocks/medicamentosMock";
 import { estoqueMock } from "../mocks/estoqueMock";
 import "./UsuarioComum.css"
-import { Clock, Pill, Search, HeartPlus, CalendarCheck, Hospital, AlarmClock, Bot, Newspaper, Map, BellRing } from "lucide-react";
+import { Clock, Pill, CalendarCheck, Hospital, AlarmClock, Newspaper, Map, BellRing, BookOpenCheck } from "lucide-react";
 import { hospitaisMock } from "../mocks/hospitaisMocks";
 import { Sidebar } from "../components/Sidebar";
 import { TopbarUsuarios } from "../components/TopbarUsuarios";
 import { useAuth } from "../contexts/AuthContext";
 import medicamentos from "../imagens/medicamentos.png"
+import { DadosHospitalMapa, MapaLocalisus } from "../components/MapaLocalisus";
 
 export const UsuarioComum = () => {
 
-    const {usuario} = useAuth()
+    const { usuario } = useAuth()
 
     const cardsCentro = [
         { titulo: "Históricos", descricao: "Acompanhe todas as retiradas realizadas e visualize a frequência com que seus medicamentos estão sendo utilizados.", icone: CalendarCheck, cor: "#6f00ffff" },
@@ -23,8 +24,7 @@ export const UsuarioComum = () => {
     ]
 
     const cardsDireita = [
-        { titulo: "Cali", descricao: "Assistente virtual do localisus", icone: Bot, cor: "#ff1a1a" },
-        { titulo: "Seu dia", descricao: "Amoxicilina", icone: Newspaper, cor: "#e600ffff" }
+        { titulo: "Seu dia", descricao: "Amoxicilina", icone: BookOpenCheck, cor: "#e600ffff" }
     ]
 
     const cardsInfoDia = [
@@ -33,10 +33,8 @@ export const UsuarioComum = () => {
         { titulo: "Consulta agendada", descricao: "Amanhã às 10:00  ", icone: BellRing, cor: "rgba(225, 255, 0, 0.67)" }
     ]
 
-    //criou-se uma memória para a busca dentro do nosso mapa, agora a nossa tela de home sabe oq pesquisar e aonde pesquisar
-    const [hospitaisNoMapa, setHospitaisNoMapa] = useState<any[]>([])
+    const [hospitaisNoMapa, setHospitaisNoMapa] = useState<DadosHospitalMapa[]>([])
     const executarBusca = (termoPesquisado: string) => {
-        //as implementações dessas constantes resolvem o erro que estava presente no momento de buscar com o componente de BarraPesquisa
         if (!termoPesquisado.trim()) {
             setHospitaisNoMapa([])
             return;
@@ -54,16 +52,21 @@ export const UsuarioComum = () => {
             idsMedicamentos.includes(e.medicamentoId) && e.quantidade > 0
         )
 
-        const hospitaisFormatados = estoqueComRemedio.map(itemEstoque => {
+        const hospitaisFormatados = estoqueComRemedio.reduce<DadosHospitalMapa[]>((dadosMedicamento, itemEstoque) => {
+
             const hosp = hospitaisMock.find(h => h.id === itemEstoque.hospitalId)
             const med = medicamentosEncontrados.find(m => m.id === itemEstoque.medicamentoId)
 
-            return {
-                hospital: hosp,
-                nomeMedicamento: med?.nome,
-                quantidadeRestante: itemEstoque.quantidade
+            if (hosp) {
+                dadosMedicamento.push({
+                    hospital: hosp,
+                    nomeMedicamento: med?.nome,
+                    quantidadeRestante: itemEstoque.quantidade
+                })
             }
-        }).filter(item => item.hospital !== undefined)
+            return dadosMedicamento;
+        }, [])
+
         setHospitaisNoMapa(hospitaisFormatados)
     }
 
@@ -73,6 +76,7 @@ export const UsuarioComum = () => {
                 <TopbarUsuarios />
             </header>
             <main>
+                <Sidebar />
                 <div className="conteudo-pagina">
                     <div className="pos-cabecalho">
                         <h1 id="saudacao-user">Olá, {usuario?.nome}!</h1>
@@ -81,22 +85,27 @@ export const UsuarioComum = () => {
                     <section className="pesquisa-elementos">
                         <div className="info-container">
                             {
-                                cardsInfoDia.map(ci =>
-                                    <article className="info-dia">
+                                cardsInfoDia.map((ci, index) =>
+                                    <article key={index} className="info-dia">
                                         <ComponenteCard titulo={ci.titulo} descricao={ci.descricao} icone={ci.icone} cor={ci.cor} />
                                     </article>
                                 )
                             }
-                            
+
                             <img id="medicamento-imagem" src={medicamentos} />
                         </div>
                         <BarraPesquisa onSearch={executarBusca} />
+
+                        <div style={{ marginTop: '30px', marginBottom: '30px' }}>
+                            <MapaLocalisus hospitaisEncontrados={hospitaisNoMapa} />
+                        </div>
+
                         <p id="mais-buscados">Buscas Recentes: Mais buscados:</p>
                         <h2 id="acoes-rapidas">Ações rápidas</h2>
                         <div className="componentes-abaixo-pesquisa">
                             {
-                                cardsCentro.map(cc =>
-                                    <article className="cards-usuario-comum-centro" style={{ "--cor-tema": cc.cor } as React.CSSProperties}>
+                                cardsCentro.map((cc, index) =>
+                                    <article key={index} className="cards-usuario-comum-centro" style={{ "--cor-tema": cc.cor } as React.CSSProperties}>
                                         <ComponenteCard titulo={cc.titulo} descricao={cc.descricao} icone={cc.icone} cor={cc.cor} />
                                     </article>
                                 )
@@ -105,8 +114,8 @@ export const UsuarioComum = () => {
                     </section>
                     <section className="componentes-cotidiano">
                         {
-                            cardsDireita.map(cd =>
-                                <article className="cards-usuario-comum-cotidiano" style={{ "--cor-tema": cd.cor } as React.CSSProperties}>
+                            cardsDireita.map((cd, index) =>
+                                <article key={index} className="cards-usuario-comum-cotidiano" style={{ "--cor-tema": cd.cor } as React.CSSProperties}>
                                     <ComponenteCard
                                         titulo={cd.titulo}
                                         descricao={cd.descricao}
@@ -115,12 +124,6 @@ export const UsuarioComum = () => {
                             )
                         }
                     </section>
-
-                    {/* <div className="area-do-mapa">
-                        {hospitaisNoMapa.length > 0 && (
-                            <MapaLocalisus/>
-                        )}
-                    </div> */}
                 </div>
             </main>
         </>

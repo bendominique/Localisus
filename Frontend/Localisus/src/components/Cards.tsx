@@ -27,8 +27,7 @@ const elementosCard: CardData[] = [
 export function ComponenteCard({
     titulo,
     descricao,
-    icone: Icone,
-    cor
+    icone: Icone
 }: CardProps) {
     return (
         <div>
@@ -39,6 +38,7 @@ export function ComponenteCard({
                 <h1>{titulo}</h1>
             </div>
             <p>{descricao}</p>
+          
 
         </div>
     )

@@ -1,8 +1,5 @@
-import { NavLink } from "react-router-dom"
 import "./Home.css"
-import { PartticulasFundo } from "./ParticulasFundo"
 import { Cards } from "../components/Cards"
-import { BarraPesquisa } from "../components/BarraPesquisa"
 import { HeroImagem } from "../components/HeroImagem"
 import { Navbar } from "../components/Navbar"
 

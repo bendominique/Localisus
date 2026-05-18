@@ -1,10 +1,11 @@
-interface hospital{
+export interface hospital{
     id: number,
     nome: string,
     endereco: string,
     telefone: string,
     longitude: number,
-    latitude: number
+    latitude: number,
+    status: string
 }
 
 export const hospitaisMock = [

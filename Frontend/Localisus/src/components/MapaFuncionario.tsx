@@ -1,10 +1,17 @@
-import { MapContainerProps, TileLayer, Marker, Popup, MapContainer } from "react-leaflet";
+import { TileLayer, Marker, Popup, MapContainer } from "react-leaflet";
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
-import { stat } from "fs";
+import {type hospital} from "../mocks/hospitaisMocks"
+
+import "../pages/Funcionario.css"
+
+export interface HospitalMapeado extends hospital {
+    status: string;
+}
+
 
 interface MapaFuncionarioProps {
-    hospitais: any[]
+    hospitais: HospitalMapeado[];
     onHospitalClick: (hospitalId: number) => void
 }
 
@@ -41,6 +48,7 @@ export const MapaFuncionario = ({ hospitais, onHospitalClick }: MapaFuncionarioP
                     <Marker
                         key={index}
                         position={[hosp.latitude, hosp.longitude]}
+                        icon={gerarIconePorStatus(hosp.status)}
                         eventHandlers={{
                             click: () => onHospitalClick(hosp.id),
                         }}
