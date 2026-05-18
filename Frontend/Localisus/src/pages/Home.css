@@ -26,14 +26,6 @@ body {
 }
 
 
-
-.elementos-cabecalho-hero li {
-    display: block;
-    flex-direction: row;
-    align-items: center;
-    list-style: none;
-}
-
 .info-pagina h1,
 .info-pagina h3 {
     display: flex;
@@ -55,8 +47,13 @@ body {
     flex-direction: column;
 }
 
+.info-pagina h2{
+    font-weight: 300;
+}
+
 .info-pagina span{
-    color: rgb(0, 166, 255)
+    color: #006aff;
+    font-weight: 400;
 }
 
 #letreiro {
@@ -69,21 +66,6 @@ body {
     display: flex;
     justify-content: center;
 }
-
-.navbar-hero {
-    font-size: 20px;
-    font-weight: 600;
-    display: flex;
-    justify-content: space-around;
-}
-
-.navbar-hero a{
-    color: var(--letras-azul);
-    list-style: none;
-    text-decoration: none;
-    text-decoration-line: none;
-}
-
 
 #botao-conhecer {
     text-decoration: none;

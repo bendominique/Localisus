@@ -1,30 +1,30 @@
 import { ComponenteCard } from "../components/Cards";
 import { useState } from "react";
 import { BarraPesquisa } from "../components/BarraPesquisa";
-import { MapaLocalisus } from "../components/MapaLocalisus";
 import { medicamentosMock } from "../mocks/medicamentosMock";
 import { estoqueMock } from "../mocks/estoqueMock";
 import "./UsuarioComum.css"
-import { Clock, Bell, Info, Pill, Search, HeartPlus, CalendarCheck, Hospital, AlarmClock, Bot, Newspaper, Map, BellRing } from "lucide-react";
+import { Clock, Pill, Search, HeartPlus, CalendarCheck, Hospital, AlarmClock, Bot, Newspaper, Map, BellRing } from "lucide-react";
 import { hospitaisMock } from "../mocks/hospitaisMocks";
 import { Sidebar } from "../components/Sidebar";
 import { TopbarUsuarios } from "../components/TopbarUsuarios";
 import { useAuth } from "../contexts/AuthContext";
+import medicamentos from "../imagens/medicamentos.png"
 
 export const UsuarioComum = () => {
 
     const {usuario} = useAuth()
 
     const cardsCentro = [
-        { titulo: "Históricos", descricao: "Acompanhe todas as retiradas realizadas e visualize a frequência com que seus medicamentos estão sendo utilizados.", icone: CalendarCheck, cor: "#ff1aff" },
-        { titulo: "Lembretes", descricao: "Receba alertas importantes para não esquecer horários, dosagens e medicamentos que precisam ser tomados hoje.", icone: AlarmClock, cor: "#ff1aff" },
-        { titulo: "Medicamentos", descricao: "Gerencie seus medicamentos em um só lugar, acompanhe tratamentos ativos e receba lembretes personalizados.", icone: Pill, cor: "#ff1aff" },
-        { titulo: "Postos e Farmácias", descricao: "Encontre unidades de saúde, farmácias e postos de atendimento próximos da sua localização de forma rápida e prática.", icone: Hospital, cor: "#afff1a" }
+        { titulo: "Históricos", descricao: "Acompanhe todas as retiradas realizadas e visualize a frequência com que seus medicamentos estão sendo utilizados.", icone: CalendarCheck, cor: "#6f00ffff" },
+        { titulo: "Lembretes", descricao: "Receba alertas importantes para não esquecer horários, dosagens e medicamentos que precisam ser tomados hoje.", icone: AlarmClock, cor: "#19b900ff" },
+        { titulo: "Medicamentos", descricao: "Gerencie seus medicamentos em um só lugar, acompanhe tratamentos ativos e receba lembretes personalizados.", icone: Pill, cor: "#0396ffff" },
+        { titulo: "Postos/Farmácias", descricao: "Encontre unidades de saúde, farmácias e postos de atendimento próximos da sua localização de forma rápida e prática.", icone: Hospital, cor: "#ff8c00ff" }
     ]
 
     const cardsDireita = [
         { titulo: "Cali", descricao: "Assistente virtual do localisus", icone: Bot, cor: "#ff1a1a" },
-        { titulo: "Seu dia", descricao: "Amoxicilina", icone: Newspaper, cor: "#ff9218" }
+        { titulo: "Seu dia", descricao: "Amoxicilina", icone: Newspaper, cor: "#e600ffff" }
     ]
 
     const cardsInfoDia = [
@@ -87,6 +87,8 @@ export const UsuarioComum = () => {
                                     </article>
                                 )
                             }
+                            
+                            <img id="medicamento-imagem" src={medicamentos} />
                         </div>
                         <BarraPesquisa onSearch={executarBusca} />
                         <p id="mais-buscados">Buscas Recentes: Mais buscados:</p>
@@ -104,7 +106,7 @@ export const UsuarioComum = () => {
                     <section className="componentes-cotidiano">
                         {
                             cardsDireita.map(cd =>
-                                <article className="elementos-card-usuario-comum-cotidiano" style={{ "--cor-tema": cd.cor } as React.CSSProperties}>
+                                <article className="cards-usuario-comum-cotidiano" style={{ "--cor-tema": cd.cor } as React.CSSProperties}>
                                     <ComponenteCard
                                         titulo={cd.titulo}
                                         descricao={cd.descricao}
@@ -114,11 +116,11 @@ export const UsuarioComum = () => {
                         }
                     </section>
 
-                    <div className="area-do-mapa">
+                    {/* <div className="area-do-mapa">
                         {hospitaisNoMapa.length > 0 && (
-                            <MapaLocalisus hospitaisEncontrados={hospitaisNoMapa} />
+                            <MapaLocalisus/>
                         )}
-                    </div>
+                    </div> */}
                 </div>
             </main>
         </>

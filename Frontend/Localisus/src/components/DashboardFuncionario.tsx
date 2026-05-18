@@ -23,6 +23,24 @@ export const DashboardFuncionario = () => {
         }
     }, [])
 
+    const hospitaisCustomizados = useMemo(() => {
+        return hospitaisMock.map(hosp => {
+            const estoqueLocal = estoqueMock.filter(e => e.hospitalId === hosp.id)
+
+            const volumeTotal = estoqueLocal.reduce((soma, item) => soma + item.quantidade, 0)
+
+            let statusLogistico = 'DISPONIVEL';
+            if  (volumeTotal === 0) statusLogistico = 'INDISPONIVEL'
+            else if (volumeTotal < 50) statusLogistico = 'CRITICO'
+
+            return{
+                ...hosp,
+                status: statusLogistico,
+                volumeEstoque: volumeTotal
+            }
+        })
+    }, [])
+
     return (
         <>
             <main className="dashboard-funcionario-container">
@@ -41,7 +59,7 @@ export const DashboardFuncionario = () => {
                     <div className="area-visualizacao-mapa">
                         <h2>Mapeamento de Disponibilidade Pública</h2>
                         <MapaFuncionario 
-                            hospitais={hospitaisMock}
+                            hospitais={hospitaisCustomizados}
                             onHospitalClick={setHospitalSelecionadoId}
                             />
                     </div>

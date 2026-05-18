@@ -33,7 +33,9 @@ export function ComponenteCard({
     return (
         <div>
             <div className="icone-container">
-                <Icone size={26} />
+                <div className="icone-fundo">
+                    <Icone size={32} />
+                </div>
                 <h1>{titulo}</h1>
             </div>
             <p>{descricao}</p>

@@ -1,15 +1,63 @@
 
 .dispositivos-hero {
-    background: linear-gradient(45deg, #e8f5ff, #d4ecff);
-    width: 850px;
+    width: 1050px;
 } 
 
 .hero-imagem {
-    background: linear-gradient(45deg, #e8f5ff, #d4ecff);
-    width: 850px;
-    border-radius: 30px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
 } 
 
+.hero-texto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
 .hero-texto h1{
-    font-size: 38px;
+    display: inline;
+    text-align: center;
+    font-size: 55px;
+    width: 100%;
+    word-spacing: 1px;
+}
+
+.hero-texto h2{
+    background-color: #b2eaff;
+    border-radius: 50px;
+    color: #0048fc;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    padding: 10px;
+}
+
+
+.hero-texto p{
+    color: #acacac;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    word-spacing: 1px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    background-color: #f0f8ff;
 }
