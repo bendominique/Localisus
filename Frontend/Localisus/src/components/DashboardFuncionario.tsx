@@ -43,6 +43,7 @@ export const DashboardFuncionario = () => {
 
     return (
         <>
+        
             <main className="dashboard-funcionario-container">
                 <header className="kpi-container">
                     {/* kpi = Key PErformance Indicator */}
