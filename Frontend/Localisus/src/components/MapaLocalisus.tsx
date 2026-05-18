@@ -1,16 +1,6 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import 'leaflet/dist/leaflet.css'
-import L from 'leaflet'
-import iconMarker from 'leaflet/dist/images/marker-icon.png';
-import iconShadow from 'leaflet/dist/images/marker-shadow.png';
-
-const customIcon = L.icon({
-    iconUrl: iconMarker,
-    shadowUrl: iconShadow,
-    iconSize: [25, 41],
-    iconAnchor: [12, 41],
-    popupAnchor: [1, -34],
-});
+import { gerarIconePorStatus } from "./ElementosMapa/mapaUtil";
 
 export interface DadosHospitalMapa {
     hospital: {
@@ -21,6 +11,7 @@ export interface DadosHospitalMapa {
     }
     nomeMedicamento: string | undefined;
     quantidadeRestante: number;
+    status: string;
 }
 
 interface MapaProps {
@@ -43,7 +34,7 @@ export const MapaLocalisus = ({ hospitaisEncontrados}: MapaProps) => {
                 />
 
                 {hospitaisEncontrados.map((item, index) => (
-                    <Marker key={index} position={[item.hospital.latitude, item.hospital.longitude]} icon={customIcon} >
+                    <Marker key={index} position={[item.hospital.latitude, item.hospital.longitude]} icon={gerarIconePorStatus(item.status)} >
                         <Popup>
                             <strong>{item.hospital.nome}</strong> <br />
                             Medicamento: {item.nomeMedicamento} <br />

@@ -1,9 +1,8 @@
 import { TileLayer, Marker, Popup, MapContainer } from "react-leaflet";
 import 'leaflet/dist/leaflet.css'
-import L from 'leaflet'
 import {type hospital} from "../mocks/hospitaisMocks"
-
 import "../pages/Funcionario.css"
+import { gerarIconePorStatus } from "./ElementosMapa/mapaUtil";
 
 export interface HospitalMapeado extends hospital {
     status: string;
@@ -13,21 +12,6 @@ export interface HospitalMapeado extends hospital {
 interface MapaFuncionarioProps {
     hospitais: HospitalMapeado[];
     onHospitalClick: (hospitalId: number) => void
-}
-
-const gerarIconePorStatus = (status: string) => {
-
-    let classeStatus = 'status-disponivel'
-
-    if (status === 'INDISPONIVEL') classeStatus = 'status-indisponivel'
-    else if (status === 'CRITICO') classeStatus = 'status-critico'
-
-    return L.divIcon({
-        className: `marcador-base ${classeStatus}`,
-        html: `<div></div>`,
-        iconSize: [24, 24],
-        iconAnchor: [12, 12]
-    })
 }
 
 export const MapaFuncionario = ({ hospitais, onHospitalClick }: MapaFuncionarioProps) => {
