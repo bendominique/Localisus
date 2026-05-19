@@ -166,3 +166,14 @@
     width: 1250px;
     margin-left: 3rem;
 }
+
+.robo-cali{
+    border-radius: 50px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    min-width: 75px;
+    min-height: 75px;
+    background-color: #a9a9a9;
+}

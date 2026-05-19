@@ -10,7 +10,6 @@ import { Sidebar } from "../components/Sidebar";
 import { TopbarUsuarios } from "../components/TopbarUsuarios";
 import { useAuth } from "../contexts/AuthContext";
 import medicamentos from "../imagens/medicamentos.png"
-import 
 import { DadosHospitalMapa, MapaLocalisus } from "../components/MapaLocalisus";
 
 type TipoStatusBusca = 'ocioso' | 'sucesso' | 'nao_encontrado' | 'campo_vazio';
@@ -149,7 +148,7 @@ export const UsuarioComum = () => {
                         </div>
                     </section>
                     <section className="componentes-cotidiano">
-                        {
+                        {/* {
                             cardsDireita.map((cd, index) =>
                                 <article key={index} className="cards-usuario-comum-cotidiano" style={{ "--cor-tema": cd.cor } as React.CSSProperties}>
                                     <ComponenteCard
@@ -157,8 +156,10 @@ export const UsuarioComum = () => {
                                         descricao={cd.descricao}
                                         icone={cd.icone} cor={cd.cor} />
                                 </article>
-                            )
-                        }
+                            ) */}
+                        <article className="robo-cali">
+                            <h3>Cali</h3>
+                        </article>
                     </section>
                 </div>
             </main>
