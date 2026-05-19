@@ -35,3 +35,29 @@
 .cards-info-hospital p{
     color: #575757;
 }
+
+.marcador-base div {
+    width: 18px; 
+    height: 18px; 
+    border-radius: 50%; 
+    border: 3px solid white; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease-in-out;
+}
+
+.marcador-base:hover div {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.status-disponivel div {
+    background-color: #2ecc71;
+}
+
+.status-critico div {
+    background-color: #f39c12; 
+}
+
+.status-indisponivel div {
+    background-color: #e74c3c; 
+}

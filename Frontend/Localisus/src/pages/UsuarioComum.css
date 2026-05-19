@@ -33,7 +33,7 @@
     transform: translateX(2px);
     transform: translateY(-6px);
     transition: width 0.3s;
-    width: 72rem;
+    min-width: 72rem;
 }
 
 .info-dia {
@@ -50,13 +50,21 @@
 
 .info-dia:hover {
     background-color: #fafeff;
-    flex: 5;
-    transform: translateY(-15px);
-    width: 280px;
+     flex: 5;
+     transform: translateY(-15px); 
+     width: 360px;
 }
 
 .info-dia h1 {
     font-size: 22px;
+}
+
+#medicamento-imagem{
+    display: flex;
+    /* position: absolute;
+    right: 425px;
+    top: 500px; */
+    width: 80px;
 }
 
 .cards-usuario-comum-centro {
@@ -72,7 +80,7 @@
 }
 
 .componentes-abaixo-pesquisa p {
-    color: #07044B;
+    color: #464646;
     font-weight: 50;
 }
 
@@ -120,7 +128,8 @@
 
 .componentes-abaixo-pesquisa p {
     padding: 10px;
-    font-size: 14px;
+    font-size: 20px;
+    text-align: center;
 }
 
 
@@ -146,14 +155,14 @@
     margin-top: 4rem;
 }
 
-.elementos-card-usuario-comum-cotidiano {
+.cards-usuario-comum-cotidiano {
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0px 2px 2px 0.5px rgb(132, 132, 132);
     display: flex;
     padding: 30px;
     justify-content: flex-start;
-    min-height: 400px;
-    width: 500px;
+    min-height: 245px;
+    width: 1250px;
     margin-left: 3rem;
 }

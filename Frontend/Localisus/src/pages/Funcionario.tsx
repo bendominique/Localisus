@@ -64,8 +64,8 @@ export const Funcionario = () => {
                     <h4 id="sugestao-user">Aqui está um resumo do dia</h4>
                     <div className="info-hospital">
                         {
-                            cardsFuncionario.map(cf =>
-                                <article className="cards-info-hospital"  style={{ "--cor-tema": cf.cor } as React.CSSProperties}>
+                            cardsFuncionario.map((cf, index) =>
+                                <article key={index} className="cards-info-hospital"  style={{ "--cor-tema": cf.cor } as React.CSSProperties}>
                                     <ComponenteCard titulo={cf.titulo} descricao={cf.descricao} icone={cf.icone} cor={cf.cor} />
                                 </article>
                             )

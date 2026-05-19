@@ -26,54 +26,67 @@ export const DashboardFuncionario = () => {
         return { capacidadeGeral, totalItensBaixo };
     }, []);
 
+    const hospitaisCustomizados = useMemo(() => {
+        return hospitaisMock.map(hosp => {
+            const estoqueLocal = estoqueMock.filter(e => e.hospitalId === hosp.id)
+
+            const volumeTotal = estoqueLocal.reduce((soma, item) => soma + item.quantidade, 0)
+
+            let statusLogistico = 'DISPONIVEL';
+            if (volumeTotal === 0) statusLogistico = 'INDISPONIVEL'
+            else if (volumeTotal < 50) statusLogistico = 'CRITICO'
+
+            return {
+                id: hosp.id,
+                nome: hosp.nome,
+                latitude: hosp.latitude,
+                longitude: hosp.longitude,
+                endereco: "",
+                telefone: "",
+                status: statusLogistico,
+                volumeEstoque: volumeTotal
+            }
+        })
+    }, []
+)
     return (
-        <main className="dashboard-funcionario-container">
-            
-            {/* CABEÇALHO ANALÍTICO */}
-            <header className="kpi-container" style={{ display: 'flex', gap: '20px', marginBottom: '30px' }}>
-                <article style={{"--cor-tema": "#25c900"} as React.CSSProperties}>
-                    <ComponenteCard 
-                        titulo="Capacidade Total Rede" 
-                        descricao={`${metricasGlobais.capacidadeGeral} unidades armazenadas`} 
-                        icone={Archive} cor="#25c900" 
-                    />
-                </article>
-                <article style={{"--cor-tema": "#ff1a1a"} as React.CSSProperties}>
-                    <ComponenteCard 
-                        titulo="Alertas de Estoque Crítico" 
-                        descricao={`${metricasGlobais.totalItensBaixo} lotes necessitando reposição`} 
-                        icone={AlertTriangle} cor="#ff1a1a" 
-                    />
-                </article>
-            </header>
+        <>
 
-            {/* MALHA MESTRE-DETALHE */}
-            <section className="dashboard-grid" style={{ display: 'flex', gap: '20px' }}>
-                
-                {/* O MESTRE: Emissor de Interrupções */}
-                <div className="area-visualizacao-mapa" style={{ flex: '1' }}>
-                    <h2>Mapeamento de Disponibilidade Pública</h2>
-                    <MapaFuncionario 
-                        hospitais={hospitaisMock}
-                        // INJEÇÃO DO CALLBACK: O mapa recebe a permissão de alterar o estado do Pai
-                        onHospitalClick={setHospitalSelecionadoId}
-                    />
-                </div>
+            <main className="dashboard-funcionario-container">
+                <header>
+                </header>
+                <section className="dashboard-grid">
+                    <article className="area-visualizacao-mapa">
+                        <h2>Mapeamento de Disponibilidade Pública</h2>
+                        <MapaFuncionario
+                            hospitais={hospitaisCustomizados}
+                            onHospitalClick={setHospitalSelecionadoId}
+                        />
+                    </article>
+                </section>
+                <section className="kpi-container">
+                    <article className="card-kpi">
+                        <h3> Capacidade Total Rede </h3>
+                        <p>{metricasGlobais.capacidadeGeral}</p>
+                    </article>
+                    <article className="card-kpi-2">
+                        <h3> Alertas de Estoque Crítico </h3>
+                        <p className="alerta-vermelho">{metricasGlobais.totalItensBaixo}</p>
+                    </article>
 
-                {/* O DETALHE: Consumidor do Estado Derivado */}
-                <aside className="area-inventario-especifico" style={{ width: '400px' }}>
-                    {hospitalSelecionadoId !== null ? (
-                        // Componente isolado. A complexidade do JOIN em memória fica encapsulada lá.
-                        <PainelInventario hospitalId={hospitalSelecionadoId} />
-                    ) : (
-                        <div className="estado-vazio" style={{ padding: '20px', border: '1px dashed #ccc' }}>
-                            <h2>Análise Estática</h2>
-                            <p>Aguardando instrução de hardware. Selecione um nó logístico (hospital) no mapa para carregar o detalhamento integral do estoque.</p>
-                        </div>
-                    )}
-                </aside>
-
-            </section>
-        </main>
-    );
-};
+                    <aside className="area-inventario-especifico">
+                        {hospitalSelecionadoId ? (
+                            <div className="tabela-estoque-hospital">
+                                <h2> Estoque do Hospital {hospitalSelecionadoId}</h2>
+                            </div>
+                        ) : (
+                            <div className="estado-vazio">
+                                <p> Selecione um hospital público para o mapa analisar o estoque integral</p>
+                            </div>
+                        )}
+                    </aside>
+                </section>
+            </main>
+        </>
+    )
+}

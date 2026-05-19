@@ -1,0 +1,39 @@
+
+.elementos-cabecalho-hero li {
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+
+.navbar-hero {
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-hero a{
+    color: var(--letras-azul);
+    list-style: none;
+    text-decoration: none;
+    text-decoration-line: none; 
+}
+
+.nav-item {
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 200;   
+    transition: all 0.3s ease; /* essa transition aqui nos permite criar a animação qdo passarmos o mouse em cima da navbar, ai permite que a gente tenha a animação da hover :)*/
+}
+
+.nav-item.active {
+    color: #0062ff;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.nav-item:hover {
+  color: #3b82f6; 
+}

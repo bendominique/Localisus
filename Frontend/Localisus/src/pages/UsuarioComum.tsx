@@ -1,44 +1,42 @@
 import { ComponenteCard } from "../components/Cards";
 import { useState } from "react";
 import { BarraPesquisa } from "../components/BarraPesquisa";
-import { MapaLocalisus } from "../components/MapaLocalisus";
 import { medicamentosMock } from "../mocks/medicamentosMock";
 import { estoqueMock } from "../mocks/estoqueMock";
 import "./UsuarioComum.css"
-import { Clock, Bell, Info, Pill, Search, HeartPlus, CalendarCheck, Hospital, AlarmClock, Bot, Newspaper, Map, BellRing } from "lucide-react";
+import { Clock, Pill, CalendarCheck, Hospital, AlarmClock, Newspaper, Map, BellRing, BookOpenCheck } from "lucide-react";
 import { hospitaisMock } from "../mocks/hospitaisMocks";
 import { Sidebar } from "../components/Sidebar";
 import { TopbarUsuarios } from "../components/TopbarUsuarios";
 import { useAuth } from "../contexts/AuthContext";
+import medicamentos from "../imagens/medicamentos.png"
+import 
+import { DadosHospitalMapa, MapaLocalisus } from "../components/MapaLocalisus";
+
+type TipoStatusBusca = 'ocioso' | 'sucesso' | 'nao_encontrado' | 'campo_vazio';
 
 export const UsuarioComum = () => {
-
-    const {usuario} = useAuth()
-
+    const { usuario } = useAuth()
+    const [statusBusca, setStatusBusca] = useState<TipoStatusBusca>('ocioso')
     const cardsCentro = [
-        { titulo: "Históricos", descricao: "Acompanhe todas as retiradas realizadas e visualize a frequência com que seus medicamentos estão sendo utilizados.", icone: CalendarCheck, cor: "#ff1aff" },
-        { titulo: "Lembretes", descricao: "Receba alertas importantes para não esquecer horários, dosagens e medicamentos que precisam ser tomados hoje.", icone: AlarmClock, cor: "#ff1aff" },
-        { titulo: "Medicamentos", descricao: "Gerencie seus medicamentos em um só lugar, acompanhe tratamentos ativos e receba lembretes personalizados.", icone: Pill, cor: "#ff1aff" },
-        { titulo: "Postos e Farmácias", descricao: "Encontre unidades de saúde, farmácias e postos de atendimento próximos da sua localização de forma rápida e prática.", icone: Hospital, cor: "#afff1a" }
+        { titulo: "Históricos", descricao: "Acompanhe todas as retiradas realizadas e visualize a frequência com que seus medicamentos estão sendo utilizados.", icone: CalendarCheck, cor: "#6f00ffff" },
+        { titulo: "Lembretes", descricao: "Receba alertas importantes para não esquecer horários, dosagens e medicamentos que precisam ser tomados hoje.", icone: AlarmClock, cor: "#19b900ff" },
+        { titulo: "Medicamentos", descricao: "Gerencie seus medicamentos em um só lugar, acompanhe tratamentos ativos e receba lembretes personalizados.", icone: Pill, cor: "#0396ffff" },
+        { titulo: "Postos/Farmácias", descricao: "Encontre unidades de saúde, farmácias e postos de atendimento próximos da sua localização de forma rápida e prática.", icone: Hospital, cor: "#ff8c00ff" }
     ]
-
     const cardsDireita = [
-        { titulo: "Cali", descricao: "Assistente virtual do localisus", icone: Bot, cor: "#ff1a1a" },
-        { titulo: "Seu dia", descricao: "Amoxicilina", icone: Newspaper, cor: "#ff9218" }
+        { titulo: "Seu dia", descricao: "Amoxicilina", icone: BookOpenCheck, cor: "#e600ffff" }
     ]
-
     const cardsInfoDia = [
         { titulo: "16:00", descricao: "Amoxicilina 250ml", icone: Clock, cor: "#fff" },
         { titulo: "UBS Central", descricao: "1,2km de distância", icone: Map, cor: "#821ff1" },
         { titulo: "Consulta agendada", descricao: "Amanhã às 10:00  ", icone: BellRing, cor: "rgba(225, 255, 0, 0.67)" }
     ]
-
-    //criou-se uma memória para a busca dentro do nosso mapa, agora a nossa tela de home sabe oq pesquisar e aonde pesquisar
-    const [hospitaisNoMapa, setHospitaisNoMapa] = useState<any[]>([])
+    const [hospitaisNoMapa, setHospitaisNoMapa] = useState<DadosHospitalMapa[]>([])
     const executarBusca = (termoPesquisado: string) => {
-        //as implementações dessas constantes resolvem o erro que estava presente no momento de buscar com o componente de BarraPesquisa
         if (!termoPesquisado.trim()) {
             setHospitaisNoMapa([])
+            setStatusBusca('campo_vazio')
             return;
         }
 
@@ -48,22 +46,43 @@ export const UsuarioComum = () => {
             m.nome.toLowerCase().includes(termoLimpo)
         )
 
+        if(medicamentos.length === 0){
+            setHospitaisNoMapa([])
+            setStatusBusca('nao_encontrado')
+        }
+
         const idsMedicamentos = medicamentosEncontrados.map(m => m.id)
 
         const estoqueComRemedio = estoqueMock.filter(e =>
             idsMedicamentos.includes(e.medicamentoId) && e.quantidade > 0
         )
 
-        const hospitaisFormatados = estoqueComRemedio.map(itemEstoque => {
+        const hospitaisFormatados = estoqueComRemedio.reduce<DadosHospitalMapa[]>((dadosMedicamento, itemEstoque) => {
+
             const hosp = hospitaisMock.find(h => h.id === itemEstoque.hospitalId)
             const med = medicamentosEncontrados.find(m => m.id === itemEstoque.medicamentoId)
 
-            return {
-                hospital: hosp,
-                nomeMedicamento: med?.nome,
-                quantidadeRestante: itemEstoque.quantidade
+            if (hosp) {
+                let statusLogistico = 'DISPONIVEL'
+                if (itemEstoque.quantidade === 0) statusLogistico = 'INDISPONIVEL'
+                else if (itemEstoque.quantidade < 50) statusLogistico = 'CRITICO'
+    
+                dadosMedicamento.push({
+                    hospital: hosp,
+                    nomeMedicamento: med?.nome,
+                    quantidadeRestante: itemEstoque.quantidade,
+                    status: statusLogistico
+                })
             }
-        }).filter(item => item.hospital !== undefined)
+            return dadosMedicamento;
+        }, [])
+
+        if (hospitaisFormatados.length === 0){
+            setStatusBusca('nao_encontrado')
+        } else {
+            setStatusBusca('sucesso')
+        }
+        
         setHospitaisNoMapa(hospitaisFormatados)
     }
 
@@ -73,6 +92,7 @@ export const UsuarioComum = () => {
                 <TopbarUsuarios />
             </header>
             <main>
+                <Sidebar />
                 <div className="conteudo-pagina">
                     <div className="pos-cabecalho">
                         <h1 id="saudacao-user">Olá, {usuario?.nome}!</h1>
@@ -81,20 +101,47 @@ export const UsuarioComum = () => {
                     <section className="pesquisa-elementos">
                         <div className="info-container">
                             {
-                                cardsInfoDia.map(ci =>
-                                    <article className="info-dia">
+                                cardsInfoDia.map((ci, index) =>
+                                    <article key={index} className="info-dia">
                                         <ComponenteCard titulo={ci.titulo} descricao={ci.descricao} icone={ci.icone} cor={ci.cor} />
                                     </article>
                                 )
                             }
+
+                            <img id="medicamento-imagem" src={medicamentos} />
                         </div>
                         <BarraPesquisa onSearch={executarBusca} />
+
+                        {
+                            statusBusca === 'nao_encontrado' && (
+                                <div className="mensagem-status-erro">
+                                    <p> Medicamento não localizado</p>
+                                </div>
+                            )
+                        }
+
+                        {
+                            statusBusca === 'campo_vazio' && (
+                                <div className="mensagem-status-vazio">
+                                    <p>O campo de busca pode estar vazio. Por favor insira um medicamento</p>
+                                </div>
+                            )
+                        }
+
+                        {
+                            statusBusca === 'sucesso' && (
+                                <div className="container-mapa-dinamico">
+                                    <MapaLocalisus hospitaisEncontrados={hospitaisNoMapa} />
+                                </div>
+                            )
+                        }
+
                         <p id="mais-buscados">Buscas Recentes: Mais buscados:</p>
                         <h2 id="acoes-rapidas">Ações rápidas</h2>
                         <div className="componentes-abaixo-pesquisa">
                             {
-                                cardsCentro.map(cc =>
-                                    <article className="cards-usuario-comum-centro" style={{ "--cor-tema": cc.cor } as React.CSSProperties}>
+                                cardsCentro.map((cc, index) =>
+                                    <article key={index} className="cards-usuario-comum-centro" style={{ "--cor-tema": cc.cor } as React.CSSProperties}>
                                         <ComponenteCard titulo={cc.titulo} descricao={cc.descricao} icone={cc.icone} cor={cc.cor} />
                                     </article>
                                 )
@@ -103,8 +150,8 @@ export const UsuarioComum = () => {
                     </section>
                     <section className="componentes-cotidiano">
                         {
-                            cardsDireita.map(cd =>
-                                <article className="elementos-card-usuario-comum-cotidiano" style={{ "--cor-tema": cd.cor } as React.CSSProperties}>
+                            cardsDireita.map((cd, index) =>
+                                <article key={index} className="cards-usuario-comum-cotidiano" style={{ "--cor-tema": cd.cor } as React.CSSProperties}>
                                     <ComponenteCard
                                         titulo={cd.titulo}
                                         descricao={cd.descricao}
@@ -113,12 +160,6 @@ export const UsuarioComum = () => {
                             )
                         }
                     </section>
-
-                    <div className="area-do-mapa">
-                        {hospitaisNoMapa.length > 0 && (
-                            <MapaLocalisus hospitaisEncontrados={hospitaisNoMapa} />
-                        )}
-                    </div>
                 </div>
             </main>
         </>

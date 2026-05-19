@@ -1,3 +1,4 @@
+import { DashboardAdmin } from "../components/DashboardAdmin";
 import { useAuth } from "../contexts/AuthContext";
 import { useNavigate } from "react-router-dom";
 
@@ -14,6 +15,7 @@ export const Admin = () => {
         <>
         <h1> Seja bem vindo(a) {usuario?.nome} </h1>
         <button onClick={handleLogout}>Sair</button>
+        <DashboardAdmin/>
         </>
     )
 }
