@@ -26,7 +26,7 @@ export const MapaFuncionario = ({ hospitais, onHospitalClick }: MapaFuncionarioP
                     key={index}
                     position={[hosp.latitude, hosp.longitude]}
                     eventHandlers={{
-                        click: () => onHospitalClick(hosp.id),
+                        click: () => onHospitalClick?.(hosp.id),
                     }}
                 >
                     <Popup>
