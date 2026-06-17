@@ -107,7 +107,7 @@ export const UsuarioComum = () => {
                                 )
                             }
 
-                            <img id="medicamento-imagem" src={medicamentos} />
+{/* //<img id="medicamento-imagem" src={medicamentos} /> */}
                         </div>
                         <BarraPesquisa onSearch={executarBusca} />
 
@@ -148,15 +148,9 @@ export const UsuarioComum = () => {
                         </div>
                     </section>
                     <section className="componentes-cotidiano">
-                        {/* {
-                            cardsDireita.map((cd, index) =>
-                                <article key={index} className="cards-usuario-comum-cotidiano" style={{ "--cor-tema": cd.cor } as React.CSSProperties}>
-                                    <ComponenteCard
-                                        titulo={cd.titulo}
-                                        descricao={cd.descricao}
-                                        icone={cd.icone} cor={cd.cor} />
-                                </article>
-                            ) */}
+                        <article className="ultimas-noticias">
+                            <h3>Acompanhe as últimas notícias</h3>
+                        </article>
                         <article className="robo-cali">
                             <h3>Cali</h3>
                         </article>
