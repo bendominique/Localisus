@@ -1,0 +1,73 @@
+.elementos-login{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #deeefed9;
+    width: 65%;
+}
+
+
+.elementos-login h2{
+    width: 36.8%;
+}
+
+
+.elementos-login img{
+    position: relative;
+    width: 1690px;
+}
+
+#celular{
+    position: absolute;
+    margin-left: 200px;
+    width: 1400px;
+}
+
+.conteudo-login{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.conteudo-login h2{
+    font-size: 30px;
+}
+
+
+.login-container{
+    margin: 50px;
+    border-radius: 20px;
+    justify-content: center;
+    background-color: white;
+    height: 500px;
+    width: 650px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0.5px 1px 2.5px 1.5px #b5b5b5;
+}
+
+.inputs input{
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+}
+
+.inputs{
+    justify-content: center;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+button{     
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    background-color: blue;
+    height: 40px;
+    width: 100%;
+}
