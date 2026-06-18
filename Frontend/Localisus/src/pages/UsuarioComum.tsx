@@ -25,9 +25,7 @@ export const UsuarioComum = () => {
         { titulo: "Medicamentos", descricao: "Gerencie seus medicamentos em um só lugar, acompanhe tratamentos ativos e receba lembretes personalizados.", icone: Pill, cor: "#0396ffff" },
         { titulo: "Postos/Farmácias", descricao: "Encontre unidades de saúde, farmácias e postos de atendimento próximos da sua localização de forma rápida e prática.", icone: Hospital, cor: "#ff8c00ff" }
     ]
-    const cardsDireita = [
-        { titulo: "Seu dia", descricao: "Amoxicilina", icone: BookOpenCheck, cor: "#e600ffff" }
-    ]
+    
     const cardsInfoDia = [
         { titulo: "16:00", descricao: "Amoxicilina 250ml", icone: Clock, cor: "#fff" },
         { titulo: "UBS Central", descricao: "1,2km de distância", icone: Map, cor: "#821ff1" },

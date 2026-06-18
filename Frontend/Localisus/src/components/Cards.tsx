@@ -6,14 +6,14 @@ export interface CardData {
     id: number,
     titulo: string,
     descricao: string,
-    icone: ElementType,
+    icone?: ElementType,
     cor: string
 }
 
 interface CardProps {
     titulo: string
     descricao: string
-    icone: ElementType
+    icone?: ElementType
     cor: string
 }
 
@@ -33,7 +33,7 @@ export function ComponenteCard({
         <div>
             <div className="icone-container">
                 <div className="icone-fundo">
-                    <Icone size={32} />
+                    {Icone && <Icone size={32}/>}
                 </div>
                 <h1>{titulo}</h1>
             </div>

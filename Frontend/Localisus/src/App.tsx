@@ -11,6 +11,7 @@ import { Contato } from './pages/Contato'
 import { Sobre } from './pages/Sobre'
 import { UsuarioComum } from './pages/UsuarioComum'
 import  Navbar  from './components/Navbar'
+import { Lembretes } from './pages/Lembretes'
 
 
 export function App() {
@@ -38,6 +39,10 @@ export function App() {
                     <Route 
                         path='/home-usuario'
                         element={<UsuarioComum/>}
+                    />
+                    <Route 
+                        path='/lembretes'
+                        element={<Lembretes/>}
                     />
                     <Route 
                         path='/sobre'
