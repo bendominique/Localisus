@@ -1,83 +1,104 @@
 .container-feed {
   width: 100%;
-  max-width: 500px; /* Largura ideal para celular */
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f9f9f9;
+  padding: 40px 0; 
+  background-color: #ecf5fb;
+  overflow: hidden; /* Evita barra de rolagem horizontal na página */
 }
 
 .titulo-feed {
-  font-size: 24px;
-  color: #333;
+  font-size: 28px;
+  color: #07044B;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
-.cartao-noticia {
-  background: white;
+
+.swiper-idosos-coverflow {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 50px; /* Espaço para a paginação (bolinhas) */
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 85%; /* Tente ajustar entre 70% e 90% */
+  max-width: 400px; /* Limite para telas grandes */
+  /* Altura fixa ajuda a manter o padrão */
+  height: 450px; 
   border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  text-align: center;
-  /* Espaço extra no final para não sobrepor os pontinhos do Swiper */
-  margin-bottom: 40px; 
+}
+
+.conteudo-slide {
+  background: white;
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
 }
 
 .img-noticia {
   width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
+  height: 200px; /* Altura fixa para a imagem */
+  object-fit: cover;
 }
 
-.cartao-noticia h3 {
-  font-size: 22px; /* Fonte grande! */
-  color: #1a1a1a;
-  margin-bottom: 10px;
+.texto-noticia {
+  padding: 20px;
+  flex-grow: 1; /* Ocupa o resto do espaço */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
 }
 
-.cartao-noticia p {
-  font-size: 18px; /* Fonte grande! */
-  color: #4a4a4a;
-  line-height: 1.5;
-  margin-bottom: 20px;
+.texto-noticia h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.texto-noticia p {
+    font-size: 18px;
+    color: #555;
+}
+
+
+.swiper-slide:not(.swiper-slide-active) {
+    opacity: 0.5;
+    /* Se quiser remover o efeito 3D de rotação, 
+       mude o 'rotate' no JS para 0 e use apenas escala aqui:
+       transform: scale(0.9); 
+    */
+}
+
+/* O slide ATIVO fica totalmente visível */   
+.swiper-slide-active {
+    opacity: 1;
 }
 
 .btn-ler-mais {
-  background-color: #0056b3; /* Azul escuro com alto contraste */
+  background-color: #0056b3;
   color: white;
   font-size: 18px;
   font-weight: bold;
-  padding: 15px 30px;
+  padding: 12px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   width: 100%;
+  margin-top: auto;
 }
 
-/* =========================================
-   CUSTOMIZANDO O SWIPER PARA IDOSOS
-========================================= */
-
-/* Deixa as setas de navegação maiores e mais visíveis */
 .swiper-button-next,
 .swiper-button-prev {
-  color: #0056b3 !important; /* Cor com alto contraste */
-  transform: scale(1.2); /* Aumenta o tamanho da seta em 20% */
-  background-color: rgba(255, 255, 255, 0.8); /* Fundo branco pra destacar a seta */
-  padding: 30px 20px;
-  border-radius: 8px;
+  color: white !important;
+  background-color: rgba(0, 86, 179, 0.7); 
+  padding: 35px 25px; 
+  border-radius: 10px;
 }
 
-/* Deixa os pontinhos de paginação maiores */
-.swiper-pagination-bullet {
-  width: 14px !important;
-  height: 14px !important;
-  background-color: #999 !important;
-  opacity: 1 !important;
-}
-
-/* Pontinho ativo mais destacado */
 .swiper-pagination-bullet-active {
-  background-color: #0056b3 !important;
-  transform: scale(1.3);
+    background-color: #0056b3 !important;
 }

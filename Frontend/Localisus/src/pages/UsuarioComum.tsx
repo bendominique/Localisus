@@ -11,6 +11,7 @@ import { TopbarUsuarios } from "../components/TopbarUsuarios";
 import { useAuth } from "../contexts/AuthContext";
 import medicamentos from "../imagens/medicamentos.png"
 import { DadosHospitalMapa, MapaLocalisus } from "../components/MapaLocalisus";
+import { FeedNoticias } from "../components/FeedNoticias";
 
 type TipoStatusBusca = 'ocioso' | 'sucesso' | 'nao_encontrado' | 'campo_vazio';
 
@@ -149,7 +150,7 @@ export const UsuarioComum = () => {
                     </section>
                     <section className="componentes-cotidiano">
                         <article className="ultimas-noticias">
-                            <h3>Acompanhe as últimas notícias</h3>
+                            <FeedNoticias></FeedNoticias>
                         </article>
                         <article className="robo-cali">
                             <h3>Cali</h3>

@@ -176,4 +176,5 @@
     min-width: 75px;
     min-height: 75px;
     background-color: #a9a9a9;
+    z-index: 1;
 }
