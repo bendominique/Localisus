@@ -11,7 +11,7 @@ export interface HospitalMapeado extends hospital {
 
 interface MapaFuncionarioProps {
     hospitais: HospitalMapeado[];
-    onHospitalClick: (hospitalId: number) => void
+    onHospitalClick: (hospitalNome: number) => void
 }
 
 export const MapaFuncionario = ({ hospitais, onHospitalClick }: MapaFuncionarioProps) => {
@@ -40,7 +40,6 @@ export const MapaFuncionario = ({ hospitais, onHospitalClick }: MapaFuncionarioP
                     >
                         <Popup>
                             <strong>{hosp.nome}</strong>
-                            Clique para abrir o inventário
                         </Popup>
                     </Marker>
                 ))}

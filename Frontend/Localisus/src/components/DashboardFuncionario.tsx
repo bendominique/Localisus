@@ -26,6 +26,12 @@ export const DashboardFuncionario = () => {
         return { capacidadeGeral, totalItensBaixo };
     }, []);
 
+    const estoqueHospitalSelecionado = useMemo(() => {
+        if (!hospitalSelecionadoId) return []
+
+        return estoqueMock.filter(item => item.hospitalId === hospitalSelecionadoId)
+    }, [hospitalSelecionadoId])
+
     const hospitaisCustomizados = useMemo(() => {
         return hospitaisMock.map(hosp => {
             const estoqueLocal = estoqueMock.filter(e => e.hospitalId === hosp.id)
@@ -74,17 +80,44 @@ export const DashboardFuncionario = () => {
                         <p className="alerta-vermelho">{metricasGlobais.totalItensBaixo}</p>
                     </article>
 
-                    <aside className="area-inventario-especifico">
-                        {hospitalSelecionadoId ? (
-                            <div className="tabela-estoque-hospital">
-                                <h2> Estoque do Hospital {hospitalSelecionadoId}</h2>
-                            </div>
-                        ) : (
-                            <div className="estado-vazio">
-                                <p> Selecione um hospital público para o mapa analisar o estoque integral</p>
-                            </div>
-                        )}
-                    </aside>
+                  <aside className="area-inventario-especifico">
+    {hospitalSelecionadoId && hospitalSelecionadoId ? (
+        <div className="tabela-estoque-hospital">
+            <h2> Estoque do Hospital: {hospitalSelecionadoId}</h2>
+            
+            {estoqueHospitalSelecionado.length > 0 ? (
+                <table className="tabela-medicamentos">
+                    <thead>
+                        <tr>
+                            <th>Medicamento</th>
+                            <th>Dosagem</th>
+                            <th>Quantidade</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {estoqueHospitalSelecionado.map((medicamento) => (
+                            <tr key={medicamento.id}>
+                                 <td>{medicamento.nome}</td>
+                                { /*<td>{medicamento.dosagem}mg</td> */}
+                                <td>{medicamento.quantidade} un.</td>
+                                <td className={medicamento.quantidade < 20 ? 'vermelho' : 'ok'}>
+                                    {medicamento.quantidade < 20 ? 'Crítico' : 'Normal'}
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            ) : (
+                <p>Nenhum medicamento registrado para esta unidade.</p>
+            )}
+        </div>
+    ) : (
+        <div className="estado-vazio">
+            <p> Selecione um hospital no mapa para analisar o estoque integral</p>
+        </div>
+    )}
+</aside>
                 </section>
             </main>
         </>
