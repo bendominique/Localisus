@@ -17,16 +17,17 @@
 }
 
 .info-container {
-    background-color: #aee4ff;
+    background-color: #d1e1fc;
     flex: 1;
     border-radius: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:first baseline;
     flex-direction: row;
-    min-height: 20rem;
-    min-width: 68rem;
+    min-height: 24rem;
+    min-width: 78rem;
     transition: width 0.2s;
+    position: relative;
 }
 
 .info-container:hover{
@@ -36,9 +37,16 @@
     min-width: 72rem;
 }
 
+.info-container:hover img{
+    transform: translateX(2px);
+    transform: translateY(-6px);
+    transition:ease-in ;
+    display: none;
+ }
+
 .info-dia {
-    background-color: #c4ecff;
-    box-shadow: var(--borda-cards);
+    background-color: #d1e1fc;
+    box-shadow: 0px 0px 0.8px 0.3px rgb(132, 132, 132);;
     height: 200px;
     width: 260px;
     border-radius: 5px;
@@ -46,6 +54,7 @@
     margin-left: 12px;
     margin-right: 12px;
     transition: width 0.4s;
+    z-index: 1;
 }
 
 .info-dia:hover {
@@ -59,13 +68,7 @@
     font-size: 22px;
 }
 
-#medicamento-imagem{
-    display: flex;
-    /* position: absolute;
-    right: 425px;
-    top: 500px; */
-    width: 80px;
-}
+
 
 .cards-usuario-comum-centro {
     background-color: #ffffff;
@@ -132,6 +135,13 @@
     text-align: center;
 }
 
+#remedioimagem{
+    position: absolute;
+    width: 677px;
+    bottom: 1.5;
+    margin-left: 725px;
+    
+}
 
 .cabecalho-nav {
     background-color: #f6fafd;

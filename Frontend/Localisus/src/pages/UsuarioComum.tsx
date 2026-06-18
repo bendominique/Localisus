@@ -12,6 +12,7 @@ import { useAuth } from "../contexts/AuthContext";
 import medicamentos from "../imagens/medicamentos.png"
 import { DadosHospitalMapa, MapaLocalisus } from "../components/MapaLocalisus";
 import { FeedNoticias } from "../components/FeedNoticias";
+import remedioimagem from "../imagens/remedios1.svg"
 
 type TipoStatusBusca = 'ocioso' | 'sucesso' | 'nao_encontrado' | 'campo_vazio';
 
@@ -106,12 +107,13 @@ export const UsuarioComum = () => {
                                         <ComponenteCard titulo={ci.titulo} descricao={ci.descricao} icone={ci.icone} cor={ci.cor} />
                                     </article>
                                 )
+                                
                             }
+                            <img id='remedioimagem' src= {remedioimagem} />
 
-{/* //<img id="medicamento-imagem" src={medicamentos} /> */}
                         </div>
-                        <BarraPesquisa onSearch={executarBusca} />
-
+                        <BarraPesquisa onSearch={executarBusca}  />
+                            
                         {
                             statusBusca === 'nao_encontrado' && (
                                 <div className="mensagem-status-erro">

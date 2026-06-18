@@ -26,7 +26,7 @@ export function FeedNoticias() {
   useEffect(() => {
     setNoticias([
       
-        { id: 1, titulo: "Cattleya", resumo: "Inovação, aplicação auxilia gestantes na prevenção de doenças", img: cattleyaimagem },
+        { id: 1, titulo: "Cattleya", resumo: "Inovação, aplicação auxilia gestantes na prevenção de doenças.", img: cattleyaimagem },
         { id: 2, titulo: "Caminhada previne dores", resumo: "15 min por dia ajudam as articulações.", img: caminharimagem },
         { id: 3, titulo: "Beba mais água", resumo: "No frio, a sensação de sede diminui.", img: aguaimagem },
         { id: 4, titulo: "Vacina da Gripe", resumo: "Campanha começa na próxima semana.", img: vacinaimagem },
