@@ -16,10 +16,10 @@ export const Funcionario = () => {
     const { usuario } = useAuth()
     const [estoque, setEstoque] = useState<any[]>([])
     const cardsFuncionario = [
-        { titulo: "Estoque total", descricao: "12,2M", icone: LucidePanelTopClose, cor: "#8c00ff" },
-        { titulo: "Medicamentos", descricao: "12.219", icone: PillIcon, cor: "#25c900" },
-        { titulo: "Unidades ativas", descricao: "128", icone: LucideHospital, cor: "#28b9e5" },
-        { titulo: "Usuários atendidos", descricao: "56.982", icone: UsersIcon, cor: "#f29500" }
+        { titulo: "Estoque total", descricao: "12,2M", descricaoPx: 40,icone: LucidePanelTopClose, cor: "#8c00ff" },
+        { titulo: "Medicamentos", descricao: "12.219",descricaoPx: 40, icone: PillIcon, cor: "#25c900" },
+        { titulo: "Unidades ativas", descricao: "128", descricaoPx: 40,icone: LucideHospital, cor: "#28b9e5" },
+        { titulo: "Usuários atendidos", descricao: "56.982",descricaoPx: 40, icone: UsersIcon, cor: "#f29500" }
     ]
 
     useEffect(() => {
@@ -66,7 +66,7 @@ export const Funcionario = () => {
                         {
                             cardsFuncionario.map((cf, index) =>
                                 <article key={index} className="cards-info-hospital"  style={{ "--cor-tema": cf.cor } as React.CSSProperties}>
-                                    <ComponenteCard titulo={cf.titulo} descricao={cf.descricao} icone={cf.icone} cor={cf.cor} />
+                                    <ComponenteCard titulo={cf.titulo} descricao={cf.descricao}  descricaoPx = {cf.descricaoPx} icone={cf.icone} cor={cf.cor} />
                                 </article>
                             )
                         }

@@ -22,7 +22,7 @@ export const MapaFuncionario = ({ hospitais, onHospitalClick }: MapaFuncionarioP
             <MapContainer
                 center={centro}
                 zoom={12}
-                style={{ height: '400px', width: '100%', borderRadius: '15px' }}
+                style={{ height: '480px', width: '1000px', borderRadius: '15px', justifyContent: "center", alignItems: "center", display: "flex" }}
 
             >
                 <TileLayer

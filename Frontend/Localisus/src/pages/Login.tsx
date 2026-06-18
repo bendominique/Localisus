@@ -60,7 +60,7 @@ export const Login = () => {
                             />
 
                         </div>
-                        <button type="submit">Entrar</button>
+                        <button id="entrar-login" type="submit">Entrar</button>
                         <h4> Ou entre com</h4>
                         {erro && <p>{erro}</p>}
                     </form>

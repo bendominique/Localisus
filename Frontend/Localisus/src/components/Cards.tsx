@@ -6,6 +6,7 @@
         id: number,
         titulo: string,
         descricao: string,
+        descricaoPx?: number,
         icone?: ElementType,
         cor: string,
         }
@@ -13,8 +14,9 @@
     interface CardProps {
         titulo: string
         descricao: string
+        descricaoPx?: number
         icone?: ElementType
-        cor: string,
+        cor: string
         children?: ReactNode
     }
 
@@ -28,6 +30,7 @@
     export function ComponenteCard({
         titulo,
         descricao,
+        descricaoPx,
         icone: Icone,
         children
     }: CardProps) {
@@ -39,7 +42,13 @@
                     </div>
                     <h1>{titulo}</h1>
                 </div>
-                <p>{descricao}</p>
+                <p style={{
+                        fontSize: `${descricaoPx}px`,
+                        overflow: 'hidden'
+                    }}>
+                   
+                    {descricao}
+                    </p>
             
                 {children}
             </div>
@@ -58,6 +67,7 @@
                                 <ComponenteCard
                                     titulo={e.titulo}
                                     descricao={e.descricao}
+                                    descricaoPx={e.descricaoPx}
                                     icone={e.icone}
                                     cor={e.cor}
                                 />

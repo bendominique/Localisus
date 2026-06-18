@@ -37,7 +37,7 @@ export const DashboardAdmin = () => {
                 
                 <section className="painel-medicamentos-destaque">
                     <h2>Medicamentos em destaque</h2>
-                    {/* Lista interna de itens */}
+                    
                 </section>
             </div>
 
