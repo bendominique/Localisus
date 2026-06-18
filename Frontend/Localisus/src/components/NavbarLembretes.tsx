@@ -9,17 +9,18 @@ export const NavbarLembretes = () => {
 
     return (
         <>
-            <NavLink to="/lembretes/ativos" className="lembretes-nav">
-                <li id="ativos-navbar">Ativos</li>
-            </NavLink>
-            {
-                cardMedicamentosAtivo.map((cmA, index) =>
-                    <article key={index} className="medicamentos-ativos">
-                        <ComponenteCard titulo={cmA.titulo} descricao={cmA.descricao} cor={cmA.cor}/>
-                    </article>
-                )
+            <div className="container-lembretes">
+                <div className="lista-medicamentos-lembretes">
+                    {
+                        cardMedicamentosAtivo.map((cmA, index) =>
+                            <article key={index} className="medicamentos-ativos">
+                                <ComponenteCard titulo={cmA.titulo} descricao={cmA.descricao} cor={cmA.cor} />
+                            </article>
+                        )
 
-            }
+                    }
+                </div>
+            </div>
         </>
     )
 }
