@@ -62,8 +62,8 @@ export const DashboardFuncionario = () => {
 
             <main className="dashboard-funcionario-container">
                 <header>
+                    
                 </header>
-
                 <button id="button-exportar-funcionario">
                     Exportar
                 </button>

@@ -63,6 +63,9 @@ export const Funcionario = () => {
                     <h1 id="saudacao-user">Olá, {usuario?.nome}!</h1>
                     <h4 id="sugestao-user">Aqui está um resumo do dia</h4>
                     <div className="info-hospital">
+                        <button>
+                            Filtrar
+                        </button>
                         {
                             cardsFuncionario.map((cf, index) =>
                                 <article key={index} className="cards-info-hospital"  style={{ "--cor-tema": cf.cor } as React.CSSProperties}>
