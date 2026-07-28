@@ -1,0 +1,19 @@
+
+.container-lembretes{
+    display: flex;
+    background-color: #f8f8f8;
+    height: 700px;
+    width: 1650px;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista-medicamentos-lembretes{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    height: 185px;
+    width: 75%;
+}
