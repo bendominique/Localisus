@@ -2,6 +2,7 @@ import {  useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { TipoUsuario } from '../mocks/usuarioMock'
+import "./Cadastro.css"
 
 export const Cadastro = () => {
     const [ nome, setNome] = useState('')
@@ -38,33 +39,45 @@ export const Cadastro = () => {
 
     return(
         <>
-        <h2> Cadastre-se no Localisus </h2>
-        <form onSubmit={handleCadastro}>
+        <h2> Crie sua conta</h2>
+        <div className="card-cadastro">
+            
+        <form id="cadastro-formulario" onSubmit={handleCadastro}>
+            <h3> Nome Completo </h3>
             <input
                 type="text"
                 value={nome}
                 placeholder='Nome'
                 onChange={(e) => setNome(e.target.value)}
                 />
+            <h3> Email </h3>
                 <input
                 type="email"
                 value={email}
                 placeholder='Email'
                 onChange={(e) => setEmail(e.target.value)}
                 />
+            <h3> CPF </h3>
                 <input
                 type="text"
                 value={cpf}
-                placeholder='Cpf'
+                placeholder='CPF'
                 onChange={(e) => setCpf(e.target.value)}
                 />
+            <h3> Senha </h3>
                 <input
                 type="password"
                 value={senha}
                 placeholder='Senha'
                 onChange={(e) => setSenha(e.target.value)}
                 />
-                <div>
+                <h3> Confirmar Senha </h3>  <input
+                type="password"
+                value={senha}
+                placeholder='Confirmar Senha'
+                onChange={(e) => setSenha(e.target.value)}
+                />
+                {/* <div>
                     <select
                         id='escolha-usuario'
                         value={tipo}
@@ -81,8 +94,9 @@ export const Cadastro = () => {
                         placeholder='Id do Hospital'
                         onChange={(e) => setHospital(Number(e.target.value))}/>
                 )}
-                </div>
+                </div> */}
         </form>
+        </div>
         </>
     )
 }

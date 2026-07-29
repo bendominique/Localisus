@@ -44,7 +44,7 @@ export const Login = () => {
                 </div>
                 <div className="login-container">
                     <h3>Faça login para continuar</h3>
-                    <form onSubmit={handleLogin}>
+                    <form id="login-formulario" onSubmit={handleLogin}>
                         <div className="inputs">
                             <p> CPF ou Email</p>
                             <input
