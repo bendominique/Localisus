@@ -7,12 +7,19 @@
     gap: 10px;
 }
 
-.icone-container-tela-sobre{
+#icone-container-tela-sobre{
+    position: absolute;
     background-color: #ffffff;
-    border-radius: 30px;
-    margin-left: 15px;
-    width: 35%;
+    box-shadow: 0.75px 3px 0px 0.5px rgba(0, 0, 0, 0.192);
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    top: 25px;
+    left: 15px;
+    opacity: 1;
+    border-radius: 100%;
 }
 
 .item-imagem{
@@ -38,6 +45,7 @@
     word-wrap:break-word;
     padding: 5px;
     padding-right: 10px;
+    flex: 0;
     position: absolute;
     bottom: 0;
     left: 0;

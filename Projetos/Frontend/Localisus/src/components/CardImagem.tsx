@@ -3,7 +3,7 @@ import primeiraImagem from "../imagens/casal_idosos_sorrindo.jpg"
 import segundaImagem from "../imagens/profissional_saude.jpeg"
 import terceiraImagem from "../imagens/menina-abraca-avo.jpg"
 import quartaImagem from "../imagens/upa_lajeado.jpg"
-import { Hospital, User, User2, Stethoscope } from "lucide-react"
+import { Hospital, User, HeartPlusIcon, Stethoscope } from "lucide-react"
 import { ElementType } from "react"
 
 export interface CardImagemProps {
@@ -33,11 +33,10 @@ export function ComponenteCardImagem({
         <>
             <div className="imagem-fundo">
                 <img src={link} />
-
-                <div className="icone-container-tela-sobre">
-                    {Icone && <Icone size={45} />}
-                </div>
             </div>
+            <div id="icone-container-tela-sobre">
+                    {Icone && <Icone size={55} />}
+                </div>
             <div className="informacao">
                 <div className="titulo-para-voce">
                     <h2 style={{
@@ -70,7 +69,7 @@ export const CardImagem = () => {
     const cards: CardImagemProps[] = [
         { id: 1, icone: User, titulo: 'Para você', subtitulo: 'Paciente', descricao: 'Encontre seus medicamentos de forma rápida para acompanhar seus tratamentos e manter o que mais importa em dia, a sua saúde.', link: primeiraImagem },
         { id: 2, icone: Stethoscope, titulo: 'Para você', subtitulo: 'Profissional de Saúde', descricao: 'Gerencie estoques, acompanhe dispensações e tenha um controle completo sobre a sua unidade de trabalho.', link: segundaImagem },
-        { id: 3, icone: User2, titulo: 'Para você', subtitulo: 'Cuidador ou Familiar', descricao: 'Acompanhe de perto o tratamento de quem você ama, tenha um controle de suas consultas, medicamentos e lembretes.', link: terceiraImagem },
+        { id: 3, icone: HeartPlusIcon, titulo: 'Para você', subtitulo: 'Cuidador ou Familiar', descricao: 'Acompanhe de perto o tratamento de quem você ama, tenha um controle de suas consultas, medicamentos e lembretes.', link: terceiraImagem },
         { id: 4, icone: Hospital, titulo: 'Para você', subtitulo: 'Gestor', descricao: 'Tenha dados estratégicos para tomar decisões que mudam vidas e melhorar a saúde da população.', link: quartaImagem }
     ]
 
