@@ -37,8 +37,11 @@ export const Login = () => {
     return (
         <>
             <div className="conteudo-login">
-                <div className="elementos-login">
-                    <h2>Tecnologia que aproxima você do que realmente importa: <span>sua saúde</span></h2>
+                <div className="elementos-login-esquerda">
+                    <div className="elementos-esquerda">
+                        <h2>Tecnologia que aproxima você do que realmente importa: <span>sua saúde</span></h2>
+                    <h3>Encontre medicamentos no SUS com facilidade e agilidade. Informação confiável, sempre que você precisar a Localisus está aqui para ajudar.</h3>
+                    </div>
                     <img id='mapa' src={mapaimagem} />
                     <img id='celular' src={celularimagem} />
                 </div>
@@ -59,11 +62,17 @@ export const Login = () => {
                                 onChange={(e) => setSenhaDigitada(e.target.value)}
                             />
 
+                            <p> Esqueceu sua senha? </p>
+
                         </div>
                         <button id="entrar-login" type="submit">Entrar</button>
-                        <h4> Ou entre com</h4>
+                        <div className="elementos-apos-botao-entrar">
+                            <h4 id='continuar-com'> ou continuar com</h4>
+                            <button id='login-qr-code' type="button">Login com QR Code</button>
+                        </div>
                         {erro && <p>{erro}</p>}
                     </form>
+                      <h4 id='possuir-conta'>ainda não possui uma conta? <span> Cadastre-se</span></h4>  
                 </div>
             </div>
         </>
