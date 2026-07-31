@@ -1,17 +1,17 @@
-import { ComponenteCard } from "../components/Cards";
+import { ComponenteCard } from "../components/Cards/Cards";
 import { useState } from "react";
-import { BarraPesquisa } from "../components/BarraPesquisa";
+import { BarraPesquisa } from "../components/BarraPesquisa/BarraPesquisa";
 import { medicamentosMock } from "../mocks/medicamentosMock";
 import { estoqueMock } from "../mocks/estoqueMock";
 import "./UsuarioComum.css"
 import { Clock, Pill, CalendarCheck, Hospital, AlarmClock, Newspaper, Map, BellRing, BookOpenCheck } from "lucide-react";
 import { hospitaisMock } from "../mocks/hospitaisMocks";
-import { Sidebar } from "../components/Sidebar";
-import { TopbarUsuarios } from "../components/TopbarUsuarios";
+import { Sidebar } from "../components/Sidebar/Sidebar";
+import { TopbarUsuarios } from "../components/Topbar/TopbarUsuarios";
 import { useAuth } from "../contexts/AuthContext";
 import medicamentos from "../imagens/medicamentos.png"
-import { DadosHospitalMapa, MapaLocalisus } from "../components/MapaLocalisus";
-import { FeedNoticias } from "../components/FeedNoticias";
+import { DadosHospitalMapa, MapaLocalisus } from "../components/Mapas/MapaLocalisus";
+import { FeedNoticias } from "../components/Feed/FeedNoticias";
 import remedioimagem from "../imagens/remedios1.svg"
 
 type TipoStatusBusca = 'ocioso' | 'sucesso' | 'nao_encontrado' | 'campo_vazio';

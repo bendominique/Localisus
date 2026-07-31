@@ -2,9 +2,9 @@ import "./DashboardFuncionario.css"
 import { useState, useMemo } from 'react';
 import { estoqueMock } from '../mocks/estoqueMock';
 import { hospitaisMock } from '../mocks/hospitaisMocks';
-import { MapaFuncionario } from './MapaFuncionario';
+import { MapaFuncionario } from './Mapas/MapaFuncionario';
 import { PainelInventario } from './PainelInventario'; // Importação do componente criado
-import { ComponenteCard } from './Cards';
+import { ComponenteCard } from './BarraPesquisa/Cards';
 import { Archive, AlertTriangle, Truck } from 'lucide-react';
 
 export const DashboardFuncionario = () => {

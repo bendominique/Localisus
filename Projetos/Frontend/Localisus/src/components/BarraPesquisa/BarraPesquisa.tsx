@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import "./BarraPesquisa.css"
-import { PartticulasFundo } from '../pages/ParticulasFundo'
+import { PartticulasFundo } from '../../pages/ParticulasFundo'
 
 interface BarraPesquisaProps {
     onSearch: (termo: string) => void

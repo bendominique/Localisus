@@ -1,6 +1,6 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import 'leaflet/dist/leaflet.css'
-import { gerarIconePorStatus } from "./ElementosMapa/mapaUtil";
+import { gerarIconePorStatus } from "../ElementosMapa/mapaUtil";
 
 export interface DadosHospitalMapa {
     hospital: {

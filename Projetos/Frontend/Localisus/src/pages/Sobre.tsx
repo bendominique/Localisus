@@ -1,5 +1,5 @@
-import { CardImagem } from "../components/CardImagem";
-import { Navbar } from "../components/Navbar";
+import { CardImagem } from "../components/Cards/CardImagem";
+import { Navbar } from "../components/Navbar/Navbar";
 import "./Sobre.css"
 export const Sobre = () => {
 

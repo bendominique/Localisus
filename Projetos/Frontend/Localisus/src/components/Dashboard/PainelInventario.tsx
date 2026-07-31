@@ -1,6 +1,6 @@
 import { useMemo } from "react";
-import { estoqueMock } from "../mocks/estoqueMock";
-import { medicamentosMock } from "../mocks/medicamentosMock";
+import { estoqueMock } from "../../mocks/estoqueMock";
+import { medicamentosMock } from "../../mocks/medicamentosMock";
 
 interface PainelInventarioProps{
     hospitalId: number

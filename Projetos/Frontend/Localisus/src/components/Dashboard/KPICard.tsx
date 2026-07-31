@@ -1,5 +1,5 @@
 import React from "react";
-import { KPIMetrica } from "../interfaces/dashboard";
+import { KPIMetrica } from "../../interfaces/dashboard";
 
 interface KPICardProps {
     metrica: KPIMetrica;

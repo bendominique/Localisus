@@ -1,5 +1,5 @@
 import { User2Icon } from "lucide-react"
-import { Sidebar } from "./Sidebar"
+import { Sidebar } from "../Sidebar/Sidebar"
 import "./TopbarUsuario.css"
 
 export const TopbarUsuarios = () => {

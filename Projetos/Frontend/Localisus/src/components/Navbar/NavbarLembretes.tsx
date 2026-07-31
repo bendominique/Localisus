@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./NavbarLembretes.css"
-import { ComponenteCard } from "./Cards";
+import { ComponenteCard } from "../Cards/Cards";
 
 export const NavbarLembretes = () => {
     const cardMedicamentosAtivo = [

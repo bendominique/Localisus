@@ -1,8 +1,8 @@
 import { TileLayer, Marker, Popup, MapContainer } from "react-leaflet";
 import 'leaflet/dist/leaflet.css'
-import {type hospital} from "../mocks/hospitaisMocks"
+import {type hospital} from "../../mocks/hospitaisMocks"
 import "../pages/Funcionario.css"
-import { gerarIconePorStatus } from "./ElementosMapa/mapaUtil";
+import { gerarIconePorStatus } from "../ElementosMapa/mapaUtil";
 
 export interface HospitalMapeado extends hospital {
     status: string;
