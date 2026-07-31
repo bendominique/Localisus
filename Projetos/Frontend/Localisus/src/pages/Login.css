@@ -55,11 +55,68 @@
     margin-left: 10px;
     height: 100%;
     width: 30%;
+    margin-top: 15%;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
+.elementos-esquerda h2{
+    font-size: 55px;
+    width: 125%;
+    margin-top: -30%;
+}
+
+.elementos-esquerda h3, .elementos-esquerda p{
+    color:#777777
+}
+
+.elementos-esquerda h3{
+    font-size: 30px;
+
+}
+
+.elementos-esquerda p {
+    margin-top: 50%;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.icones-elementos-esquerda{
+    width:  500px;
+    flex-direction: column;
+    margin-left: 45px;
+    display: flex;
+}
+
+.icones-elementos-esquerda img{
+    margin-top: 10%;
+    background-color:#d3f4fe ;
+    border-radius: 20%;
+    padding: 15px;
+    transition: transform 0.3s ease;
+    width: 60px;
+    z-index: 2; /* o z-index aqui é para sobrepor a posição absoluta que o celular possui
+     juntamente com o seu z-index, permitindo que ao passar o mouse em cima dos icones eles se movam*/
+
+}
+
+
+.icones-elementos-esquerda img:hover 
+{
+    transform: translateY(-33%) translateX(-25px);
+    width: 80px;
+}
+
+
+
+.descricao-icone-esquerda{
+    width: 60%;
+    font-size: 25px;
+    margin-top: -15%;
+    margin-left:25%;
+    background-color:#effbff ;
+}
 
 .elementos-apos-botao-entrar{
     display: flex;
@@ -71,14 +128,13 @@
 
 
 #continuar-com{
-    border-top: 2px solid #d8d8d8;
     margin-top: 15px;
     color: #b5b5b5;
 }
 
 #possuir-conta{
     font-size: medium;
-    color: #b5b5b5;
+    color: #777777;
     cursor: pointer;
 }
 
@@ -136,7 +192,8 @@
 @media (min-width: 1025px) and (max-width: 2250px){
     .elementos-login-esquerda{
         background-color: #eefaff;
-        height: 100vh;
+        border-radius: 15%;
+        height: 135vh;
         width: 120vh;
         display: flex;
         align-items: center;
@@ -155,7 +212,7 @@
         margin-left: 80%;
         margin-bottom: 20%;
         z-index: 1;
-        min-width: 85%;
+        width: 85%;
         max-height: 75%;
         position: absolute;
     }

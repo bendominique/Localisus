@@ -19,7 +19,7 @@ input{
     width: 100%;
     margin-bottom: 25px;
     height: 45px;
-    box-shadow: 1.5px 0.35px 2.5px 0.2px rgba(0, 0, 0, 0.8);
+    box-shadow: 1px 0.35px 5px 0.15px rgba(113, 113, 113, 0.8);
     border-style: none;
     border-radius: 10px;
 
