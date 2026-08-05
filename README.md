@@ -114,7 +114,7 @@ npx react-native run-ios
 
 ## 👥 Equipe de Desenvolvimento (Senac)
 
-* **Benjamin Dominique** - [GitHub](https://github.com/SeuUsuarioAqui)
+* **Benjamin Dominique** - [GitHub](https://github.com/SeuUsuarioAqui](https://github.com/bendominique))
 
 * **Italo Vinicius** - [@Italo15](https://github.com/Italo15)
 
