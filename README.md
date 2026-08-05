@@ -2,6 +2,8 @@
 
 Este é o **Projeto Integrador** desenvolvido para o curso de Tecnologia no **Senac**. A aplicação consiste em uma plataforma de geolocalização que integra os dados oficiais do **LocaliSUS** com a **Google Maps API**, permitindo a busca e visualização de unidades de saúde e serviços do SUS de forma eficiente.
 
+Além da versão web, o projeto conta com um **aplicativo mobile multiplataforma**, desenvolvido em **React Native**, oferecendo acesso às funcionalidades tanto em dispositivos **Android** quanto **iOS**, mantendo uma experiência consistente entre as plataformas.
+
 ---
 
 ## 🎯 A Solução
@@ -14,21 +16,33 @@ Durante o desenvolvimento, identificamos que o acesso aos dados de saúde públi
 
 * **Transparência e Confiabilidade:** Utiliza a base de dados oficial do governo, garantindo que o usuário consulte informações reais de postos de saúde, UPAs e hospitais.
 
+* **Experiência Multiplataforma:** Disponível em ambiente web e mobile, permitindo acesso às informações do SUS em qualquer dispositivo.
+
 * **Eficiência Técnica:** A arquitetura em microsserviços permite que a plataforma seja escalável, podendo adicionar novos serviços de saúde sem interromper o funcionamento do mapa principal.
 
 ---
 
 ## 🛠️ Stack Tecnológica
 
-### **Frontend (Interface)**
+### **Frontend Web**
 
 * **React + Vite:** Estrutura base para uma Single Page Application (SPA) de alta performance.
 
 * **TypeScript:** Tipagem estrita para garantir a integridade dos dados geoespaciais.
 
-* **Google Maps API:** Integração core para renderização de mapas, geocodificação e plotagem de marcadores.
+* **Google Maps API:** Integração para renderização de mapas, geocodificação e plotagem de marcadores.
 
-* **CSS Puro / Modules:** Estilização customizada e exclusiva para o projeto.
+* **CSS Modules:** Estilização modular e customizada.
+
+### **Frontend Mobile**
+
+* **React Native:** Desenvolvimento de aplicativo nativo multiplataforma.
+
+* **TypeScript:** Compartilhamento de tipagem e maior segurança durante o desenvolvimento.
+
+* **Google Maps API:** Exibição de mapas e localização das unidades de saúde diretamente no aplicativo.
+
+* **Android e iOS:** Uma única base de código para ambas as plataformas.
 
 ### **Backend (Microsserviços e API)**
 
@@ -50,39 +64,51 @@ Durante o desenvolvimento, identificamos que o acesso aos dados de saúde públi
 
 2. **Processamento via EF Core:** Os dados são processados pelos microsserviços e persistidos no SQL Server.
 
-3. **Visualização Maps:** O frontend consome a API própria e renderiza os pontos de interesse via Google Maps.
+3. **API Centralizada:** Os microsserviços disponibilizam os dados por meio de uma API unificada.
 
-4. **Interface Scalar:** Documentação técnica acessível para visualização dos contratos da API.
+4. **Visualização Web e Mobile:** As aplicações React e React Native consomem a API e renderizam os pontos de interesse utilizando o Google Maps.
+
+5. **Interface Scalar:** Documentação técnica acessível para visualização e testes dos contratos da API.
 
 ---
 
 ## 🚀 Como Executar o Projeto
 
-1. **Clonagem do Repositório:**
+### Backend
 
-   ```bash
-   git clone https://github.com/LuizSoares-sys/projeto-integrador-senac.git
-   ```
+```bash
+git clone https://github.com/LuizSoares-sys/projeto-integrador-senac.git
 
-2. **Configuração do Banco (Migrações):**
+dotnet ef database update
 
-   ```bash
-   dotnet ef database update
-   ```
+dotnet run
+```
 
-3. **Execução do Backend:**
+Acesse o Scalar em:
 
-   ```bash
-   dotnet run
-   ```
+```
+/scalar/v1
+```
 
-   Acesse o Scalar em: `/scalar/v1`
+### Frontend Web
 
-4. **Execução do Frontend:**
+```bash
+npm install
+npm run dev
+```
 
-   ```bash
-   npm install && npm run dev
-   ```
+### Frontend Mobile
+
+```bash
+npm install
+npx react-native run-android
+```
+
+ou
+
+```bash
+npx react-native run-ios
+```
 
 ---
 
