@@ -1,0 +1,63 @@
+:root {
+    --borda-cards: 0px 2px 2px 0.5px rgb(132, 132, 132);
+}
+
+
+.conteudo-pagina {
+    margin-top: -4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.pos-cabecalho {
+    align-self: flex-start;
+    margin-left: 10rem;
+    margin-bottom: 2rem;
+}
+
+.info-hospital{
+    display: flex;
+    justify-content: center;
+}
+
+.cards-info-hospital{
+    background-color: white;
+    box-shadow: var(--borda-cards);
+    border-radius: 10px;
+    margin-left: 12px;
+    padding: 2rem;
+    height: 8rem;
+    width: 26rem;
+}
+
+.cards-info-hospital p{
+    color: #575757;
+}
+
+.marcador-base div {
+    width: 18px; 
+    height: 18px; 
+    border-radius: 50%; 
+    border: 3px solid white; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease-in-out;
+}
+
+.marcador-base:hover div {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.status-disponivel div {
+    background-color: #2ecc71;
+}
+
+.status-critico div {
+    background-color: #f39c12; 
+}
+
+.status-indisponivel div {
+    background-color: #e74c3c; 
+}

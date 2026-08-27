@@ -1,0 +1,102 @@
+:root {
+    --fundo-hero: #f6fafd;
+    --letras-azul: #07044B;
+    --letras-branco: #ffff;
+    --letras-azul-bebe: #007dbc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--fundo-hero);
+    color: var(--letras-azul);
+}
+
+
+.conteudo-home {
+    text-decoration: none;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.conteudo-home h4{
+    color: var(--letras-azul-bebe);
+    font-weight: 500;
+}
+
+
+.info-pagina h1,
+.info-pagina h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.info-pagina {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-pagina a{
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.info-pagina button {
+    flex-direction: column;
+}
+
+.info-pagina h2{
+    font-weight: 300;
+}
+
+.info-pagina span{
+    color: #006aff;
+    font-weight: 400;
+}
+
+#letreiro {
+    font-size: 30px;
+    margin-top: 7.5px;
+    margin-right: 2.5rem;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+#botao-conhecer {
+    text-decoration: none;
+    display: block;
+    font-weight: 300;
+    font-size: medium;
+    margin-top: -10px;
+    border-style: none;
+    border-color: var(--letras-branco);
+    height: 45px;
+    background-color: var(--letras-azul);
+    color: var(--letras-branco);
+    border-radius: 12px;
+    cursor: pointer;
+    width: 150px;
+}
+
+
+#botao-conhecer:hover {
+    animation: botaoAnimacao;
+    animation-duration: 4s;
+    border-style: solid;
+    height: 45px;
+    background-color: var(--letras-branco);
+    cursor: pointer;
+    width: 150px;
+}
+
+@keyframes botaoAnimacao {
+    100% {border-color: var(--letras-azul);}
+    100% {color: var(--letras-azul)}
+    50% {border-color: var(--letras-azul);}
+    50% {color: var(--letras-azul)}
+}

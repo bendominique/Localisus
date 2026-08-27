@@ -1,0 +1,104 @@
+.container-feed {
+  width: 100%;
+  padding: 40px 0; 
+  background-color: #ecf5fb;
+  overflow: hidden; /* Evita barra de rolagem horizontal na página */
+}
+
+.titulo-feed {
+  font-size: 28px;
+  color: #07044B;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.swiper-idosos-coverflow {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 50px; /* Espaço para a paginação (bolinhas) */
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 85%; /* Tente ajustar entre 70% e 90% */
+  max-width: 400px; /* Limite para telas grandes */
+  /* Altura fixa ajuda a manter o padrão */
+  height: 450px; 
+  border-radius: 12px;
+}
+
+.conteudo-slide {
+  background: white;
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.img-noticia {
+  width: 100%;
+  height: 200px; /* Altura fixa para a imagem */
+  object-fit: cover;
+}
+
+.texto-noticia {
+  padding: 20px;
+  flex-grow: 1; /* Ocupa o resto do espaço */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.texto-noticia h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.texto-noticia p {
+    font-size: 18px;
+    color: #555;
+}
+
+
+.swiper-slide:not(.swiper-slide-active) {
+    opacity: 0.5;
+    /* Se quiser remover o efeito 3D de rotação, 
+       mude o 'rotate' no JS para 0 e use apenas escala aqui:
+       transform: scale(0.9); 
+    */
+}
+
+/* O slide ATIVO fica totalmente visível */   
+.swiper-slide-active {
+    opacity: 1;
+}
+
+.btn-ler-mais {
+  background-color: #0056b3;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+  background-color: rgba(0, 86, 179, 0.7); 
+  padding: 35px 25px; 
+  border-radius: 10px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #0056b3 !important;
+}
