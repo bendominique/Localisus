@@ -1,1 +1,23 @@
-﻿Frontend/node_modules/
+﻿# Visual Studio
+.vs/
+*.user
+*.suo
+*.csproj.user
+
+# .NET build output
+bin/
+obj/
+
+# Rider / JetBrains
+.idea/
+
+# NuGet
+*.nupkg
+**/packages/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
