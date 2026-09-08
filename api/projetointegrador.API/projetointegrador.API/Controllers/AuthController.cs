@@ -35,7 +35,7 @@ namespace projetointegrador.API.Controllers
 
             //buscanodo o usuário pelo CPF
             var usuario = await _authDbContext.Usuarios
-                .FirstOrDefaultAsync(u => u.CPF == loginDados.CPF);
+                .FirstOrDefaultAsync(u => u.CPF == loginDados.CPF); 
 
             //realizando a verificação de existência de um usuário
             if (usuario == null)

@@ -12,5 +12,6 @@ namespace projetointegrador.API.Data
         public DbSet<Models.Cliente> Clientes { get; set; }
          public DbSet<Models.Endereco> Enderecos { get; set; }
         public DbSet<Models.Medicamento> Medicamentos { get; set; }
+        public object Usuarios { get; internal set; }
     }
 }
