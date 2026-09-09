@@ -94,8 +94,12 @@ namespace Localisus.Controllers
         }
 
         // POST: api/Medicamentos
+        //[HttpPost]
+        //[Authorize(Roles = "Administrador,Funcionario")]
+        //Temporarioooo
         [HttpPost]
-        [Authorize(Roles = "Administrador,Funcionario")]
+        [AllowAnonymous]
+
         public async Task<IActionResult> CriarMedicamento(
             [FromBody] CriarMedicamentoDTO dto)
         {
@@ -193,8 +197,11 @@ namespace Localisus.Controllers
         }
 
         // DELETE: api/Medicamentos/5
+        //[HttpDelete("{id:int}")]
+        //[Authorize(Roles = "Administrador")]
+        //Temporarioooo tmb
         [HttpDelete("{id:int}")]
-        [Authorize(Roles = "Administrador")]
+        [AllowAnonymous]
         public async Task<IActionResult> DeletarMedicamento(int id)
         {
             var medicamento = await _context.Medicamentos
